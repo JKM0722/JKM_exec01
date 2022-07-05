@@ -5,7 +5,7 @@
 @import url(core.css);
 @import url(common.css);
 
-
+@media screen and (min-width:1025px) {
 body{
     background-image: url(../img/main_visual.png);
     background-repeat: no-repeat;
@@ -110,14 +110,9 @@ body{
 
 
 
-@media screen and (max-width:925px) {
-    body{
-        background-color: rgb(226, 198, 202);
-    }
-    
-    .pat{
-        width: 100%;
-    }
+
 }
+
+
 
 
