@@ -4,7 +4,7 @@
 @import url(reset.css);
 @import url(core.css);
 @import url(common.css);
-@media screen and (min-width:1200px) {
+
 body{
     background-image: url(../img/main_visual.png);
     background-repeat: no-repeat;
@@ -35,6 +35,7 @@ body{
     box-sizing: border-box;
 }
 
+
 .pbx{
     width: 80%;
     display: flex;
@@ -42,8 +43,11 @@ body{
 }
 
 .pat{
-    width: 100%;
+    width: 183px;
     text-align: center;
+    margin: 0 auto;
+     /* 포지션 */
+    position: relative;
 }
 
 
@@ -51,6 +55,8 @@ body{
  border-radius: 30px;
  border: 5px solid hotpink;
  padding: 8px;
+ /* 오버시 애니메이션 */
+ transition: 0.6s;
 }
 
 .pd {
@@ -63,18 +69,77 @@ body{
 }
 
 .pn{
-    font-size: 18px;
+    font-size: min(1.2vw, 18px);
     font-weight: bold;
-    height: 50px;
-    line-height: 50px;
-    background: rgba(34, 34, 34, 0.507);
+    height: 30px;
+    line-height: 20px;
+    background: rgba(148, 101, 101, 0.507);
     color: pink;
+    text-shadow: 1px 0 0 #000,-1px 0 0 #000,0 1px 0 #000,0 -1px 0 #000 ;
+    width: 130px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 4px dotted rgba(128, 0, 128, 0.452);
+    box-sizing: border-box;
+    /* 포지션 */
+    position: absolute; 
+    top: 200px;
+    left: 27px;
+    font-family: 'Single Day', cursive;
+
+     /* 오버시 애니메이션 */
+    transition: 0.4s;
+}
+
+/* 프로필 설명 박스 */
+.pd{
+    width: 165px;
+    min-height: 220;
+    /* 포지션 */
+    position: absolute; 
+    top: 21px;
+    left: 17px;
+    /* 오버전엔 안보이기 */
+    opacity: 0;
+    /* 오버시 애니메이션 */
+    transition: 0.4s;
+}
+
+.pd h3{
+    font-size: min(max(1.2vw, 16px), 18px);
+    height: 30px;
+    line-height: 30px;
+    font-family: 'Single Day', cursive;
+    font-weight: bold;
+    text-shadow: 1px 0 0 cyan,-1px 0 0 cyan,0 1px 0 cyan,0 -1px 0 cyan ;
+    color: purple;
+}
+
+.pd p{
+    font-size: min(max(1.1vw,14px), 16px);
+    line-height: 20px;
+    font-family: 'Single Day', cursive;
+    color: #fff;
     text-shadow: 1px 0 0 #000,-1px 0 0 #000,0 1px 0 #000,0 -1px 0 #000 ;
 }
 
+/************************** 오버시 프로필 설명 박스 나오게 하기 **************************/
 
+/* 오버시 어두워지고 조금 커지기 */
+.pat:hover img{
+    filter: brightness(0.2);
+    transform: scale(1.2);
+}
 
+.pat:hover .pn{
+    filter: brightness(0.4);
+    transform: scale(1.2);
+    top: 218px;
+}
 
+.pat:hover .pd{
+    opacity: 1;
+}
 
 
 
@@ -91,7 +156,50 @@ body{
 
 
 
+
+
+
+
+/* 미디어쿼리 */
+@media screen and (max-width:1035px) {
+    .header h1 img{
+        width: 35%;
+    }
+
+
+    .pbx{
+        columns: 2;
+        display: block;
+    }
+
+    .pat{
+        margin-bottom: 50px;
+    }
+
+    #footer{
+        margin-top: 50px;
+    }
 }
+
+
+@media screen and (max-width:500px) {
+    .header h1 img{
+        width: 45%;
+    }
+
+
+    .pbx{
+        display: block;
+        columns: unset;
+    }
+
+    .pat{
+        margin-bottom: 30px;
+    }
+
+}
+
+
 
 
 
