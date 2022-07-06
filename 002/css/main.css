@@ -13,7 +13,7 @@ body{
     background-position: center;
 }
 
-/* 헤더영역 */
+/***************************** 헤더영역 *****************************/
 #header{
     background: url(../img/footer.png) no-repeat center/cover;
 }
@@ -21,6 +21,7 @@ body{
 .header h1{
     text-align: center;
     line-height: 100px;
+    border-bottom: 2px solid #fff;
 }
 
 .header h1 img{
@@ -28,8 +29,38 @@ body{
     vertical-align: middle;
 }
 
+/* 네비게이션 영역 */
+.header nav ul{
+    display: flex;
+    justify-content: center;
+}
 
-/* 메인영역 */
+/* gnb1 */
+
+.header .gnb{
+    height: 30px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.header .gnb li{
+    margin: 0 20px;
+}
+
+.header .gnb ul a{
+    color: rgba(255, 255, 255, 0.726);
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.header .gnb ul a:hover{
+    color: #333;
+    font-weight: bold;
+}
+
+
+/********************************* 메인영역 *********************************/
 .main{
     padding-top: 100px;
     box-sizing: border-box;
@@ -94,11 +125,13 @@ body{
 /* 프로필 설명 박스 */
 .pd{
     width: 165px;
-    min-height: 220;
+    max-height: 220px;
     /* 포지션 */
     position: absolute; 
-    top: 21px;
-    left: 17px;
+    top: 15px;
+    left: 10px;
+    /* 넘치는부분 스크롤바 */
+    overflow: auto;
     /* 오버전엔 안보이기 */
     opacity: 0;
     /* 오버시 애니메이션 */
@@ -121,6 +154,9 @@ body{
     font-family: 'Single Day', cursive;
     color: #fff;
     text-shadow: 1px 0 0 #000,-1px 0 0 #000,0 1px 0 #000,0 -1px 0 #000 ;
+    text-align: justify;
+    word-spacing: 1px;
+    letter-spacing: 1px;
 }
 
 /************************** 오버시 프로필 설명 박스 나오게 하기 **************************/
@@ -147,9 +183,39 @@ body{
 
 
 
-/* 하단 */
+/**************************** 하단영역 ****************************/
 #footer{
     background-color: rgba(51, 51, 51, 0.521);
+}
+
+/* fgnb */
+.footer .fgnb ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.footer .fgnb{
+    height: 30px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.footer .fgnb li{
+    margin: 0 20px;
+}
+
+/* 회사정보 */
+
+.footer{
+    text-align: center;
+}
+
+.footer p{
+    margin-top: 60px;
+    color: #fff;
+    font-size: 14px;
 }
 
 
@@ -160,12 +226,16 @@ body{
 
 
 
-/* 미디어쿼리 */
+
+/******************************* 미디어쿼리 *******************************/
 @media screen and (max-width:1035px) {
     .header h1 img{
         width: 35%;
     }
 
+    nav{
+        display: none;
+    }
 
     .pbx{
         columns: 2;

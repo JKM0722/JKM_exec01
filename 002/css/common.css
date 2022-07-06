@@ -6,13 +6,14 @@
 /* 상단영역, 하단영역 반복디자인  */
 
 /* 공사중 표시 */
-/* body *{
+body *{
     outline: 2px dashed gray;
-} */
+}
+
 
 /* 1. 상단영역 */
 .header{
-    height: 100px;
+    min-height: 100px;
 }
 
 /* 2. 메인영역  */
@@ -22,5 +23,5 @@
 
 /* 3. 하단영역 */
 .footer {
-    height: 240px;
+    min-height: 200px;
 }
