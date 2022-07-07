@@ -14,6 +14,17 @@ body{
 }
 
 /***************************** 헤더영역 *****************************/
+
+/* 체크박스 없애기 */
+input[type=checkbox]{
+    display: none;
+}
+
+/* PC 버전 메뉴바 업애기 */
+label{
+    display: none;
+}
+
 #header{
     background: url(../img/footer.png) no-repeat center/cover;
 }
@@ -234,14 +245,44 @@ body{
 
 /******************************* 미디어쿼리 *******************************/
 @media screen and (max-width:1035px) {
+
+    .header{
+        position: relative;
+    }
+
+    .header .gnb{
+        position: absolute;
+    }
+
+    .header h1{
+        border: none;
+    }
+
+    /* 모바일 버전 메뉴바 나오게하기 */
+    label{
+        display: block;
+        position: absolute;
+    }
+
+    label.bar{
+        left: 10%;
+        top: 30%;
+    }
+
+    i.fa-bars{
+        font-size: min(max(3vw,30px),40px);
+    }
+
     .header h1 img{
         width: 35%;
     }
 
-    nav{
-        display: none;
+
+    .header nav ul{
+    display: block;
     }
 
+    /* 배치 2개씩 */
     .pbx{
         columns: 2;
         display: block;
@@ -254,6 +295,11 @@ body{
     #footer{
         margin-top: 50px;
     }
+
+    .footer .fgnb li{
+        margin: 0 10px;
+    }
+
 }
 
 
