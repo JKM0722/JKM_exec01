@@ -5,3 +5,20 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/* 스크롤바 */
+.scbar::-webkit-scrollbar{
+    /* 전체 스크롤바 크기 변경 */
+    width:7px;
+}
+
+.scbar::-webkit-scrollbar-thumb{
+    /* 스크롤바 */
+    background: #666;
+    border-radius: 5px;
+}
+.scbar::-webkit-scrollbar-track{
+    /* 스크롤바 트랙*/
+    background: #ddd;
+    border-radius: 5px;
+}
