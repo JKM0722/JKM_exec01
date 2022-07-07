@@ -98,7 +98,7 @@ label{
  border: 5px solid hotpink;
  padding: 8px;
  /* 오버시 애니메이션 */
- transition: 0.6s;
+ transition: 0.4s;
 }
 
 .pd {
@@ -125,7 +125,7 @@ label{
     box-sizing: border-box;
     /* 포지션 */
     position: absolute; 
-    top: 200px;
+    bottom: 7%;
     left: 27px;
     font-family: 'Single Day', cursive;
 
@@ -181,7 +181,7 @@ label{
 .pat:hover .pn{
     filter: brightness(0.4);
     transform: scale(1.2);
-    top: 218px;
+    bottom: 3%;
 }
 
 .pat:hover .pd{
@@ -238,6 +238,12 @@ label{
     filter: brightness(0.7);
 }
 
+/* 푸터로고 */
+.footer>a{
+    display: block;
+    padding-top: 20px;
+}
+
 
 
 
@@ -246,13 +252,30 @@ label{
 /******************************* 미디어쿼리 *******************************/
 @media screen and (max-width:1035px) {
 
+    /* 작업할떄 없어질거 */
+    body{
+        background-image: none;
+    }
+    .main, .footer{
+    display: none;
+    }
+
+    /**********************************************************/
+
+
+    #header{
+        background-image: none;
+    }
+
     .header{
+        background: url(../img/footer.png) no-repeat center/cover;
+    }
+
+    #header{
         position: relative;
     }
 
-    .header .gnb{
-        position: absolute;
-    }
+
 
     .header h1{
         border: none;
@@ -277,10 +300,56 @@ label{
         width: 35%;
     }
 
+    /* 메뉴바 클릭시 네비게이션 나오게하기 */
 
-    .header nav ul{
-    display: block;
+    .nwrap{
+        width: 100%;
+        height: 100%;
+        background: #000;
     }
+
+    label.close{
+        top: 27%;
+        right: 10%;
+    }
+
+    i.fa-xmark{
+        font-size: min(max(3vw,35px),45px);
+    }
+    .header .nwrap .gnb{
+        position: absolute;
+        z-index: 2;
+    }
+    .header .nwrap .gnb ul{
+    display: block;
+    margin-top: 50px;
+    }
+
+    .header .nwrap .gnb ul li{
+        margin-top: 50px;
+    }
+
+    .header .nwrap .gnb ul li a{
+        color: black;
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* 배치 2개씩 */
     .pbx{
@@ -300,7 +369,7 @@ label{
         margin: 0 10px;
     }
 
-}
+
 
 
 @media screen and (max-width:500px) {
