@@ -52,24 +52,24 @@ label{
     display: none;
 }
 
-.nwrap2 .gnb2{
+.nwrap2 .gnb{
     height: 30px;
     width: 80%;
     margin: 0 auto;
     line-height: 30px;
 }
 
-.nwrap2 .gnb2 li{
+.nwrap2 .gnb li{
     margin: 0 20px;
 }
 
-.nwrap2 .gnb2 ul a{
+.nwrap2 .gnb ul a{
     color: rgba(255, 255, 255, 0.726);
     font-weight: bold;
     transition: 0.4s;
 }
 
-.nwrap2 .gnb2 ul a:hover{
+.nwrap2 .gnb ul a:hover{
     color: #333;
     font-weight: bold;
 }
@@ -257,35 +257,20 @@ label{
 @media screen and (max-width:1035px) {
 
     /* 작업할떄 없어질거 */
-    body{
+    /* body{
         background-image: none;
     }
     .main, .footer{
     display: none;
-    }
+    } */
 
     /**********************************************************/
-
-
 
     .header h1{
         border: none;
     }
 
     /* 모바일 버전 메뉴바 나오게하기 */
-    label{
-        display: block;
-        position: absolute;
-    }
-
-    label.bar{
-        left: 10%;
-        top: 30%;
-    }
-
-    i.fa-bars{
-        font-size: min(max(3vw,30px),40px);
-    }
 
     .header h1 img{
         width: 35%;
@@ -302,38 +287,7 @@ label{
     }
 
     .nwrap{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: white;
-        z-index: 5;
-    }
-
-    label.close{
-        top: 5%;
-        right: 10%;
-    }
-
-    i.fa-xmark{
-        font-size: min(max(3vw,35px),45px);
-    }
-    .nwrap .gnb{
-        position: absolute;
-        z-index: 2;
-    }
-
-    .nwrap .gnb ul{
-    display: block;
-    margin-top: 50px;
-    }
-
-    .nwrap .gnb ul li{
-        margin-top: 50px;
-    }
-
-    .nwrap .gnb ul li a{
-        color: black;
-        font-size: 20px;
+        display: block;
     }
 
 
@@ -344,14 +298,7 @@ label{
 
 
 
-
-
-
-
-
-
-
-
+    
 
     /* 배치 2개씩 */
     .pbx{
