@@ -41,31 +41,35 @@ label{
 }
 
 /* 네비게이션 영역 */
-.header nav ul{
+.nwrap2 nav ul{
     display: flex;
     justify-content: center;
 }
 
 /* gnb1 */
 
-.header .gnb{
+.nwrap{
+    display: none;
+}
+
+.nwrap2 .gnb2{
     height: 30px;
     width: 80%;
     margin: 0 auto;
     line-height: 30px;
 }
 
-.header .gnb li{
+.nwrap2 .gnb2 li{
     margin: 0 20px;
 }
 
-.header .gnb ul a{
+.nwrap2 .gnb2 ul a{
     color: rgba(255, 255, 255, 0.726);
     font-weight: bold;
     transition: 0.4s;
 }
 
-.header .gnb ul a:hover{
+.nwrap2 .gnb2 ul a:hover{
     color: #333;
     font-weight: bold;
 }
@@ -263,19 +267,6 @@ label{
     /**********************************************************/
 
 
-    #header{
-        background-image: none;
-    }
-
-    .header{
-        background: url(../img/footer.png) no-repeat center/cover;
-    }
-
-    #header{
-        position: relative;
-    }
-
-
 
     .header h1{
         border: none;
@@ -302,38 +293,49 @@ label{
 
     /* 메뉴바 클릭시 네비게이션 나오게하기 */
 
+    body{
+        position: relative;
+    }
+
+    .nwrap2{
+        display: none;
+    }
+
     .nwrap{
+        position: absolute;
         width: 100%;
         height: 100%;
-        background: #000;
+        background: white;
+        z-index: 5;
     }
 
     label.close{
-        top: 27%;
+        top: 5%;
         right: 10%;
     }
 
     i.fa-xmark{
         font-size: min(max(3vw,35px),45px);
     }
-    .header .nwrap .gnb{
+    .nwrap .gnb{
         position: absolute;
         z-index: 2;
     }
-    .header .nwrap .gnb ul{
+
+    .nwrap .gnb ul{
     display: block;
     margin-top: 50px;
     }
 
-    .header .nwrap .gnb ul li{
+    .nwrap .gnb ul li{
         margin-top: 50px;
     }
 
-    .header .nwrap .gnb ul li a{
+    .nwrap .gnb ul li a{
         color: black;
         font-size: 20px;
     }
-}
+
 
 
 
@@ -368,7 +370,7 @@ label{
     .footer .fgnb li{
         margin: 0 10px;
     }
-
+}
 
 
 
