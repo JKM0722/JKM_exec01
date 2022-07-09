@@ -14,11 +14,11 @@
 
 .scbar::-webkit-scrollbar-thumb{
     /* 스크롤바 */
-    background: #666;
+    background: hotpink;
     border-radius: 5px;
 }
 .scbar::-webkit-scrollbar-track{
     /* 스크롤바 트랙*/
-    background: #ddd;
+    background: pink;
     border-radius: 5px;
 }
