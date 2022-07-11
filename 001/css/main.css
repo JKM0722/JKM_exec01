@@ -18,9 +18,9 @@
 
 /* 메인로고 */
 .header>.logo{
-    width: 162px;
+    width: 20%;
     height: 40px;
-    margin-left: 50px;
+    text-align: center;
 }
 
 /* 네비게이션 배치 */
