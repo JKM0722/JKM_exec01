@@ -4,6 +4,12 @@
 @import url(./core.css);
 @import url(./common.css);
 
+
+/* 스크롤 부드럽게 */
+html{
+    scroll-behavior: smooth;
+}
+
 /* 헤더배치 */
 
 .header{
@@ -14,6 +20,7 @@
     width: 100%;
     background-color: #fff;
     height: 114px;
+    z-index: 50;
 }
 
 /* 메인로고 */
@@ -36,4 +43,105 @@
 .header>.nav>.gnb>li>a{
     font-size: 20px;
     font-weight: bold;
+}
+
+/* 메인파트 */
+
+#main{
+    padding-top: 114px;
+}
+
+/* section1 */
+
+#sec1{
+    /* display: none; */
+    /* 공사용 */
+    width: 100%;
+    height: 90vh;
+    background: url(../images/main_01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* 백그라운드에 블러 넣기 */
+#sec1::before{
+    position: absolute;
+    content: '';
+    display: block;
+    background: #000;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.5;
+    
+}
+
+.sec1 h2{
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    left: 60%;
+    top: 30%;
+}
+
+.sec1 a{
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 26px;
+    text-indent: -999em;
+    background-image: url(../images/skip.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* 애니메이션 */
+    animation: skipAni1 1s ease-in-out infinite alternate;
+}
+
+/* 화살표 애니메이션 */
+@keyframes skipAni1 {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}/* 키프레임 */
+
+/* section 2 */
+#sec2{
+    height: 1131px;
+    background-image: url(../images/bg_service_list.svg);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    position: relative;
+}
+
+.sec2{
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    top: 20%;
+}
+
+.sec2 h2{
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+.sec2 p{
+    font-size: 18px;
+    margin-left: 56px;
+    margin-top: 50px;
+    color: rgb(121, 121, 121);
 }
