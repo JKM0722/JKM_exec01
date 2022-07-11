@@ -13,12 +13,14 @@
     position: fixed;
     width: 100%;
     background-color: #fff;
+    height: 114px;
 }
 
 /* 메인로고 */
 .header>.logo{
     width: 162px;
     height: 40px;
+    margin-left: 50px;
 }
 
 /* 네비게이션 배치 */
