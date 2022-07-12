@@ -10,6 +10,8 @@ html{
     scroll-behavior: smooth;
 }
 
+
+
 /* 헤더배치 */
 
 .header{
@@ -44,7 +46,6 @@ html{
 .header>.nav>.gnb>li>a{
     font-size: 20px;
     font-weight: 900;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* 메인파트 */
@@ -84,7 +85,6 @@ html{
     font-size: 60px;
     line-height: 80px;
     font-weight: 800;
-    font-family: 'Noto Sans KR', sans-serif;
     color: #fff;
     position: absolute;
     left: 60%;
@@ -142,7 +142,6 @@ html{
 }
 
 .sec2 h2{
-    font-family: 'Noto Sans KR', sans-serif;
     font-size: 60px;
     line-height: 80px;
     font-weight: 800;
@@ -153,7 +152,6 @@ html{
     margin-left: 56px;
     margin-top: 50px;
     color: rgb(121, 121, 121);
-    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700;
     line-height: 30px;
 }
@@ -168,7 +166,6 @@ html{
 }
 
 .sec3 h2{
-    font-family: 'Noto Sans KR', sans-serif;
     font-size: 60px;
     line-height: 80px;
     font-weight: 800;
@@ -177,7 +174,6 @@ html{
 .sec3 p{
     font-size: 18px;
     color: rgb(121, 121, 121);
-    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700;
     line-height: 30px;
     margin-top: 50px;
@@ -206,7 +202,6 @@ html{
 }
 
 .sec4b2 h2{
-    font-family: 'Noto Sans KR', sans-serif;
     font-size: 50px;
     line-height: 80px;
     font-weight: 800;
@@ -218,7 +213,6 @@ html{
 .sec4 p{
     font-size: 18px;
     color: rgb(121, 121, 121);
-    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700;
     line-height: 30px;
     margin-top: 50px;
@@ -241,7 +235,6 @@ html{
 }
 
 .sec5b1 h2{
-    font-family: 'Noto Sans KR', sans-serif;
     font-size: 60px;
     line-height: 80px;
     font-weight: 800;
@@ -250,7 +243,6 @@ html{
 .sec5b1 p{
     font-size: 18px;
     color: rgb(121, 121, 121);
-    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700;
     line-height: 30px;
     margin-top: 50px;
@@ -284,11 +276,13 @@ html{
     height: 51px;
     font-size: 20px;
     margin: 0 20px 15px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #f2f2f2;
     border-radius: 30px;
-    font-family: 'Noto Sans KR', sans-serif;
     text-align: center;
     line-height: 51px;
+    font-weight: 800;
+    color: #b3b3b3;
+    background-color: #efefef;
 }
 
 .type li.brk{
@@ -353,6 +347,7 @@ html{
 
 #footer{
     background-color: #000;
+    position: relative;
 }
 
 .logobox{
@@ -371,9 +366,7 @@ html{
 
 .footer address span{
     color: #fff;
-    font-size: 17px;
-    font-family: 'Noto Sans KR', sans-serif;
-    /* display: inline-block; */
+    font-size: 15px;
     
 }
 
@@ -389,26 +382,42 @@ address span:first-child~span{
 address span:first-child~span::before{
     content: '';
     display: inline-block;
-    height: 20px;
+    height: 13px;
     width: 1px;
     background-color: #ccc;
     position: absolute;
     left: -1px;
-    top: 4px;
+    top: 5px;
 }
 
 .footer p{
     font-size: 15px;
     color: rgb(121, 121, 121);
-    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700;
     line-height: 30px;
     margin-top: 20px;
 }
+
+/* 탑버튼 */
+.btn_top{
+    display: block;
+    color: #fff;
+    position: absolute;
+    bottom: 30%;
+    right: 5%;
+    font-size: 14px;
+    text-align: center;
+    width: 50px;
+
+}
+
+
+
 
 
 
 /* 공사용 */
 /* #sec1, #sec2, #sec3, #sec4{
     display: none;
+
 } */
