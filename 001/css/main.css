@@ -21,6 +21,7 @@ html{
     background-color: #fff;
     height: 114px;
     z-index: 50;
+    opacity: 0.8;
 }
 
 /* 메인로고 */
@@ -48,9 +49,9 @@ html{
 
 /* 메인파트 */
 
-#main{
+/* #main{
     padding-top: 114px;
-}
+} */
 
 
 /* section1 */
@@ -159,9 +160,6 @@ html{
 
 
 /* section 3 */
-/* #sec3{
-    height: 761px;
-} */
 
 .sec3{
     display: flex;
@@ -190,7 +188,6 @@ html{
 
 #sec4{
     background: rgb(0, 0, 0) url(../images/sec03_bg.png) no-repeat center/cover;
-    /* height: 806px; */
 }
 
 .sec4{
@@ -230,6 +227,116 @@ html{
 }
 
 
+/* section 5 */
+
+.sec5{
+    padding: 260px 20px 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sec5b1{
+    width: 700px;
+}
+
+.sec5b1 h2{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: 800;
+}
+
+.sec5b1 p{
+    font-size: 18px;
+    color: rgb(121, 121, 121);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 50px;
+}
+
+.tip{
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/icon_tip.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    top: 100px;
+    position: relative;
+    top: 2px;
+    left: 5px;
+    border: none;
+    border-radius: 50%;
+}
+
+.type{
+    width: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.type li{
+    width: 112px;
+    height: 51px;
+    font-size: 20px;
+    margin: 0 20px 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    line-height: 51px;
+}
+
+.type li.brk{
+    flex-basis: 100%;
+    height: 0;
+    border: none;
+}
+
+.sec5b2 .pho{
+    width: 430px;
+    height: 754px;
+    text-align: center;
+    background-image: url(../images/phone_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.sec5b2 .pho img{
+    width: 70%;
+    height: 70%;
+    padding-top: 91px;
+    padding-right: 56px;
+}
+
+.sec5b2 .pho::before{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 55px;
+    position: absolute;
+    top: 40%;
+    left: -8%;
+    transform: translate(-50%, -50%);
+    background: url(../images/bg_arrow.svg) no-repeat center/cover;
+}
+
+.sec5b2 .pho::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    right: 0%;
+    transform: translate(-50%, -50%) scaleX(-1);
+    background: url(../images/bg_arrow.svg) no-repeat center/cover;
+}
 
 
 
@@ -237,10 +344,71 @@ html{
 
 
 
+
+
+
+
+
+/***************************** footer *****************************/
+
+#footer{
+    background-color: #000;
+}
+
+.logobox{
+    border-bottom: 1px solid #333;
+}
+
+.flogo{
+    filter: contrast(0);
+    padding: 50px 0;
+}
+
+.footer address{
+    padding-top: 50px;
+    line-height: 30px;
+}
+
+.footer address span{
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* display: inline-block; */
+    
+}
+
+address span:first-child{
+    padding-right: 10px;
+}
+
+address span:first-child~span{
+    padding: 0 10px;
+    position: relative;
+}
+
+address span:first-child~span::before{
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 1px;
+    background-color: #ccc;
+    position: absolute;
+    left: -1px;
+    top: 4px;
+}
+
+.footer p{
+    font-size: 15px;
+    color: rgb(121, 121, 121);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 20px;
+}
 
 
 
 /* 공사용 */
-/* #sec1, #sec2, #sec3{
+/* #sec1, #sec2, #sec3, #sec4{
     display: none;
 } */
