@@ -350,6 +350,10 @@ html{
     position: relative;
 }
 
+.logobox, .footer{
+    padding-left: 50px;
+}
+
 .logobox{
     border-bottom: 1px solid #333;
 }
