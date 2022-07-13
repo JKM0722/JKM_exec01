@@ -360,6 +360,21 @@ html{
     position: relative;
 }
 
+.sec6b1{
+    min-width: 30%;
+    position: relative;
+}
+
+.sec6b1 img{
+    max-width: 100%;
+}
+
+.sec6b1 .tip{
+    position: absolute;
+    left: 90%;
+    top: -3%;
+}
+
 .sec6b2 h2{
     font-size: 50px;
     line-height: 80px;
@@ -377,6 +392,7 @@ html{
     margin-top: 50px;
     color: white;
     text-align: right;
+    white-space: nowrap;
 }
 
 
@@ -465,6 +481,6 @@ address span:first-child~span::before{
 
 
 /* 공사용 */
-/* #sec1, #sec2, #sec3, #sec4, #sec5{
+#sec1, #sec2, #sec3, #sec4, #sec5{
     display: none;
-} */
+}
