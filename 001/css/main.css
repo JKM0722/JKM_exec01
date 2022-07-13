@@ -332,8 +332,52 @@ html{
     background: url(../images/bg_arrow.svg) no-repeat center/cover;
 }
 
+/* section 6 */
 
+#sec6{
+    background: url(../images/sec05_bg.png) no-repeat center/cover;
+    position: relative;
+}
 
+/* 백그라운드에 블러 넣기 */
+#sec6::before{
+    position: absolute;
+    content: '';
+    display: block;
+    background: #000;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+.sec6{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 254px 20px 185px;
+    position: relative;
+}
+
+.sec6b2 h2{
+    font-size: 50px;
+    line-height: 80px;
+    font-weight: 800;
+    color: white;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.sec6b2 p{
+    font-size: 18px;
+    color: rgb(121, 121, 121);
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 50px;
+    color: white;
+    text-align: right;
+}
 
 
 
@@ -421,7 +465,6 @@ address span:first-child~span::before{
 
 
 /* 공사용 */
-/* #sec1, #sec2, #sec3, #sec4{
+#sec1, #sec2, #sec3, #sec4, #sec5{
     display: none;
-
-} */
+}
