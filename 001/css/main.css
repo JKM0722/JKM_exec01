@@ -48,7 +48,7 @@ html{
     font-weight: 900;
 }
 
-/* 메인파트 */
+/************************************* 메인파트 *************************************/
 
 /* #main{
     padding-top: 114px;
@@ -387,7 +387,6 @@ html{
 
 .sec6b2 p{
     font-size: 18px;
-    color: rgb(121, 121, 121);
     font-weight: 700;
     line-height: 30px;
     margin-top: 50px;
@@ -397,8 +396,155 @@ html{
 }
 
 
+/* section 7 */
+
+.sec7{
+    padding: 274px 20px 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sec7b1 h2{
+    font-size: 50px;
+    line-height: 80px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.sec7b1 p{
+    font-size: 18px;
+    color: rgb(121, 121, 121);
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 50px;
+    white-space: nowrap;
+}
+
+.sec7b1 .de1{
+    display: block;
+    margin-top: 30px;
+    color: #ea3062;
+    font-weight: 500;
+    position: relative;
+}
+
+.sec7b1 .de1::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 75px;
+    background-color: #ea3062;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+}
+
+.sec7b2{
+    padding-top: 50px;
+    min-width: 30%;
+}
+
+.sec7b2 img{
+    max-width: 100%;
+}
 
 
+/* section 8 */
+/* #sec8{
+    height: 790px;
+} */
+.sec8{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sec8b1 {
+    position: relative;
+}
+
+.sec8b1 .tip{
+    position: absolute;
+    top: 0;
+    left: 90%;
+}
+
+.sec8b2 h2{
+    font-size: 50px;
+    line-height: 80px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.sec8b2 p{
+    font-size: 18px;
+    color: rgb(121, 121, 121);
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 50px;
+    white-space: nowrap;
+}
+
+/* section 9 */
+#sec9{
+    position: relative;
+    height: 1125px;
+    background: url(../images/sec07_bg.png) no-repeat center/cover;
+}
+
+/* 백그라운드에 블러 넣기 */
+#sec9::before{
+    position: absolute;
+    content: '';
+    display: block;
+    background: #000;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+
+
+.sec9{
+text-align: center;
+}
+
+.sec9 h2{
+    font-size: 50px;
+    line-height: 80px;
+    font-weight: 800;
+    color: white;
+    padding-top: 400px;
+    position: relative;
+
+}
+
+.sec9 a{
+    margin: 0 auto;
+    display: block;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 50px;
+    position: relative;
+    width: 115px;
+}
+
+.sec9 a::after{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    content: '';
+}
 
 
 
@@ -482,6 +628,6 @@ address span:first-child~span::before{
 
 
 /* 공사용 */
-/* #sec1, #sec2, #sec3, #sec4, #sec5{
+/* #sec1, #sec2, #sec3, #sec4, #sec5, #sec6, #sec7{
     display: none;
 } */
