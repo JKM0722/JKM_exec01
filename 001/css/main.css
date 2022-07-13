@@ -356,7 +356,7 @@ html{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 254px 20px 185px;
+    padding: 254px 20px 100px;
     position: relative;
 }
 
@@ -367,12 +367,13 @@ html{
 
 .sec6b1 img{
     max-width: 100%;
+    padding-top: 50px;
 }
 
 .sec6b1 .tip{
     position: absolute;
     left: 90%;
-    top: -3%;
+    top: 20px;
 }
 
 .sec6b2 h2{
