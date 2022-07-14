@@ -28,9 +28,24 @@ html{
 
 /* 메인로고 */
 .header>.logo{
-    width: 20%;
+    margin-left: 8%;
+    width: 15%;
     height: 40px;
-    text-align: center;
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* outline: 1px solid red; */
+}
+.logo h1{
+    height: 100%;
+    width: 100%;
+}
+.logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -999em;
 }
 
 /* 네비게이션 배치 */
@@ -459,10 +474,18 @@ html{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: -1px;
 }
 
 .sec8b1 {
     position: relative;
+    min-width: 30%;
+}
+
+.sec8b1 img{
+    max-width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .sec8b1 .tip{
@@ -619,7 +642,6 @@ address span:first-child~span::before{
     font-size: 14px;
     text-align: center;
     width: 50px;
-
 }
 
 
