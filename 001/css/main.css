@@ -69,19 +69,34 @@ html{
     padding-top: 114px;
 } */
 
+.tip{
+    cursor: pointer;
+}
 
 /* section1 */
 
 #sec1{
     width: 100%;
     height: 100vh;
-    background: url(../images/main_01.png);
+    /* background: url(../images/main_01.png); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
+
+    animation: sec1Ani 15s ease-out infinite;
 }
 
+
+@keyframes sec1Ani {
+    0%{background-image: url(../images/main_01.png);}
+    32%{background-image: url(../images/main_01.png);}
+    33%{background-image: url(../images/main_02.png);}
+    65%{background-image: url(../images/main_02.png);}
+    66%{background-image: url(../images/main_03.png);}
+    99%{background-image: url(../images/main_03.png);}
+    100%{background-image: url(../images/main_01.png);}
+}
 /* 백그라운드에 블러 넣기 */
 #sec1::before{
     position: absolute;
@@ -138,13 +153,13 @@ html{
 /* section 2 */
 #sec2{
     min-height: 1131px;
-    background-image: url(../images/bg_service_list.svg);
+    /* background-image: url(../images/bg_service_list.svg);
     background-repeat: no-repeat;
-    background-position: 0 100%;
-    /* position: relative; */
+    background-position: 0 100%; */
+    position: relative;
     box-sizing: border-box;
     background-color: #e7f3f6;
-    
+    overflow: hidden;
 }
 
 .sec2{
@@ -153,8 +168,20 @@ html{
     /* position: absolute;
     top: 20%; */
     padding: 172px 20px 0;
-
+    overflow: ;
+    /* position: relative; */
 }
+
+/* .sec::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc((100% - 1440px) / 2);
+    height: 100%;
+    background-color: #000;
+} */
 
 .sec2 h2{
     font-size: 60px;
@@ -171,6 +198,66 @@ html{
     line-height: 30px;
 }
 
+.sec2b1{
+    width: 2700px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+
+}
+
+.s2li{
+    display: flex;
+
+}
+
+.s2li li{
+    flex: 1;
+    background: rgba(255, 255, 255, 0.712);
+    margin-right: 60px;
+    position: absolute;
+    top: -15%;
+    text-align: left;
+    width: 307px;
+    height: 247px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.s2li li:nth-child(1){
+    left: 0;
+}
+
+.s2li li:nth-child(2){
+    left: 500px;
+}
+
+.s2li li:nth-child(3){
+    left: 1000px;
+}
+
+.s2li li:nth-child(4){
+    left: 1500px;
+}
+
+.s2li li:nth-child(5){
+    left: 2000px;
+}
+
+.s2li li h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.s2li li p{
+padding: 30px 0px;
+margin: 0;
+line-height: normal;
+}
+
+.s2li li span{
+    display: block;
+}
 
 /* section 3 */
 
@@ -650,6 +737,7 @@ address span:first-child~span::before{
 
 
 /* 공사용 */
-/* #sec1, #sec2, #sec3, #sec4, #sec5, #sec6, #sec7{
+#sec1, #sec3, #sec4, #sec5, #sec6, #sec7, #sec8, #sec9{
     display: none;
-} */
+} 
+/* #sec2, */
