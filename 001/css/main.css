@@ -172,17 +172,6 @@ html{
     /* position: relative; */
 }
 
-/* .sec::before{
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: calc((100% - 1440px) / 2);
-    height: 100%;
-    background-color: #000;
-} */
-
 .sec2 h2{
     font-size: 60px;
     line-height: 80px;
@@ -208,8 +197,31 @@ html{
 
 .s2li{
     display: flex;
-
 }
+
+/* 흰색줄 만들기 */
+.s2li li::after{
+    content: '';
+    display: block;
+    width: 4px;
+    /* height: 100px; */
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50% -50%);
+}
+
+.s2li li:nth-child(1):after{height: 220px;}
+.s2li li:nth-child(2):after{height: 150px;}
+.s2li li:nth-child(3):after{height: 260px;}
+.s2li li:nth-child(4):after{height: 120px;}
+.s2li li:nth-child(5):after{height: 30px;}
+
+
+
+
+
 
 .s2li li{
     flex: 1;
@@ -257,6 +269,8 @@ line-height: normal;
 
 .s2li li span{
     display: block;
+    font-weight: 600;
+    color: #ccc;
 }
 
 /* section 3 */
@@ -737,7 +751,7 @@ address span:first-child~span::before{
 
 
 /* 공사용 */
-#sec1, #sec3, #sec4, #sec5, #sec6, #sec7, #sec8, #sec9{
+/* #sec1, #sec3, #sec4, #sec5, #sec6, #sec7, #sec8, #sec9{
     display: none;
-} 
+}  */
 /* #sec2, */
