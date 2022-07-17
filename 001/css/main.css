@@ -152,7 +152,7 @@ html{
 
 /* section 2 */
 #sec2{
-    min-height: 1131px;
+    
     /* background-image: url(../images/bg_service_list.svg);
     background-repeat: no-repeat;
     background-position: 0 100%; */
@@ -163,13 +163,20 @@ html{
 }
 
 .sec2{
-    display: flex;
+    min-height: 1131px;
+
     align-items: flex-end;
     /* position: absolute;
     top: 20%; */
     padding: 172px 20px 0;
-    overflow: ;
-    /* position: relative; */
+    /* overflow: ; */
+    position: relative;
+}
+
+.secb2{
+    position: absolute;
+    top: 20%;
+    display: flex;
 }
 
 .sec2 h2{
@@ -192,7 +199,7 @@ html{
     position: absolute;
     bottom: 0;
     z-index: 1;
-
+    left: 0;
 }
 
 .s2li{
