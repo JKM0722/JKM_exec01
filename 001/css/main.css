@@ -371,6 +371,10 @@ line-height: normal;
     margin-top: 50px;
 }
 
+.tip1{
+    position: relative;
+}
+
 .tip{
     width: 20px;
     height: 20px;
@@ -385,6 +389,42 @@ line-height: normal;
     border: none;
     border-radius: 50%;
 }
+
+.tip_box{
+    position: absolute;
+    width: 300px;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    background-color: #f0f2f7;
+    padding: 20px;
+    font-size: 13px;
+    color: #000;
+    line-height: normal;
+    border: solid 1px #e1e1e1;
+    z-index: 1;
+}
+
+.tip_box::after{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #f0f2f7;
+    position: absolute;
+    top: calc(50% - 7.5px);
+    left: -8px;
+    transform: rotate(45deg);
+    border-left: solid 1px #e1e1e1;
+    border-bottom: solid 1px #e1e1e1;
+}
+
+#sec5 .tip_box{
+    top: -5px;
+    left: 331px;
+}
+
+
 
 .type{
     width: 430px;
@@ -493,11 +533,20 @@ line-height: normal;
     padding-top: 50px;
 }
 
-.sec6b1 .tip{
+.sec6b1 .tip1{
     position: absolute;
     left: 90%;
     top: 20px;
 }
+
+.sec6b1 .tip_box{
+    font-weight: 600;
+    position: absolute;
+    top: -38px;
+    left: 39px;
+}
+
+
 
 .sec6b2 h2{
     font-size: 50px;
@@ -758,7 +807,7 @@ address span:first-child~span::before{
 
 
 /* 공사용 */
-/* #sec1, #sec3, #sec4, #sec5, #sec6, #sec7, #sec8, #sec9{
+/* #sec1, #sec3, #sec4, #sec6, #sec7, #sec8, #sec9, #sec2{
     display: none;
 }  */
-/* #sec2, */
+/* , */
