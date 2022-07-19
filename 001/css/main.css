@@ -419,12 +419,26 @@ line-height: normal;
     border-bottom: solid 1px #e1e1e1;
 }
 
+
+
 #sec5 .tip_box{
     top: -5px;
     left: 331px;
+    display: none;
 }
 
+#sec5 .tip_box.on{
+    display: block;
+}
 
+.tip_box button{
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    border: none;
+    cursor: pointer;
+}
 
 .type{
     width: 430px;
@@ -544,9 +558,12 @@ line-height: normal;
     position: absolute;
     top: -38px;
     left: 39px;
+    display: none;
 }
 
-
+#sec6 .tip_box.on{
+    display: block;
+}
 
 .sec6b2 h2{
     font-size: 50px;
@@ -645,11 +662,31 @@ line-height: normal;
     margin-bottom: 0;
 }
 
+.sec8 .tip1{
+    position: absolute;
+    top: 0%;
+    left: 85%;
+}
+
+.sec8 .tip_box{
+    display: none;
+    position: absolute;
+    top: -32px;
+    left: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+}
+
+.sec8 .tip_box.on{
+    display: block;
+}
+
 .sec8b1 .tip{
     position: absolute;
     top: 0;
-    left: 90%;
 }
+
+
 
 .sec8b2 h2{
     font-size: 50px;
@@ -807,7 +844,7 @@ address span:first-child~span::before{
 
 
 /* 공사용 */
-/* #sec1, #sec3, #sec4, #sec6, #sec7, #sec8, #sec9, #sec2{
+/* #header, #sec1, #sec3, #sec4, #sec5, #sec7, #sec6, #sec9, #sec2{
     display: none;
 }  */
 /* , */

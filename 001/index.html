@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>assuretee</title>
-    <link rel="icon" href="./images/logo.jpg">
+    <link rel="icon" href="./images/logo-removebg-preview.png">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -173,8 +173,10 @@
                             <h2>보험료를 알아서 <br> 비교</h2>
                             <p class="tip1">
                                 관심 있는 보험을 선택하고 간단한 나의 정보만 넣으면 <br> 어슈어티가 보험료를 비교해 드립니다.
-                                    <button class="tip"></button>
-                                    <span class="tip_box">2022년 2월 기준 운전분야의 오토바이 보험만 런칭 되었으며, 순차적으로 각 보험종목별 솔루션을 연내 오픈 계획에 있습니다.</span>
+                                    <button class="tip" onclick="document.querySelector('.sec5 .tip_box').classList.toggle('on')"></button>
+                                    <span class="tip_box">2022년 2월 기준 운전분야의 오토바이 보험만 런칭 되었으며, 순차적으로 각 보험종목별 솔루션을 연내 오픈 계획에 있습니다.
+                                    <button class="xmark" onclick="document.querySelector('.sec5 .tip_box').classList.toggle('on')"><i class="fa-solid fa-xmark" ></i></button>
+                                    </span>
                             </p>
                             
                             <ul class="type">
@@ -205,9 +207,9 @@
                         <div class="sec6b1">
                             <img src="./images/img_sec05.png" alt="">
                             <div class="tip1">
-                                <button class="tip"></button>
+                                <button class="tip" onclick="document.querySelector('.sec6 .tip_box').classList.toggle('on')"></button>
                                 <span class="tip_box">
-                                    본 화면은 특정 상품의 화면예시 이며 보험상품 및 계약자 종류에 따라 화면 구성이 충분히 달라집니다.
+                                    본 화면은 특정 상품의 화면예시 이며 보험상품 및 계약자 종류에 따라 화면 구성이 충분히 달라집니다.                                    <button class="xmark" onclick="document.querySelector('.sec6 .tip_box').classList.toggle('on')"><i class="fa-solid fa-xmark"></i></button>
                                 </span>
                             </div>
                         </div>
@@ -240,10 +242,17 @@
                 <!-- #sec8 -->
                 <div id="sec8">
                     <section class="sec8 ibx">
-                        <div class="sec8b1 tip1">
+                        <div class="sec8b1">
                             <img src="./images/img_sec06_2.png" alt="">
-                            <button class="tip"></button>
-                            <span class="tip_box"></span>
+                            <div class="tip1">
+                                <button class="tip" onclick="document.querySelector('.sec8 .tip_box').classList.toggle('on')"></button>
+                                <span class="tip_box">
+                                    Android / iOS App은 2022년 6월 출시 예정입니다.
+                                    <button class="xmark" onclick="document.querySelector('.sec8 .tip_box').classList.toggle('on')">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </span>
+                            </div>
                         </div>
                         <div class="sec8b2">
                             <h2>가입하지 않아도 <br> 가장 가까운 곳에서 쉽고 <br> 편리하게 이용</h2>
