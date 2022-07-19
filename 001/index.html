@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
+<script>
+    window.addEventListener('scroll', () => { 
+    //스크롤을 할 때마다 로그로 현재 스크롤의 위치가 찍혀나온다.
+    console.log(window.scrollX, window.scrollY);
+});
+</script>
 <body>
     <!-- wrap -->
 
@@ -193,9 +200,13 @@
                             <!-- 화면스와이프하며 넘겨지는 핸드폰 -->
                             <!-- 핸드폰 -->
                             <div class="pho">
-                                <img src="./images/slide_phone_1.jpg" alt="">
-                                <!-- <img src="./images/slide_phone_2.jpg" alt="">
-                                <img src="./images/slide_phone_3.jpg" alt=""> -->
+                                <button class="btl"></button>
+                                <button class="btr"></button>
+                                <div class="phi">
+                                    <img src="./images/slide_phone_1.jpg" alt="">
+                                    <img src="./images/slide_phone_2.jpg" alt="">
+                                    <img src="./images/slide_phone_3.jpg" alt="">
+                                </div>
                             </div>
                         </div>
                     </section>
