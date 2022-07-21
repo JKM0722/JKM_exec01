@@ -18,9 +18,9 @@ html{
     position: fixed;
     width: 100%;
     background-color: #fff;
-    height: 64px;
+    height: 64px !important;
     z-index: 50;
-    /* opacity: 0.8; */
+    opacity: 0.8;
 }
 
 /* 메인로고 */
@@ -48,12 +48,24 @@ html{
     text-indent: -999em;
 }
 
-/* 데스크탑용 gnb, 메뉴바 */
+/* 데스크탑용 gnb, 햄버거바 */
 .bar{
-    width: 50px;
-    height: 50px;
-    outline: 2px solid black;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    /* outline: 2px solid black; */
 }
+
+.bar span{
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+}
+
+.bar .bar1{top: 20%;}
+.bar .bar2{top: 50%;}
+.bar .bar3{top: 80%;}}
 
 .header>.nav{
     display: flex;
@@ -61,6 +73,10 @@ html{
     right: 2px;
 }
 
+/* 일단 햄버거바 옆에뜨는 문구 삭제 */
+.gnb{
+    display: none;
+}
 
 
 
@@ -96,5 +112,14 @@ html{
 
 
 
+
+
+
+/* 공사중 */
+/* #header, #sec3, #sec4, #sec8, #sec7, #sec6, #sec9, #sec2{
+    display: none;
+}  */
+
+/*  #sec1 */
 
 }
