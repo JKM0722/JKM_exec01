@@ -1,8 +1,11 @@
 @charset "utf-8";
 
 @import url(./reset.css);
-@import url(./core.css);
 @import url(./common.css);
+
+@media screen and (min-width:1080px) {
+    
+@import url(./core.css);
 
 
 /* 스크롤 부드럽게 */
@@ -61,6 +64,12 @@ html{
 .header>.nav>.gnb>li>a{
     font-size: 20px;
     font-weight: 900;
+}
+.bar{
+    display: none;
+}
+.nav2{
+    display: none;
 }
 
 /************************************* 메인파트 *************************************/
@@ -861,3 +870,5 @@ address span:first-child~span::before{
     display: none;
 }  */
 /* , */
+
+}
