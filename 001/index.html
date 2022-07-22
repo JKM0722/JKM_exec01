@@ -16,6 +16,25 @@
     //스크롤을 할 때마다 로그로 현재 스크롤의 위치가 찍혀나온다.
     console.log(window.scrollX, window.scrollY);
 });
+
+
+
+
+window.addEventListener("DOMContentLoaded", () => {
+
+    /*********************************************************
+        함수명 : ham
+        기능 : 모바일 버전에서 햄버거메뉴 클릭시 메뉴 나옴
+    *********************************************************/
+
+
+
+
+
+
+});///////////////////////////dom
+
+
 </script>
 <body>
     <!-- wrap -->
@@ -55,14 +74,13 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="bar">
-                        <span class="bar1"></span>
-                        <span class="bar2"></span>
-                        <span class="bar3"></span>
-                    </div>
                 </div>
             </header>
-
+            <div class="bar" onclick="document.querySelector('.nav2').classList.toggle('on'), document.querySelector('.bar').classList.toggle('on')">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </div>
             <!-- 누르면 토글로 튀어나오는 부분 -->
             <div class="nav2">
                 <ul class="gnb2">

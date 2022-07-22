@@ -380,53 +380,6 @@ line-height: normal;
     margin-top: 50px;
 }
 
-.tip1{
-    position: relative;
-}
-
-.tip{
-    width: 20px;
-    height: 20px;
-    background-image: url(../images/icon_tip.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 150%;
-    top: 100px;
-    position: relative;
-    top: 2px;
-    left: 5px;
-    border: none;
-    border-radius: 50%;
-}
-
-.tip_box{
-    position: absolute;
-    width: 300px;
-    box-sizing: border-box;
-    display: block;
-    text-align: center;
-    background-color: #f0f2f7;
-    padding: 20px;
-    font-size: 13px;
-    color: #000;
-    line-height: normal;
-    border: solid 1px #e1e1e1;
-    z-index: 1;
-}
-
-.tip_box::after{
-    content: '';
-    display: block;
-    width: 15px;
-    height: 15px;
-    background-color: #f0f2f7;
-    position: absolute;
-    top: calc(50% - 7.5px);
-    left: -8px;
-    transform: rotate(45deg);
-    border-left: solid 1px #e1e1e1;
-    border-bottom: solid 1px #e1e1e1;
-}
 
 
 
@@ -440,14 +393,6 @@ line-height: normal;
     display: block;
 }
 
-.tip_box button{
-    display: block;
-    position: absolute;
-    top: 5px;
-    right: 0;
-    border: none;
-    cursor: pointer;
-}
 
 .type{
     width: 430px;
