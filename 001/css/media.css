@@ -90,7 +90,13 @@ html{
 
 
 
-
+/* section 2 */
+#sec2{
+    position: relative;
+    box-sizing: border-box;
+    background-color: #e7f3f6;
+    overflow: hidden;
+}
 
 
 
