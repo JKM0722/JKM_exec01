@@ -1,7 +1,21 @@
 @charset "utf-8";
 
+@media screen and (min-width:1080px){
+
 /* 속박스 class */
 .ibx{
     max-width: 1440px;
     margin: 0 auto;
+}
+
+}
+
+@media screen and (max-width:1079px){
+
+/* 속박스 class */
+.ibx{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 }
