@@ -159,14 +159,14 @@ html{
 
 /* section 2 */
 #sec2{
-    
+    border-bottom: 3px solid #95d0df;
     /* background-image: url(../images/bg_service_list.svg);
     background-repeat: no-repeat;
     background-position: 0 100%; */
     position: relative;
     box-sizing: border-box;
     background-color: #e7f3f6;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .sec2{
@@ -176,7 +176,6 @@ html{
     /* position: absolute;
     top: 20%; */
     padding: 172px 20px 0;
-    /* overflow: ; */
     position: relative;
 }
 
@@ -201,12 +200,17 @@ html{
     line-height: 30px;
 }
 
+
+@media screen and (min-width:768px) {
+    
+
 .sec2b1{
     width: 2700px;
     position: absolute;
     bottom: 0;
     z-index: 1;
-    left: 0;
+    left: 15px;
+    
 }
 
 .s2li{
@@ -286,6 +290,8 @@ line-height: normal;
     font-weight: 600;
     color: #ccc;
 }
+
+}/* 미디어쿼리 770px 이상 */
 
 /* section 3 */
 

@@ -4,10 +4,14 @@
 
     body{
         max-width: 1079px;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
     
 /* 스크롤 부드럽게 */
+body .ibx{
+    max-width: 100% !important;
+}
+
 
 .header{
     display: flex;
@@ -30,7 +34,7 @@
     height: 34px;
     position: absolute;
     top: 15px;
-    left: 20px;
+    left: -27px;
     background-image: url(../images/logo.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -164,6 +168,13 @@
 /********************* 메인영역 *********************/
 /* section 1*/
 
+h2{
+    font-size: 42px !important;
+}
+
+p{
+    font-size: 20px !important; 
+}
 
 @keyframes sec1Ani {
     0%{background-image: url(../images/mobile_main_01.jpg);}
@@ -175,10 +186,18 @@
     100%{background-image: url(../images/mobile_main_01.jpg);}
 }
 
+#sec1>.sec1>h2{
+    top: 413px;
+    left: 13vw;
+    line-height: 1.24;
+}
 
 
 
 
+
+
+    
 
 
 /* section 2 */
@@ -186,13 +205,138 @@
     position: relative;
     box-sizing: border-box;
     background-color: #e7f3f6;
-    overflow: hidden;
+    /* overflow: hidden; */
+    text-align: center;
+}
+
+.sec2{
+    padding: 0;
+    margin: 0;
+}
+
+.secb2{
+    display: block;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+}
+
+.secb2 h2{
+    line-height: 1.23;
+}
+
+.secb2 p{
+    width: 500px;
+    line-height: 1.4;
+    margin-left: 0;
 }
 
 
 
 
 
+@media screen and (max-width:767px){
+
+.sec2b1{
+    width: 500vw;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    left: 0;
+}
+
+
+
+.sec2b1 img{
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+    width: 500vw;
+}
+
+.sec2b1 .s2li{
+    display: flex;
+    position: absolute;
+    width: 100%;
+}
+
+.s2li li{
+    position: absolute;
+    top: -650px;    
+    flex: 1;
+    box-sizing: border-box;
+    width: 90vw;
+    margin-left: 30px;
+    background: rgba(255, 255, 255, 0.712);
+    /* background-color: aqua; */
+    text-align-last: left;
+    height: 250px;
+}
+
+.s2li li:nth-child(1){
+    left: 50vw;
+    transform: translateX(-50vw);
+}
+.s2li li:nth-child(2){
+    left: 150vw;
+    transform: translateX(-50vw);
+}
+.s2li li:nth-child(3){
+    left: 250vw;
+    transform: translateX(-50vw);
+}
+.s2li li:nth-child(4){
+    left: 350vw;
+    transform: translateX(-50vw);
+}
+.s2li li:nth-child(5){
+    left: 450vw;
+    transform: translateX(-50vw);
+}
+
+/* 흰색줄 만들기 */
+.s2li li::after{
+    content: '';
+    display: block;
+    width: 4px;
+    /* height: 100px; */
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50% -50%);
+}
+
+.s2li li:nth-child(1):after{height: 220px;}
+.s2li li:nth-child(2):after{height: 220px;}
+.s2li li:nth-child(3):after{height: 350px;}
+.s2li li:nth-child(4):after{height: 200px;}
+.s2li li:nth-child(5):after{height: 75px;}
+
+.s2li li h3{
+    font-size: 26px;
+    font-weight: 800;
+    margin: 30px 0 30px 30px;
+}
+
+
+.s2li li p{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    margin: 30px 0 30px 30px;
+}
+
+.s2li li span{
+    margin: 50px 0 30px 30px;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ccc;
+}
+
+}/* sec2 미디어쿼리 768이하 */
 
 
 
