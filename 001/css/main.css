@@ -2,9 +2,6 @@
 
 @import url(./reset.css);
 @import url(./common.css);
-
-@media screen and (min-width:1080px) {
-    
 @import url(./core.css);
 
 
@@ -53,15 +50,16 @@ html{
 
 /* 네비게이션 배치 */
 
-.header>.nav{
+.navbox{
     width: 50%;
 }
-.header>.nav>.gnb{
+
+.gnb{
     display: flex;
     justify-content: space-around;
 }
 
-.header>.nav>.gnb>li>a{
+.gnb>li>a{
     font-size: 20px;
     font-weight: 900;
 }
@@ -816,4 +814,3 @@ address span:first-child~span::before{
 }  */
 /* , */
 
-}
