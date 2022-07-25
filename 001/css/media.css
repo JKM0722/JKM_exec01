@@ -166,10 +166,10 @@ body .ibx{
 }
 
 .gnb2 a {
-    font-size: 40px;
+    font-size: 5vh;
     font-weight: 600;
     display: block;
-    padding: 50px;
+    padding: 6vh;
 }
 
 /********************* 메인영역 *********************/
@@ -402,10 +402,11 @@ body .ibx{
 .sec5{
     align-items: center;
     padding: 0;
-    padding-top: 150px;
+    padding-top: 200px;
     flex-direction: column;
     text-align: center;
     position: relative;
+    padding-bottom: 200px;
 }
 
 .sec5 h2{
@@ -434,16 +435,22 @@ body .ibx{
     transform: translateX(-50%);
 }
 
+
 .tip_box::after{
     top: -8px;
     left: calc(50% - 7.5px);
     transform: rotate(135deg);
 }
 
+.type{
+    position: absolute;
+    left: 50%;
+    bottom: -3%;
+    transform: translate(-50%, -50%) scale(.7);
+}
 
 
 .sec5b2 .pho{
-    margin-bottom: 100px;
     left: 7%;
 }
 

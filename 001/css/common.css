@@ -95,10 +95,5 @@ body {
         width: 90vw;
     }
     
-    .type{
-        position: absolute;
-        left: 51%;
-        top: 88%;
-        transform: translate(-50%, -50%) scale(.7);
-    }
+
 }
