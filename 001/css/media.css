@@ -451,7 +451,22 @@ body .ibx{
 
 
 .sec5b2 .pho{
-    left: 7%;
+    left: 5%;
+    transform: scale(.8);
+    /* max-width: 80%; */
+}
+
+/* 버튼 */
+.pho .btl{
+    top: 40%;
+    left: -12%;
+    transform: scale(.6);
+}
+
+.pho .btr{
+    top: 40%;
+    right: 1%;
+    transform: scaleX(-1);
 }
 
 

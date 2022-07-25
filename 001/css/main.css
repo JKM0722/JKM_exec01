@@ -441,15 +441,16 @@ line-height: normal;
 }
 
 .phi{
-    display: flex;
+    /* display: flex; */
     width: 252px;
-    height: 534px;
+    height: 557px;
     padding-right: 56px;
     margin-top: 75px;
     /* outline: 1px solid blue; */
     margin-left: 31px;
     overflow: hidden;
     padding-top: 97px;
+    border-radius: 50px;
 }
 
 .pho button{
@@ -463,9 +464,17 @@ line-height: normal;
     cursor: pointer;
 }
 
-.phi img{
+.phi .phib{
     border-radius: 50px;
-    padding-right: 20px;
+    /* outline: 1px dotted red; */
+    width: 311px;
+    height: 551px;
+    display: flex;
+    transform: translateX(0px);
+}
+.phi .phib img{
+    width: 100%;
+    padding-right: 30px;
 }
 
 .pho .btl{
