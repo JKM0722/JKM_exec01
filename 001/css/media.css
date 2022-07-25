@@ -9,7 +9,7 @@
     
 /* 스크롤 부드럽게 */
 body .ibx{
-    max-width: 100% !important;
+    max-width: 1079px;
 }
 
 
@@ -168,12 +168,14 @@ body .ibx{
 /********************* 메인영역 *********************/
 /* section 1*/
 
-h2{
-    font-size: 42px !important;
+.sec1 h2{
+    font-size: 42px;
+    line-height: 1.23;
 }
 
-p{
-    font-size: 20px !important; 
+.sec1 p{
+    font-size: 20px; 
+    line-height: 1.4;
 }
 
 @keyframes sec1Ani {
@@ -205,7 +207,7 @@ p{
     position: relative;
     box-sizing: border-box;
     background-color: #e7f3f6;
-    /* overflow: hidden; */
+    overflow: hidden;
     text-align: center;
 }
 
@@ -223,13 +225,16 @@ p{
 }
 
 .secb2 h2{
+    font-size: 42px;
     line-height: 1.23;
 }
 
+
 .secb2 p{
     width: 500px;
-    line-height: 1.4;
     margin-left: 0;
+    font-size: 20px; 
+    line-height: 1.4;
 }
 
 
@@ -336,14 +341,83 @@ p{
     color: #ccc;
 }
 
-}/* sec2 미디어쿼리 768이하 */
+}/* sec2 미디어쿼리 767px이하 */
+
+/* sec3 */
+
+.sec3{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.sec3 h2{
+    font-size: 35px;
+    line-height: 1.23;
+}
+
+.sec3 p{
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.sec3b2{
+    min-width: 30%;
+}
+
+.sec3b2 img{
+    max-width: 100%;
+}
 
 
+/* sec4 */
+.sec4{
+    text-align: center;
+    flex-direction: column-reverse;
+    padding-top: 100px;
+}
 
+#sec4 .sec4 h2{
+    text-align: center;
+    font-size: 35px;
+    line-height: 1.23;
+}
 
+#sec4 .sec4 p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 20px;
+}
 
+/* section 5 */
+.sec5{
+    padding: 0;
+    padding-top: 150px;
+    flex-direction: column;
+    text-align: center;
+}
 
+.sec5 h2{
+    text-align: center;
+    font-size: 35px;
+    line-height: 1.23;
+}
 
+.sec5 p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 30px;
+}
+
+#sec5 .sec5 .tip{
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 
@@ -358,7 +432,7 @@ p{
 
 
 /* 공사중 */
-/* #header, #sec3, #sec4, #sec8, #sec7, #sec6, #sec9, #sec2{
+/* #header, #sec1, #sec2, #sec4, #sec5, #sec8, #sec7, #sec6, #sec9, #sec2{
     display: none;
 }  */
 
