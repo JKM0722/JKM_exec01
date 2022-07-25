@@ -459,14 +459,14 @@ body .ibx{
 /* 버튼 */
 .pho .btl{
     top: 40%;
-    left: -12%;
+    left: -9%;
     transform: scale(.6);
 }
 
 .pho .btr{
     top: 40%;
-    right: 1%;
-    transform: scaleX(-1);
+    right: 3%;
+    transform: scaleX(-1) scale(.6);
 }
 
 
