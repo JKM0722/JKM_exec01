@@ -2,9 +2,12 @@
 
 @media screen and (max-width:1079px) {
 
+html, body{
+    overflow-x: hidden;
+}
+
     body{
         max-width: 1079px;
-        overflow-x: hidden;
     }
     
 /* 스크롤 부드럽게 */
