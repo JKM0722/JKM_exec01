@@ -10,7 +10,7 @@ html, body{
         max-width: 1079px;
     }
     
-/* 스크롤 부드럽게 */
+
 body .ibx{
     max-width: 1079px;
 }
@@ -41,7 +41,7 @@ body .ibx{
     height: 34px;
     position: absolute;
     top: 15px;
-    left: -27px;
+    left: -20px;
     background-image: url(../images/logo.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -509,7 +509,7 @@ body .ibx{
 
 
 
-
+/* sec7 */
 
 
 
@@ -524,25 +524,38 @@ body .ibx{
 
 .sec7 h2{
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 1.23;
 }
 
 .sec7 p{
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.4;
     margin-top: 30px;
 }
 
+.de1{
+    font-size: 16px;
+}
+
+.sec7b1 .de1::after{
+    left: 40.5%;
+}
+
+.sec7b2 img{
+    max-width: none;
+    width: 107%;
+}
 
 
+/* sec8 */
 
 .sec8{
     align-items: center;
     padding: 0;
     padding-top: 150px;
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
 }
 
@@ -558,9 +571,85 @@ body .ibx{
     font-size: 18px;
     line-height: 1.4;
     margin-top: 30px;
+    padding-bottom: 50px;
+}
+
+.sec8b1 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.sec8 .tip1{
+    position: static;
+    margin-bottom: 20px;
+}
+
+.sec8 .tip{
+    position: static;
+}
+
+.sec8 .tip_box{
+left: 50%;
+transform: translateX(-50%);
+top: 34px;
+}
+
+.sec8b1 img{
+    position: relative;
+    left: 7%;
 }
 
 
+/* sec9 */
+.sec9 h2{
+font-size: 40px;
+line-height: 1.23;
+}
+
+.sec9 a{
+font-size: 24px;
+}
+
+.sec9 a::after{
+    width: 80%;
+    left: 11px;
+}
+
+
+/************************ 푸터영역 ************************/
+.flogo{
+    padding: 20px 0px;
+    
+}
+
+.flogo img{
+    width: 110px;
+}
+
+.footer address span{
+    display: block;
+    padding: 0;
+    margin-bottom: -10px;
+    font-size: 13px;
+}
+
+address span:first-child~span{
+padding: 0;
+}
+
+address span:first-child~span::before{
+display: none;
+}
+
+
+.footer p{
+font-size: 13px;
+padding-bottom: 10px;
+}
+
+.btn_top{
+top: 16px;
+}
 
 
 
