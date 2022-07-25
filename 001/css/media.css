@@ -62,7 +62,7 @@ body .ibx{
 /* 데스크탑용 gnb, 햄버거바 */
 #header .bar{
     position: fixed;
-    right: 10px;
+    right: 20px;
     top: 22px;
     width: 20px;
     height: 20px;
@@ -196,7 +196,7 @@ body .ibx{
 }
 
 #sec1>.sec1>h2{
-    top: 413px;
+    top: 65%;
     left: 13vw;
     line-height: 1.24;
 }
@@ -262,7 +262,7 @@ body .ibx{
 
 .sec2b1 img{
     position: absolute;
-    left: 200px;
+    left: 100px;
     bottom: 0;
     width: 500vw;
 }
@@ -279,7 +279,7 @@ body .ibx{
     flex: 1;
     box-sizing: border-box;
     width: 90vw;
-    margin-left: 20px;
+    margin-left: 25px;
     background: rgba(255, 255, 255, 0.712);
     /* background-color: aqua; */
     text-align-last: left;
@@ -405,6 +405,7 @@ body .ibx{
     padding-top: 150px;
     flex-direction: column;
     text-align: center;
+    position: relative;
 }
 
 .sec5 h2{
@@ -415,7 +416,7 @@ body .ibx{
 
 .sec5 p{
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.4;
     margin-top: 30px;
 }
@@ -427,43 +428,76 @@ body .ibx{
     transform: translate(-50%, -50%);
 }
 
+#sec5 .tip_box {
+    top: 88px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tip_box::after{
+    top: -8px;
+    left: calc(50% - 7.5px);
+    transform: rotate(135deg);
+}
 
 
 
+.sec5b2 .pho{
+    margin-bottom: 100px;
+    left: 7%;
+}
 
 
-
-
-
-
-
-
+/* sec6 */
 
 
 .sec6{
     align-items: center;
     padding: 0;
     padding-top: 150px;
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
 }
 
 .sec6 h2{
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 1.23;
 }
 
 .sec6 p{
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.4;
     margin-top: 30px;
 }
 
+.sec6b1{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+}
 
+.sec6b1 .tip1{
+    position: static;
+}
 
+.sec6 .tip{
+    left: 1px;
+}
 
+.sec6 .sec6b1 img{
+    max-width: none;
+    width: 107%;
+    
+}
+
+.sec6b1 .tip_box{
+    top: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
 
 
 
