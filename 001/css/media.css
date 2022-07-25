@@ -4,7 +4,7 @@
 
     body{
         max-width: 1079px;
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
     }
     
 /* 스크롤 부드럽게 */
@@ -12,6 +12,10 @@ body .ibx{
     max-width: 1079px;
 }
 
+
+#header{
+    width: 100vw;
+}
 
 .header{
     display: flex;
@@ -272,7 +276,7 @@ body .ibx{
     flex: 1;
     box-sizing: border-box;
     width: 90vw;
-    margin-left: 30px;
+    margin-left: 20px;
     background: rgba(255, 255, 255, 0.712);
     /* background-color: aqua; */
     text-align-last: left;
@@ -393,6 +397,7 @@ body .ibx{
 
 /* section 5 */
 .sec5{
+    align-items: center;
     padding: 0;
     padding-top: 150px;
     flex-direction: column;
@@ -426,6 +431,90 @@ body .ibx{
 
 
 
+
+
+
+
+
+
+.sec6{
+    align-items: center;
+    padding: 0;
+    padding-top: 150px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sec6 h2{
+    text-align: center;
+    font-size: 35px;
+    line-height: 1.23;
+}
+
+.sec6 p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sec7{
+    align-items: center;
+    padding: 0;
+    padding-top: 150px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sec7 h2{
+    text-align: center;
+    font-size: 35px;
+    line-height: 1.23;
+}
+
+.sec7 p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 30px;
+}
+
+
+
+
+.sec8{
+    align-items: center;
+    padding: 0;
+    padding-top: 150px;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.sec8 h2{
+    text-align: center;
+    font-size: 35px;
+    line-height: 1.23;
+}
+
+.sec8 p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 30px;
+}
 
 
 
