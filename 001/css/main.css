@@ -817,6 +817,7 @@ address span:first-child~span::before{
     font-size: 14px;
     text-align: center;
     width: 50px;
+    height: 50px;
 }
 
 
