@@ -166,7 +166,7 @@ html{
     position: relative;
     box-sizing: border-box;
     background-color: #e7f3f6;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .sec2{

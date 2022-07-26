@@ -215,6 +215,7 @@ body .ibx{
     box-sizing: border-box;
     background-color: #e7f3f6;
     overflow: hidden;
+    /* overflow: visible; */
     text-align: center;
 }
 
@@ -632,6 +633,11 @@ font-size: 24px;
 
 
 /************************ 푸터영역 ************************/
+.logobox, .footer {
+    padding-left: 20px;
+}
+
+
 .flogo{
     padding: 20px 0px;
     
