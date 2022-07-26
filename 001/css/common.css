@@ -17,6 +17,15 @@ body {
 }
 
 
+.loading{
+    width: 0;
+    height: 0;
+}
+
+.loading img{
+    display: none;
+}
+
 /* 1. 상단영역 */
 /* .header{
     min-height: 100px;
