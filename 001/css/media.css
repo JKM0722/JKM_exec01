@@ -133,7 +133,7 @@ body .ibx{
 
 /* 메뉴3 */
 #header .gnb{
-    /* top: -76px; */
+    top: -76px;
 }
 
 /* 메뉴4 */
@@ -143,6 +143,10 @@ body .ibx{
 
 #header .gnb li{
     padding-bottom: 20px;
+}
+
+.gnb>li>a{
+    font-size: 14px;
 }
 
 
