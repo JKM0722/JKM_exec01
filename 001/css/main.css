@@ -503,6 +503,27 @@ line-height: normal;
     transform: scaleX(-1);
 }
 
+.bbtn{
+    display: flex;
+    position: absolute;
+    left: 163px;
+    bottom: 56px;
+}
+
+.bbtn span{
+    margin-right: 10px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    /* outline: 1px solid red; */
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.bbtn span.on {
+    background-color: orangered;
+}
+
 
 
 /* section 6 */

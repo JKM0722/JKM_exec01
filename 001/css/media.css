@@ -107,7 +107,6 @@ body .ibx{
     /* outline: 1px solid red; */
     position: relative;
     overflow: hidden;
-    right: -6px;
     top: 10px;
 }
 
@@ -123,12 +122,12 @@ body .ibx{
 
 /* 메뉴1 */
 #header .gnb{
-    /* top: 4px; */
+    /* top: -3px; */
 }
 
 /* 메뉴2 */
 #header .gnb{
-    /* top: -36px; */
+    /* top: -39px; */
 }
 
 /* 메뉴3 */
@@ -138,7 +137,7 @@ body .ibx{
 
 /* 메뉴4 */
 #header .gnb{
-    /* top: -115px; */
+    /* top: -112px; */
 }
 
 #header .gnb li{
