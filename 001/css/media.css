@@ -198,9 +198,16 @@ body .ibx{
 }
 
 #sec1>.sec1>h2{
-    top: 65%;
+    top: 70%;
     left: 13vw;
     line-height: 1.24;
+}
+
+@keyframes sec1h2Ani {
+    to{
+        top: 65%;
+        opacity: 1;
+    }
 }
 
 

@@ -125,7 +125,18 @@ html{
     color: #fff;
     position: absolute;
     left: 60%;
-    top: 30%;
+    top: 35%;
+    opacity: 0;
+
+    /* 글씨 뜨기 애니메이션 */
+    animation: sec1h2Ani 1s ease-out .1s forwards;
+}
+
+@keyframes sec1h2Ani {
+    to{
+        top: 30%;
+        opacity: 1;
+    }
 }
 
 .sec1 a{
@@ -142,8 +153,9 @@ html{
     left: 50%;
     transform: translate(-50%, -50%);
 
-    /* 애니메이션 */
+    /* 화살표 애니메이션 */
     animation: skipAni1 2s ease-in-out infinite forwards;
+
 }
 
 /* 화살표 애니메이션 */
