@@ -106,9 +106,9 @@ body .ibx{
     height: 30px;
     /* outline: 1px solid red; */
     position: relative;
-    right: 25px;
-    top: 2px;
     overflow: hidden;
+    right: -6px;
+    top: 10px;
 }
 
 #header .gnb{
@@ -133,7 +133,7 @@ body .ibx{
 
 /* 메뉴3 */
 #header .gnb{
-    top: -76px;
+    /* top: -76px; */
 }
 
 /* 메뉴4 */

@@ -485,7 +485,7 @@ line-height: normal;
     width: 311px;
     height: 551px;
     display: flex;
-    transform: translateX(0px);
+    position: relative;
 }
 .phi .phib img{
     width: 100%;
