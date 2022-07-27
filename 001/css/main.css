@@ -28,7 +28,7 @@ html{
 
 /* 메인로고 */
 .header>.logo{
-    margin-left: 8%;
+    margin-left: 5%;
     width: 15%;
     height: 40px;
     background-image: url(../images/logo.svg);
