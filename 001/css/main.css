@@ -181,7 +181,7 @@ html{
     position: relative;
     box-sizing: border-box;
     background-color: #e7f3f6;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .sec2{
@@ -272,7 +272,7 @@ html{
     background: rgba(255, 255, 255, 0.712);
     margin-right: 60px;
     position: absolute;
-    top: 0%;
+    top: 10%;
     text-align: left;
     width: 307px;
     height: 247px;
@@ -875,8 +875,8 @@ address span:first-child~span::before{
 
 
 /* 공사용 */
-#header, #sec1, #sec3, #sec4, #sec8, #sec7, #sec6, #sec9, #sec5{
+/* #header, #sec1, #sec3, #sec4, #sec8, #sec7, #sec6, #sec9, #sec5{
     display: none;
-} 
+}  */
 /* , */
 

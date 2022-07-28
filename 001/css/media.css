@@ -3,7 +3,7 @@
 @media screen and (max-width:1079px) {
 
 html, body{
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
     body{
@@ -269,8 +269,18 @@ body .ibx{
     bottom: 0;
     z-index: 1;
     left: 0;
+    height: 550px;
 }
 
+.sec2b1 .bgimg{
+    position: absolute;
+    background: url(../images/bg_service_list.svg) no-repeat;
+    background-position: 29vw 100%;
+    background-size: 100% auto;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+}
 
 
 .sec2b1 img{
@@ -288,7 +298,6 @@ body .ibx{
 
 .s2li li{
     position: absolute;
-    top: -650px;    
     flex: 1;
     box-sizing: border-box;
     width: 90vw;
@@ -297,6 +306,7 @@ body .ibx{
     /* background-color: aqua; */
     text-align-last: left;
     height: 250px;
+    top: -60px;
 }
 
 .s2li li:nth-child(1){
@@ -326,17 +336,17 @@ body .ibx{
     display: block;
     width: 4px;
     /* height: 100px; */
-    background-color: #000;
+    background-color: #fff;
     position: absolute;
     left: 50%;
     top: 100%;
     transform: translate(-50% -50%);
 }
 
-.s2li li:nth-child(1):after{height: 220px;}
-.s2li li:nth-child(2):after{height: 220px;}
-.s2li li:nth-child(3):after{height: 350px;}
-.s2li li:nth-child(4):after{height: 200px;}
+.s2li li:nth-child(1):after{height: 200px;}
+.s2li li:nth-child(2):after{height: 129px;}
+.s2li li:nth-child(3):after{height: 280px;}
+.s2li li:nth-child(4):after{height: 150px;}
 .s2li li:nth-child(5):after{height: 75px;}
 
 .s2li li h3{
