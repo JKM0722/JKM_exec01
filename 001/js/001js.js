@@ -56,14 +56,14 @@ $(()=>{
         // console.log("오른쪽버튼인가?", isR)
 
         if(isR){/// 오른쪽
-            phib.animate({left:"-131.2%"}, aniT, aniE, 
+            phib.animate({left:"-100%"}, aniT, aniE, 
             function(){
                 phib.append(phib.find("img").first()).css({left:"0"});
             });///animate
         }/// 오른쪽
 
         else {///왼쪽
-            phib.prepend(phib.find("img").last()).css({left:"-131.2%"}).animate({left:"0"}, aniT, aniE)
+            phib.prepend(phib.find("img").last()).css({left:"-100%"}).animate({left:"0"}, aniT, aniE)
         } ////왼쪽
 
         /// 블릿 span에 클래스 on 주기
@@ -96,7 +96,7 @@ $(()=>{
     // 인터발 호출함수
     function autoSlide(){
         autoI = setInterval(() => {
-            phib.animate({left:"-131.2%"}, aniT, aniE, 
+            phib.animate({left:"-100%"}, aniT, aniE, 
             function(){
                 phib.append(phib.find("img").first()).css({left:"0"});
             });///animate///
