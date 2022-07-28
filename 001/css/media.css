@@ -3,7 +3,7 @@
 @media screen and (max-width:1079px) {
 
 html, body{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
     body{
@@ -226,7 +226,7 @@ body .ibx{
     position: relative;
     box-sizing: border-box;
     background-color: #e7f3f6;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* overflow: visible; */
     text-align: center;
 }
@@ -326,7 +326,7 @@ body .ibx{
     display: block;
     width: 4px;
     /* height: 100px; */
-    background-color: #fff;
+    background-color: #000;
     position: absolute;
     left: 50%;
     top: 100%;
