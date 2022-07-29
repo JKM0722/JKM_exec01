@@ -110,6 +110,10 @@ body .ibx{
 .bar .bar2{top: 50%;}
 .bar .bar3{top: 80%;}
 
+.bar.on span{
+    background-color: #000;
+}
+
 /* 눌렀을때 X모양 변경 */
 .bar.on .bar1{
     transform: rotate(45deg) translate(8px, 5px) scale(1.5);
