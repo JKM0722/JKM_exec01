@@ -104,7 +104,7 @@ body {
     transform: translateX(30%);
     /* opacity: 0; */
     opacity: 0;
-    transition: 1s ease-out;
+    transition: 1.5s ease-out;
 }
 .tftx1.on{
     opacity: 1;
@@ -115,7 +115,7 @@ body {
     transform: translateX(-30%);
     /* opacity: 0; */
     opacity: 0;
-    transition: 1s ease-out;
+    transition: 1.2s ease-out;
 }
 .tftx2.on{
     opacity: 1;
