@@ -371,6 +371,13 @@ body .ibx{
     color: #ccc;
 }
 
+.s2li li span:nth-child(3){
+    margin-top: 0;
+}
+.s2li li span:nth-child(4){
+    margin-top: 0;
+}
+
 }/* sec2 미디어쿼리 767px이하 */
 
 /* sec3 */
