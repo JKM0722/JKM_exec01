@@ -26,13 +26,36 @@ body .ibx{
     align-items: center;
     position: fixed;
     width: 100%;
-    background-color: #fff;
+    background-color: transparent;
     height: 64px !important;
     z-index: 50;
-    opacity: 0.8;
+    opacity: 1;
+    transition: .4s;
+
     /* overflow: hidden; */
     justify-content: flex-end;
 }
+
+
+/* .on 클래스 줘서 색깔 입히기 */
+.header.on{
+    background-color: #fff;
+    opacity: .8;
+}
+
+.header.on>.logo{
+    background-image: url(../images/logo.svg);
+}
+
+.header.on .gnb>li>a{
+    color: #000;
+}
+
+.header.on + .bar span{
+    background-color: #000;
+}
+
+
 
 /* 메인로고 */
 .header>.logo{
@@ -43,7 +66,7 @@ body .ibx{
     position: absolute;
     top: 15px;
     left: -20px;
-    background-image: url(../images/logo.svg);
+    background-image: url(../images/logo_wh.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -78,7 +101,7 @@ body .ibx{
     position: absolute;
     height: 3px;
     width: 100%;
-    background-color: #000;
+    background-color: #fff;
     transition: .5s ease-in-out;
 }
 

@@ -20,18 +20,21 @@ html{
     align-items: center;
     position: fixed;
     width: 100%;
-    background-color: #fff;
+    background-color: transparent;
+    transition: .4s;
     height: 114px;
     z-index: 50;
-    opacity: 0.8;
+    opacity: 1;
 }
+
+
 
 /* 메인로고 */
 .header>.logo{
     margin-left: 5%;
     width: 15%;
     height: 40px;
-    background-image: url(../images/logo.svg);
+    background-image: url(../images/logo_wh.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -48,6 +51,21 @@ html{
     text-indent: -999em;
 }
 
+/* .on 클래스 줘서 색깔 입히기 */
+.header.on{
+    background-color: #fff;
+    opacity: .8;
+}
+
+.header.on>.logo{
+    background-image: url(../images/logo.svg);
+}
+
+.header.on .gnb>li>a{
+    color: rgb(196, 196, 196);
+}
+
+
 /* 네비게이션 배치 */
 
 .navbox{
@@ -62,6 +80,7 @@ html{
 .gnb>li>a{
     font-size: 20px;
     font-weight: 900;
+    color: #fff;
 }
 .bar{
     display: none;
