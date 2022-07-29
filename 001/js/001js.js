@@ -175,6 +175,19 @@ $(()=>{
 
 
     // resize
+    $(window).resize(() => {
+        tfty.each((idx, ele) => scposy[idx] = $(ele).offset().top);
+        console.log(scposy);
+    }); /////////// resize함수 ///////////////////
+    $(window).resize(() => {
+        tftx1.each((idx, ele) => scposx1[idx] = $(ele).offset().top);
+        console.log(scposx1);
+    }); /////////// resize함수 ///////////////////
+    $(window).resize(() => {
+        tftx2.each((idx, ele) => scposx2[idx] = $(ele).offset().top);
+        console.log(scposx2);
+    }); /////////// resize함수 ///////////////////
+
 
     /************************************* 
          함수명: tftyGo
