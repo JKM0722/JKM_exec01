@@ -13,7 +13,10 @@ $(()=>{
 
     
     ///////////////////sec2 이미지 넘기면서 설명보기///////////////////////
-
+    // 임시조치
+    $(".sec2b1").draggable({
+        axis:"x"
+    });
 
 
 
@@ -138,10 +141,18 @@ $(()=>{
     
     let scTop; // 스크롤 위치변수    
 
+    // 각 등장액션 위치 배열변수
+    const scpos = [];
+
+    const tfty = $(".tfty");
+
+    const gapp = $(window).height();
 
 
-
-
+    tfty.each((idx,ele) => {
+        console.log(idx,ele);
+        scpos[idx] = $(ele).offset().top;
+    })
 
 
         
@@ -175,6 +186,11 @@ $(()=>{
         else if(scTop < 150){
             headerA.removeClass("on")
         }
+
+        
+
+
+
 
 
 

@@ -234,7 +234,10 @@ html{
     line-height: 30px;
 }
 
-
+.s2li{
+    user-select: none;
+    -webkit-user-drag: none;
+}
 
 
 
