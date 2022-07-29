@@ -99,6 +99,30 @@ body {
     cursor: pointer;
 }
 
+/* 스크롤할때 나타나는 위치 */
+.tftx{
+    transform: translateX(30%);
+    /* opacity: 0; */
+    opacity: .2;
+    transition: .8s ease-out;
+}
+.tftx.on{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.tfty{
+    /* opacity: 0; */
+    opacity: .2;
+    transform: translateY(30%);
+    transition: .8s ease-out;
+}
+.tfty.on{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
 @media screen and (max-width:1079px) {
     .tip_box{
         width: 90vw;
