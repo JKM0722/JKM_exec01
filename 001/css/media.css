@@ -28,7 +28,7 @@ body .ibx{
     width: 100%;
     background-color: transparent;
     height: 64px !important;
-    z-index: 50;
+    z-index: 999;
     opacity: 1;
     transition: .4s;
 
@@ -481,6 +481,7 @@ body .ibx{
     font-size: 15px;
     line-height: 1.4;
     margin-top: 30px;
+    z-index: 100;
 }
 
 #sec5 .sec5 .tip{
