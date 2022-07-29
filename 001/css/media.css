@@ -429,7 +429,7 @@ body .ibx{
     flex-direction: column;
     text-align: center;
     position: relative;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 .sec5 h2{
@@ -476,6 +476,7 @@ body .ibx{
 .sec5b2 .pho{
     left: 5%;
     transform: scale(.8);
+    margin-top: 0;
     /* max-width: 80%; */
 }
 
