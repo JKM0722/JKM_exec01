@@ -152,6 +152,8 @@ $(()=>{
 
     const gapp = $(window).height();
 
+    console.log("gapp 입니다", gapp)
+
 
 
     tfty.each((idx,ele) => {
@@ -234,8 +236,7 @@ $(()=>{
     
 
     /******************************** 스크롤함수  ********************************/
-    // 각 등장위치 보정값(화면크기 기준)
-    const gap = $(window).height();
+
 
     $(window).scroll(function(){
 
