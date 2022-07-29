@@ -100,13 +100,24 @@ body {
 }
 
 /* 스크롤할때 나타나는 위치 */
-.tftx{
+.tftx1{
     transform: translateX(30%);
     /* opacity: 0; */
     opacity: .2;
     transition: .8s ease-out;
 }
-.tftx.on{
+.tftx1.on{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.tftx2{
+    transform: translateX(-30%);
+    /* opacity: 0; */
+    opacity: .2;
+    transition: .8s ease-out;
+}
+.tftx2.on{
     opacity: 1;
     transform: translateX(0);
 }

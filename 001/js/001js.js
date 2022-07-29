@@ -142,17 +142,71 @@ $(()=>{
     let scTop; // 스크롤 위치변수    
 
     // 각 등장액션 위치 배열변수
-    const scpos = [];
+    const scposy = [];
+    const scposx1 = [];
+    const scposx2 = [];
 
     const tfty = $(".tfty");
+    const tftx1 = $(".tftx1");
+    const tftx2 = $(".tftx2");
 
     const gapp = $(window).height();
 
 
+
     tfty.each((idx,ele) => {
         console.log(idx,ele);
-        scpos[idx] = $(ele).offset().top;
-    })
+        scposy[idx] = $(ele).offset().top;
+    });
+
+    tftx1.each((idx,ele) => {
+        console.log(idx,ele);
+        scposx1[idx] = $(ele).offset().top;
+    });
+
+    tftx2.each((idx,ele) => {
+        console.log(idx,ele);
+        scposx2[idx] = $(ele).offset().top;
+    });
+
+    console.log(scposy)
+    console.log(scposx1)
+    console.log(scposx2)
+
+
+    // resize
+
+    /************************************* 
+         함수명: tftyGo
+         기능: 스크롤 등장액션 주기
+    *************************************/
+
+         function tftyGo(n){
+            if(scTop > scposy[n] - gapp){
+                tfty.eq(n).addClass("on")
+            }///////if
+            else{
+                tfty.eq(n).removeClass("on")
+            }/////else
+         }
+
+         function tftx1Go(n){
+            if(scTop > scposx1[n] - gapp){
+                tftx1.eq(n).addClass("on")
+            }///////if
+            else{
+                tftx1.eq(n).removeClass("on")
+            }/////else
+         }
+
+         function tftx2Go(n){
+            if(scTop > scposx2[n] - gapp){
+                tftx2.eq(n).addClass("on")
+            }///////if
+            else{
+                tftx2.eq(n).removeClass("on")
+            }/////else
+         }
 
 
         
@@ -187,7 +241,9 @@ $(()=>{
             headerA.removeClass("on")
         }
 
-        
+        tfty.each((idx) => tftyGo(idx));
+        tftx1.each((idx) => tftx1Go(idx));
+        tftx2.each((idx) => tftx2Go(idx));
 
 
 

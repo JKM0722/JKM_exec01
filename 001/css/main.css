@@ -10,6 +10,10 @@ html{
     scroll-behavior: smooth;
 }
 
+html, body{
+    overflow-x: hidden;
+}
+
 
 
 /* 헤더배치 */
