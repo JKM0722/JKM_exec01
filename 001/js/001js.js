@@ -140,6 +140,9 @@ $(()=>{
     /*********************************************************/
     
     let scTop; // 스크롤 위치변수    
+    let scH; // 넓이 변수    
+
+    scH = $(window).width()
 
     // 각 등장액션 위치 배열변수
     const scposy = [];
@@ -152,43 +155,71 @@ $(()=>{
 
     const gapp = $(window).height();
 
-    console.log("gapp 입니다", gapp)
+    // console.log("gapp 입니다", gapp)
 
 
 
     tfty.each((idx,ele) => {
-        console.log(idx,ele);
+        // console.log(idx,ele);
         scposy[idx] = $(ele).offset().top;
     });
 
     tftx1.each((idx,ele) => {
-        console.log(idx,ele);
+        // console.log(idx,ele);
         scposx1[idx] = $(ele).offset().top;
     });
 
     tftx2.each((idx,ele) => {
-        console.log(idx,ele);
+        // console.log(idx,ele);
         scposx2[idx] = $(ele).offset().top;
     });
 
-    console.log(scposy)
-    console.log(scposx1)
-    console.log(scposx2)
+    // console.log(scposy)
+    // console.log(scposx1)
+    // console.log(scposx2)
 
 
     // resize
     $(window).resize(() => {
         tfty.each((idx, ele) => scposy[idx] = $(ele).offset().top);
-        console.log(scposy);
+        // console.log(scposy);
     }); /////////// resize함수 ///////////////////
     $(window).resize(() => {
         tftx1.each((idx, ele) => scposx1[idx] = $(ele).offset().top);
-        console.log(scposx1);
+        // console.log(scposx1);
     }); /////////// resize함수 ///////////////////
     $(window).resize(() => {
         tftx2.each((idx, ele) => scposx2[idx] = $(ele).offset().top);
-        console.log(scposx2);
+        // console.log(scposx2);
     }); /////////// resize함수 ///////////////////
+
+
+    /////////////////////////////////////////////////////////
+    //// 스크롤 할떄 GNB 메뉴 움직이기////////////////////////
+    ///////////////////////////////////////////////////////
+
+
+    ////// 클래스 설정//////////////////////
+    const scposli = [];
+
+    const gnbpos = $(".gnbpos")
+    const gnbli = $(".gnb li")
+    const gnb = $(".gnb")
+
+    gnbpos.each((idx,ele)=>{
+        scposli[idx] = $(ele).offset().top
+    })//////each
+    
+    // console.log(scposli)
+
+        // resize
+        $(window).resize(() => {
+            gnbpos.each((idx, ele) => scposli[idx] = $(ele).offset().top);
+            console.log(scposli);
+        }); /////////// resize함수 ///////////////////
+    
+
+
 
 
     /************************************* 
@@ -222,6 +253,28 @@ $(()=>{
                 tftx2.eq(n).removeClass("on")
             }/////else
          }
+
+         console.log("나는 넓이!", scH)
+
+         function gnbposition(n){
+            if(scH>1079){
+                if(scTop > scposli[n] - 150){
+                    gnbli.eq(n).addClass("on").siblings().removeClass("on")
+                }
+
+                else{
+                    gnbli.eq(n).removeClass("on")
+                }
+            }/////////////넓이 if 문!!
+            else{
+                if(scTop > scposli[n] - 150){
+                    gnb.addClass(`on${n}`).removeClass(`on${n-1} on${n+1}`)
+                }
+                else{
+                    gnb.removeClass(`on${n}`)
+                }
+            }///////else
+        }////gnbposition
 
 
         
@@ -259,7 +312,7 @@ $(()=>{
         tftx1.each((idx) => tftx1Go(idx));
         tftx2.each((idx) => tftx2Go(idx));
 
-
+        gnbli.each((idx) => gnbposition(idx));
 
 
 

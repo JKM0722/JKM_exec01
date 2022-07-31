@@ -86,11 +86,38 @@ html, body{
     font-weight: 900;
     color: #fff;
 }
+
 .bar{
     display: none;
 }
 .nav2{
     display: none;
+}
+
+.header .gnb li a{
+    display: block;
+    position: relative;
+    transition: .4s ease-out;
+}
+.header .gnb li.on a{
+    color: #000;
+}
+
+.header .gnb li a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    top: 25px;
+    left: 0;
+    transition: all .3s ease-out .1s;
+}
+
+.header .gnb li.on a::after{
+    width: 100%;
+    background-color: #000;
 }
 
 /************************************* 메인파트 *************************************/

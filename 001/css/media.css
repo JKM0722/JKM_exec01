@@ -145,26 +145,27 @@ body .ibx{
 /* 메뉴0 */
 #header .gnb{
     top: 38px;
+    transition: .4s;
 }
 
 /* 메뉴1 */
-#header .gnb{
-    /* top: -3px; */
+#header .gnb.on0{
+    top: 0px;
 }
 
 /* 메뉴2 */
-#header .gnb{
-    /* top: -39px; */
+#header .gnb.on1{
+    top: -34px;
 }
 
 /* 메뉴3 */
-#header .gnb{
-    /* top: -76px; */
+#header .gnb.on2{
+    top: -68px;
 }
 
 /* 메뉴4 */
-#header .gnb{
-    /* top: -112px; */
+#header .gnb.on3{
+    top: -102px;
 }
 
 #header .gnb li{
