@@ -883,6 +883,11 @@ address span:first-child~span::before{
     margin-top: 20px;
 }
 
+.footer .km{
+    text-shadow: 1px 0 0 aqua, -1px 0 0 aqua, 0px 1px 0 aqua, 1px -1px 0 aqua ;
+    color: rgb(0, 0, 0);
+}
+
 /* 탑버튼 */
 .btn_top{
     display: block;
