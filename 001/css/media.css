@@ -205,6 +205,10 @@ body .ibx{
     padding: 3vh;
 }
 
+.header .gnb li.on a::after{
+    display: none;
+}
+
 /********************* 메인영역 *********************/
 /* section 1*/
 
