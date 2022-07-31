@@ -193,6 +193,11 @@ $(()=>{
         // console.log(scposx2);
     }); /////////// resize함수 ///////////////////
 
+    $(window).resize(() => {
+        scH = $(window).width()
+        console.log("나는 넓이", scH);
+    })
+
 
     /////////////////////////////////////////////////////////
     //// 스크롤 할떄 GNB 메뉴 움직이기////////////////////////
@@ -215,7 +220,7 @@ $(()=>{
         // resize
         $(window).resize(() => {
             gnbpos.each((idx, ele) => scposli[idx] = $(ele).offset().top);
-            console.log(scposli);
+            // console.log(scposli);
         }); /////////// resize함수 ///////////////////
     
 
@@ -295,7 +300,7 @@ $(()=>{
 
         scTop = $(this).scrollTop();
         // 스크롤 위차값 확인 + 위치값
-        console.log("스크롤중", scTop);
+        // console.log("스크롤중", scTop);
 
         let headerA = $(".header")
 
