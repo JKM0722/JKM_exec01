@@ -162,6 +162,7 @@ $(()=>{
     tfty.each((idx,ele) => {
         // console.log(idx,ele);
         scposy[idx] = $(ele).offset().top;
+        // console.log(scposy)
     });
 
     tftx1.each((idx,ele) => {
