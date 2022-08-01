@@ -330,6 +330,39 @@ $(()=>{
     /*********************************************************/
 
 
+    //////////////////////////////////////////////////////
+    //////섹터5 type li 눌렀을때 변경//////////////////////
+    /////////////////////////////////////////////////////
+
+    let lic = $(".lic");
+
+    lic.click(function(){
+        console.log(this)
+
+        let temp = $(this).text();
+
+        $(this).html("준비중").css({
+            color:"#4eb2cc",
+            backgroundColor:"#e7f3f6",
+            border:"2px solid #a9d8e4",
+            boxSizing:"border-box",
+            transition : ".4s",
+            lineHeight:"50px"
+        })
+
+        setTimeout(() => {
+            $(this).attr("style","").text(temp);
+        }, 2000);
+
+
+
+
+    })////////////////click
+
+
+
+
+
 
 
 
