@@ -273,7 +273,7 @@ $(()=>{
                 }
             }/////////////넓이 if 문!!
             else{
-                if(scTop > scposli[n] - 150){
+                if(scTop > scposli[n] - 170){
                     gnb.addClass(`on${n}`).removeClass(`on${n-1} on${n+1}`)
                 }
                 else{
@@ -353,9 +353,6 @@ $(()=>{
         setTimeout(() => {
             $(this).attr("style","").text(temp);
         }, 2000);
-
-
-
 
     })////////////////click
 
