@@ -270,6 +270,28 @@ html, body{
     -webkit-user-drag: none;
 }
 
+.sec2btn{
+    width: 26px;
+    height: 50px;
+    /* outline: 1px dashed red; */
+    position: absolute;
+    top: 740px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+
+.sec2btn.lb{
+    left: 3%;
+    background: url(../images/bg_arrow_life.svg) no-repeat 0 0 / 100% auto;
+    transform: scaleX(-1);
+}
+.sec2btn.rb{
+    right: 3%;
+    background: url(../images/bg_arrow_life.svg) no-repeat 0 0 / 100% auto;
+}
+
 
 
 @media screen and (min-width:768px) {
@@ -282,6 +304,17 @@ html, body{
     z-index: 1;
     left: 15px;
     height: 640px;
+    transition: .4s;
+}
+
+.sec2b1.on1{
+    left: -483px;
+}
+.sec2b1.on2{
+    left: -969px;
+}
+.sec2b1.on3{
+    right: -28%px;
 }
 
 .sec2b1 .bgimg{
