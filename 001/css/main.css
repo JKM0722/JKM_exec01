@@ -278,6 +278,7 @@ html, body{
     top: 740px;
     z-index: 10;
     cursor: pointer;
+    transition: none;
 }
 
 
@@ -286,11 +287,14 @@ html, body{
     left: 3%;
     background: url(../images/bg_arrow_life.svg) no-repeat 0 0 / 100% auto;
     transform: scaleX(-1);
+    display: none;
 }
 .sec2btn.rb{
     right: 3%;
     background: url(../images/bg_arrow_life.svg) no-repeat 0 0 / 100% auto;
 }
+
+
 
 
 
@@ -313,9 +317,6 @@ html, body{
 .sec2b1.on2{
     left: -969px;
 }
-.sec2b1.on3{
-    right: -28%px;
-}
 
 .sec2b1 .bgimg{
     position: absolute;
@@ -324,6 +325,8 @@ html, body{
     height: 100%;
     bottom: 0;
 }
+
+
 
 .s2li{
     display: flex;
@@ -404,6 +407,42 @@ line-height: normal;
 }
 
 }/* 미디어쿼리 770px 이상 */
+
+@media screen and (min-width:1060px) {
+
+    #sec2 .sec2b1.on3{
+        left: -100%;
+    }
+}/* 미디어쿼리 1060px 이상 */
+
+@media screen and (min-width:940px) and (max-width:1059px) {
+
+    .sec2b1.on3{
+        left: -150%;
+    }
+    
+}/* 미디어쿼리 */
+@media screen and (min-width:768px) and (max-width:939px) {
+    #sec2 .sec2 .sec2btn{
+        transform: scale(.6);
+        transition: none;
+    } 
+
+    #sec2 .sec2 .sec2btn.lb{
+        transform: scale(.6) scaleX(-1);
+    }
+
+    #sec2 .sec2b1.on3{
+        left: -1480px;
+    }
+    #sec2 .sec2b1.on4{
+        left: -200vw;
+    }
+    
+}/* 미디어쿼리 */
+
+
+
 
 /* section 3 */
 

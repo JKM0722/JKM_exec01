@@ -2,6 +2,10 @@
 
 $(()=>{
 
+    let scH; // 넓이 변수    
+
+    scH = $(window).width()
+
     $('.bar').click(function(){
         $('.nav2, .bar').toggleClass('on');
     });////////////////////////click
@@ -31,19 +35,96 @@ $(()=>{
         let isR = $(this).is(".rb");
         console.log(isR)
 
-        if(isR){/// 오른쪽
-                if(b1.css("left") > "10px"){
-                    b1.addClass("on1");
+        if(scH >= 940){
+
+            if(isR){/// 오른쪽
+                    if(b1.css("left") > "10px"){
+                        b1.addClass("on1");
+                        $("#sec2 .sec2btn.lb").css({display:"block"})
+                    }
+
+                    else if(b1.hasClass("on1")){
+                        b1.addClass("on2").removeClass("on1");
+                    }
+
+                    else if(b1.hasClass("on2")){
+                        b1.addClass("on3").removeClass("on2");
+                        $(".rb").css({display:"none"})
+                    }
+                
+                }/////////////오른쪽
+
+            else{/////////왼쪽
+                if(b1.hasClass("on3")){
+                    b1.addClass("on2").removeClass("on3");
+                    $(".rb").css({display:""})
                 }
 
-                else if(b1.css("left") < "10px" && b1.css("left") > "-500px"){
-                    b1.addClass("on2").removeClass("on1");
+                else if (b1.hasClass("on2")){
+                    b1.addClass("on1").removeClass("on2");
                 }
-            
-            }/////////////오른쪽
-    
-    
+                else if (b1.hasClass("on1")){
+                    b1.removeClass("on1");
+                    $(".lb").css({display:"none"})
+                }
 
+            }////////////////////////왼쪽
+    
+        ////////////////////////////////////////////////////////////////////////
+        }///////////////////////넓이 if문//////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////
+
+
+
+        else if(scH<940){
+
+            if(isR){/// 오른쪽
+                    if(b1.css("left") >= "0px"){
+                        b1.addClass("on1");
+                        $("#sec2 .sec2btn.lb").css({display:"block"})
+                    }
+
+                    else if(b1.hasClass("on1")){
+                        b1.addClass("on2").removeClass("on1");
+                    }
+
+                    else if(b1.hasClass("on2")){
+                        b1.addClass("on3").removeClass("on2");
+                    }
+
+                    else if(b1.hasClass("on3")){
+                        b1.addClass("on4").removeClass("on3");
+                        $(".rb").css({display:"none"})
+                    }
+                }/////////////오른쪽
+
+                else{/////////왼쪽
+                    if(b1.hasClass("on4")){
+                        b1.addClass("on3").removeClass("on4");
+                        $(".rb").css({display:""})
+                    }
+    
+                    else if (b1.hasClass("on3")){
+                        b1.addClass("on2").removeClass("on3");
+                    }
+
+                    else if (b1.hasClass("on2")){
+                        b1.addClass("on1").removeClass("on2");
+                    }
+
+                    else if (b1.hasClass("on1")){
+                        b1.removeClass("on1");
+                        $(".lb").css({display:"none"})
+                    }
+    
+                }////////////////////////왼쪽
+
+
+
+
+
+            ////////////////////////////////////
+        }/////////////////////////////넓이 else if문/////////////////////////////////////////////////////////////
 
 
 
@@ -202,9 +283,7 @@ $(()=>{
     /*********************************************************/
     
     let scTop; // 스크롤 위치변수    
-    let scH; // 넓이 변수    
 
-    scH = $(window).width()
 
     // 각 등장액션 위치 배열변수
     const scposy = [];

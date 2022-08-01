@@ -301,6 +301,29 @@ body .ibx{
     z-index: 1;
     left: 0;
     height: 550px;
+    transition: .4s;
+}
+
+#sec2 .sec2 .sec2b1.on1{
+    left: -100%;
+}
+#sec2 .sec2 .sec2b1.on2{
+    left: -200%;
+}
+#sec2 .sec2 .sec2b1.on3{
+    left: -300%;
+}
+#sec2 .sec2 .sec2b1.on4{
+    left: -400%;
+}
+
+#sec2 .sec2 .sec2btn{
+    transform: scale(.5);
+    transition: none;
+} 
+
+#sec2 .sec2 .sec2btn.lb{
+    transform: scale(.5) scaleX(-1);
 }
 
 .sec2b1 .bgimg{
