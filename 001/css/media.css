@@ -2,6 +2,10 @@
 
 @media screen and (max-width:1079px) {
 
+::-webkit-scrollbar {
+    display: none;
+  }
+
 html, body{
     overflow-x: hidden;
 }
@@ -305,16 +309,17 @@ body .ibx{
 }
 
 #sec2 .sec2 .sec2b1.on1{
-    left: -100%;
+    left: -100vw;
+    /* margin: 0; */
 }
 #sec2 .sec2 .sec2b1.on2{
-    left: -200%;
+    left: -200vw;
 }
 #sec2 .sec2 .sec2b1.on3{
-    left: -300%;
+    left: -300vw;
 }
 #sec2 .sec2 .sec2b1.on4{
-    left: -400%;
+    left: -400vw;
 }
 
 #sec2 .sec2 .sec2btn{
@@ -348,6 +353,8 @@ body .ibx{
     display: flex;
     position: absolute;
     width: 100%;
+    margin-left: 25px;
+
 }
 
 .s2li li{
@@ -355,7 +362,6 @@ body .ibx{
     flex: 1;
     box-sizing: border-box;
     width: 90vw;
-    margin-left: 25px;
     background: rgba(255, 255, 255, 0.712);
     /* background-color: aqua; */
     text-align-last: left;
