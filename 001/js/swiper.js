@@ -1,8 +1,35 @@
 //swiper
 window.addEventListener("load", () => {
 
+  
+  var swiper = new Swiper(".Swipe1", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".rb",
+      prevEl: ".lb"
+    }
+  });
+  
 
-var swiper = new Swiper(".mySwiper", {
+
+
+
+
+
+
+
+
+
+
+
+
+
+var swiper = new Swiper(".Swipe2", {
     spaceBetween: 30,
     loop: true,
     centeredSlides: true,
@@ -18,9 +45,7 @@ var swiper = new Swiper(".mySwiper", {
     navigation: {
       nextEl: ".btr",
       prevEl: ".btl"
-    },
-    observer: true,
-    observeParents: true,
+    }
   });
 
 

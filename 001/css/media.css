@@ -299,28 +299,15 @@ body .ibx{
 @media screen and (max-width:767px){
 
 .sec2b1{
-    width: 500vw;
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    left: 0;
-    height: 550px;
-    transition: .4s;
+    width: 100%;
+    position: absolute !important;
+    bottom: 0 !important;
+    z-index: 1 !important;
+    left: 0 !important;
+    height: 550px !important;
+    transition: .4s !important;
 }
 
-#sec2 .sec2 .sec2b1.on1{
-    left: -100vw;
-    /* margin: 0; */
-}
-#sec2 .sec2 .sec2b1.on2{
-    left: -200vw;
-}
-#sec2 .sec2 .sec2b1.on3{
-    left: -300vw;
-}
-#sec2 .sec2 .sec2b1.on4{
-    left: -400vw;
-}
 
 #sec2 .sec2 .sec2btn{
     transform: scale(.5);
@@ -334,11 +321,14 @@ body .ibx{
 .sec2b1 .bgimg{
     position: absolute;
     background: url(../images/bg_service_list.svg) no-repeat;
-    background-position: 29vw 100%;
-    background-size: 100% auto;
-    width: 100%;
-    height: 100%;
-    bottom: 0;
+    background-position: 29vw 100% !important;
+    background-size: 100% auto !important;
+    width: 500vw !important;
+    height: 100% !important;
+    bottom: 0 !important;
+    display: flex;
+    margin-left: 25px;
+    
 }
 
 
@@ -349,15 +339,11 @@ body .ibx{
     width: 500vw;
 }
 
-.sec2b1 .s2li{
-    display: flex;
-    position: absolute;
-    width: 100%;
-    margin-left: 25px;
-
+.swiper-wrapper{
+flex: 1;
 }
 
-.s2li li{
+.list{
     position: absolute;
     flex: 1;
     box-sizing: border-box;
@@ -369,7 +355,7 @@ body .ibx{
     top: -60px;
 }
 
-.s2li li:nth-child(1){
+/* .s2li li:nth-child(1){
     left: 50vw;
     transform: translateX(-50vw);
 }
@@ -388,10 +374,10 @@ body .ibx{
 .s2li li:nth-child(5){
     left: 450vw;
     transform: translateX(-50vw);
-}
+} */
 
 /* 흰색줄 만들기 */
-.s2li li::after{
+.list::after{
     content: '';
     display: block;
     width: 4px;
@@ -403,27 +389,27 @@ body .ibx{
     transform: translate(-50% -50%);
 }
 
-.s2li li:nth-child(1):after{height: 200px;}
-.s2li li:nth-child(2):after{height: 129px;}
-.s2li li:nth-child(3):after{height: 280px;}
-.s2li li:nth-child(4):after{height: 150px;}
-.s2li li:nth-child(5):after{height: 75px;}
+.list1::after{height: 200px;}
+.list2::after{height: 129px;}
+.list3::after{height: 280px;}
+.list4::after{height: 150px;}
+.list5::after{height: 75px;}
 
-.s2li li h3{
+.list h3{
     font-size: 26px;
     font-weight: 800;
     margin: 30px 0 30px 30px;
 }
 
 
-.s2li li p{
+.list p{
     padding: 0;
     margin: 0;
     font-size: 18px;
     margin: 30px 0 30px 30px;
 }
 
-.s2li li span{
+.list span{
     margin: 50px 0 30px 30px;
     display: block;
     font-size: 18px;
@@ -431,10 +417,10 @@ body .ibx{
     color: #ccc;
 }
 
-.s2li li span:nth-child(3){
+.list3 span{
     margin-top: 0;
 }
-.s2li li span:nth-child(4){
+.list4 span{
     margin-top: 0;
 }
 

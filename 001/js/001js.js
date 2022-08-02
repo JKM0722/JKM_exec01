@@ -28,103 +28,103 @@ $(()=>{
     //// 끝에 다다르면 버튼 자체가 없어지게 한다////////////////
     /////////////////////////////////////////////////////////
 
-    let btn = $(".sec2btn")
-    let b1 = $(".sec2b1")
+    // let btn = $(".sec2btn")
+    // let b1 = $(".sec2b1")
 
-    btn.click(function(){
-        let isR = $(this).is(".rb");
-        console.log(isR)
+    // btn.click(function(){
+    //     let isR = $(this).is(".rb");
+    //     console.log(isR)
 
-        if(scH >= 940){
+    //     if(scH >= 940){
 
-            if(isR){/// 오른쪽
-                    if(b1.css("left") > "10px"){
-                        b1.addClass("on1");
-                        $("#sec2 .sec2btn.lb").css({display:"block"})
-                    }
+    //         if(isR){/// 오른쪽
+    //                 if(b1.css("left") > "10px"){
+    //                     b1.addClass("on1");
+    //                     $("#sec2 .sec2btn.lb").css({display:"block"})
+    //                 }
 
-                    else if(b1.hasClass("on1")){
-                        b1.addClass("on2").removeClass("on1");
-                    }
+    //                 else if(b1.hasClass("on1")){
+    //                     b1.addClass("on2").removeClass("on1");
+    //                 }
 
-                    else if(b1.hasClass("on2")){
-                        b1.addClass("on3").removeClass("on2");
-                        $(".rb").css({display:"none"})
-                    }
+    //                 else if(b1.hasClass("on2")){
+    //                     b1.addClass("on3").removeClass("on2");
+    //                     $(".rb").css({display:"none"})
+    //                 }
                 
-                }/////////////오른쪽
+    //             }/////////////오른쪽
 
-            else{/////////왼쪽
-                if(b1.hasClass("on3")){
-                    b1.addClass("on2").removeClass("on3");
-                    $(".rb").css({display:""})
-                }
+    //         else{/////////왼쪽
+    //             if(b1.hasClass("on3")){
+    //                 b1.addClass("on2").removeClass("on3");
+    //                 $(".rb").css({display:""})
+    //             }
 
-                else if (b1.hasClass("on2")){
-                    b1.addClass("on1").removeClass("on2");
-                }
-                else if (b1.hasClass("on1")){
-                    b1.removeClass("on1");
-                    $(".lb").css({display:"none"})
-                }
+    //             else if (b1.hasClass("on2")){
+    //                 b1.addClass("on1").removeClass("on2");
+    //             }
+    //             else if (b1.hasClass("on1")){
+    //                 b1.removeClass("on1");
+    //                 $(".lb").css({display:"none"})
+    //             }
 
-            }////////////////////////왼쪽
+    //         }////////////////////////왼쪽
     
-        ////////////////////////////////////////////////////////////////////////
-        }///////////////////////넓이 if문//////////////////////////////////////
-        /////////////////////////////////////////////////////////////////////
+    //     ////////////////////////////////////////////////////////////////////////
+    //     }///////////////////////넓이 if문//////////////////////////////////////
+    //     /////////////////////////////////////////////////////////////////////
 
 
 
-        else if(scH<940){
+    //     else if(scH<940){
 
-            if(isR){/// 오른쪽
-                    if(b1.css("left") >= "0px"){
-                        b1.addClass("on1");
-                        $("#sec2 .sec2btn.lb").css({display:"block"})
-                    }
+    //         if(isR){/// 오른쪽
+    //                 if(b1.css("left") >= "0px"){
+    //                     b1.addClass("on1");
+    //                     $("#sec2 .sec2btn.lb").css({display:"block"})
+    //                 }
 
-                    else if(b1.hasClass("on1")){
-                        b1.addClass("on2").removeClass("on1");
-                    }
+    //                 else if(b1.hasClass("on1")){
+    //                     b1.addClass("on2").removeClass("on1");
+    //                 }
 
-                    else if(b1.hasClass("on2")){
-                        b1.addClass("on3").removeClass("on2");
-                    }
+    //                 else if(b1.hasClass("on2")){
+    //                     b1.addClass("on3").removeClass("on2");
+    //                 }
 
-                    else if(b1.hasClass("on3")){
-                        b1.addClass("on4").removeClass("on3");
-                        $(".rb").css({display:"none"})
-                    }
-                }/////////////오른쪽
+    //                 else if(b1.hasClass("on3")){
+    //                     b1.addClass("on4").removeClass("on3");
+    //                     $(".rb").css({display:"none"})
+    //                 }
+    //             }/////////////오른쪽
 
-                else{/////////왼쪽
-                    if(b1.hasClass("on4")){
-                        b1.addClass("on3").removeClass("on4");
-                        $(".rb").css({display:""})
-                    }
+    //             else{/////////왼쪽
+    //                 if(b1.hasClass("on4")){
+    //                     b1.addClass("on3").removeClass("on4");
+    //                     $(".rb").css({display:""})
+    //                 }
     
-                    else if (b1.hasClass("on3")){
-                        b1.addClass("on2").removeClass("on3");
-                    }
+    //                 else if (b1.hasClass("on3")){
+    //                     b1.addClass("on2").removeClass("on3");
+    //                 }
 
-                    else if (b1.hasClass("on2")){
-                        b1.addClass("on1").removeClass("on2");
-                    }
+    //                 else if (b1.hasClass("on2")){
+    //                     b1.addClass("on1").removeClass("on2");
+    //                 }
 
-                    else if (b1.hasClass("on1")){
-                        b1.removeClass("on1");
-                        $(".lb").css({display:"none"})
-                    }
+    //                 else if (b1.hasClass("on1")){
+    //                     b1.removeClass("on1");
+    //                     $(".lb").css({display:"none"})
+    //                 }
     
-                }////////////////////////왼쪽
+    //             }////////////////////////왼쪽
 
 
 
 
 
-            ////////////////////////////////////
-        }/////////////////////////////넓이 else if문/////////////////////////////////////////////////////////////
+    //         ////////////////////////////////////
+    //     }/////////////////////////////넓이 else if문/////////////////////////////////////////////////////////////
 
 
 
@@ -137,7 +137,7 @@ $(()=>{
 
 
     
-    })////////////////////////click 함수
+    // })////////////////////////click 함수
 
 
 

@@ -287,7 +287,7 @@ html, body{
     left: 3%;
     background: url(../images/bg_arrow_life.svg) no-repeat 0 0 / 100% auto;
     transform: scaleX(-1);
-    display: none;
+    /* display: none; */
 }
 .sec2btn.rb{
     right: 3%;
@@ -302,38 +302,36 @@ html, body{
     
 
 .sec2b1{
-    width: 2700px;
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    left: 15px;
-    height: 640px;
-    transition: .4s;
+    width: 100%;
+    position: absolute !important;
+    bottom: 0 !important;
+    z-index: 1 !important;
+    left: 15px !important;
+    height: 640px !important;
+    transition: .4s !important;
+    overflow: visible !important;
 }
 
 .sec2b1.on1{
     left: -483px;
 }
 .sec2b1.on2{
-    left: -969px;
+    left: -969px
 }
 
 .sec2b1 .bgimg{
     position: absolute;
-    background: url(../images/bg_service_list.svg) no-repeat 27px 100% / auto 77%;
-    width: 100%;
-    height: 100%;
-    bottom: 0;
+    background: url(../images/bg_service_list.svg) no-repeat 90px 100% / auto 77%;
+    width: 2700px ;
+    height: 100% ;
+    bottom: 0 ; 
+    display: flex ;
+    left: 15px;
 }
 
-
-
-.s2li{
-    display: flex;
-}
 
 /* 흰색줄 만들기 */
-.s2li li::after{
+.list::after{
     content: '';
     display: block;
     width: 4px;
@@ -345,62 +343,65 @@ html, body{
     transform: translate(-50% -50%);
 }
 
-.s2li li:nth-child(1):after{height: 220px;}
-.s2li li:nth-child(2):after{height: 150px;}
-.s2li li:nth-child(3):after{height: 260px;}
-.s2li li:nth-child(4):after{height: 120px;}
-.s2li li:nth-child(5):after{height: 30px;}
+.list1:after{height: 150px;}
+.list2:after{height: 150px;}
+.list3:after{height: 230px;}
+.list4:after{height: 120px;}
+.list5:after{height: 30px;}
 
 
 
 
 
 
-.s2li li{
-    flex: 1;
-    background: rgba(255, 255, 255, 0.712);
-    margin-right: 60px;
-    position: absolute;
-    top: 10%;
-    text-align: left;
-    width: 307px;
-    height: 247px;
-    padding: 25px;
-    box-sizing: border-box;
+.swiper-slide{
+    flex: 1 !important; 
 }
 
-.s2li li:nth-child(1){
+.list{
+    background: rgba(255, 255, 255, 0.712) ;
+    margin-right: 60px ;
+    position: absolute ;
+    top: 10% ;
+    text-align: left ;
+    width: 307px ;
+    height: 247px ;
+    padding: 25px ;
+    box-sizing: border-box ;
+}
+
+/* .list:nth-child(1){
     left: 0px;
 }
 
-.s2li li:nth-child(2){
+.list:nth-child(2){
     left: 500px;
 }
 
-.s2li li:nth-child(3){
+.list:nth-child(3){
     left: 1000px;
 }
 
-.s2li li:nth-child(4){
+.list:nth-child(4){
     left: 1500px;
 }
 
-.s2li li:nth-child(5){
+.list:nth-child(5){
     left: 2000px;
-}
+} */
 
-.s2li li h3{
+.list h3{
     font-size: 30px;
     font-weight: 600;
 }
 
-.s2li li p{
+.list p{
 padding: 30px 0px;
 margin: 0;
 line-height: normal;
 }
 
-.s2li li span{
+.list span{
     display: block;
     font-weight: 600;
     color: #ccc;
