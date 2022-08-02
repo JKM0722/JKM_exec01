@@ -18,7 +18,9 @@ var swiper = new Swiper(".mySwiper", {
     navigation: {
       nextEl: ".btr",
       prevEl: ".btl"
-    }
+    },
+    observer: true,
+    observeParents: true,
   });
 
 
