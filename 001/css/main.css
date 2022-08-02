@@ -350,6 +350,9 @@ html, body{
 .list5:after{height: 30px;}
 
 
+.sec2 .swiper-pagination{
+    display: none;
+}
 
 
 
@@ -370,25 +373,6 @@ html, body{
     box-sizing: border-box ;
 }
 
-/* .list:nth-child(1){
-    left: 0px;
-}
-
-.list:nth-child(2){
-    left: 500px;
-}
-
-.list:nth-child(3){
-    left: 1000px;
-}
-
-.list:nth-child(4){
-    left: 1500px;
-}
-
-.list:nth-child(5){
-    left: 2000px;
-} */
 
 .list h3{
     font-size: 30px;
@@ -409,38 +393,8 @@ line-height: normal;
 
 }/* 미디어쿼리 770px 이상 */
 
-@media screen and (min-width:1060px) {
 
-    #sec2 .sec2b1.on3{
-        left: -100%;
-    }
-}/* 미디어쿼리 1060px 이상 */
 
-@media screen and (min-width:940px) and (max-width:1059px) {
-
-    .sec2b1.on3{
-        left: -150%;
-    }
-    
-}/* 미디어쿼리 */
-@media screen and (min-width:768px) and (max-width:939px) {
-    #sec2 .sec2 .sec2btn{
-        transform: scale(.6);
-        transition: none;
-    } 
-
-    #sec2 .sec2 .sec2btn.lb{
-        transform: scale(.6) scaleX(-1);
-    }
-
-    #sec2 .sec2b1.on3{
-        left: -1480px;
-    }
-    #sec2 .sec2b1.on4{
-        left: -200vw;
-    }
-    
-}/* 미디어쿼리 */
 
 
 
@@ -645,18 +599,18 @@ line-height: normal;
     transform: scaleX(-1);
 }
 
-.swiper-pagination{
+.sec5 .swiper-pagination{
     left: -7% !important;
     bottom: 5% !important;
 }
 
-.swiper-pagination-bullet {
+.sec5 .swiper-pagination-bullet {
     background: transparent !important;
-    border: 1px solid rgb(0, 0, 0) !important;
+    border: 1px solid rgba(0, 0, 0, 0.466) !important;
     opacity: 1;
   }
 
-  .swiper-pagination-bullet-active {
+ .sec5 .swiper-pagination-bullet-active {
     background: orangered !important;
     border: 1px solid transparent !important;
   }

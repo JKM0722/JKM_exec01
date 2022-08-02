@@ -6,7 +6,7 @@ window.addEventListener("load", () => {
     slidesPerView: "auto",
     spaceBetween: 30,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".sec2 .swiper-pagination",
       clickable: true,
     },
     navigation: {
@@ -38,7 +38,7 @@ var swiper = new Swiper(".Swipe2", {
       disableOnInteraction: false
     },
     pagination: {
-      el: ".swiper-pagination",
+      el: ".sec5 .swiper-pagination",
       clickable: true,
       type: "bullets"
     },
