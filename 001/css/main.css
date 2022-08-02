@@ -605,10 +605,11 @@ line-height: normal;
     border-radius: 50px;
     position: relative;
     top: 96px;
-    left: 33px;
+    left: -31px;
+
 }
 
-.pho button{
+.pho .phobtn{
     display: block;
     border: none;
     position: absolute;
@@ -634,7 +635,7 @@ line-height: normal;
 
 .pho .btl{
     top: 40%;
-    left: -12%;
+    left: -10%;
 }
 
 .pho .btr{
@@ -643,26 +644,23 @@ line-height: normal;
     transform: scaleX(-1);
 }
 
-.bbtn{
-    display: flex;
-    position: absolute;
-    left: 163px;
-    bottom: 56px;
+.swiper-pagination{
+    left: -7% !important;
+    bottom: 5% !important;
 }
 
-.bbtn span{
-    margin-right: 10px;
-    display: block;
-    width: 10px;
-    height: 10px;
-    /* outline: 1px solid red; */
-    background-color: #fff;
-    border-radius: 50%;
-}
+.swiper-pagination-bullet {
+    background: transparent !important;
+    border: 1px solid rgb(0, 0, 0) !important;
+    opacity: 1;
+  }
 
-.bbtn span.on {
-    background-color: orangered;
-}
+  .swiper-pagination-bullet-active {
+    background: orangered !important;
+    border: 1px solid transparent !important;
+  }
+
+
 
 
 

@@ -22,6 +22,7 @@
     <script src="./js/jquery-touch-punch.min.js"></script>
 
     <script src="./js/001js.js"></script>
+    <script src="./js/swiper.js"></script>
 </head>
 
 <script>
@@ -268,20 +269,16 @@
                             <!-- 화면스와이프하며 넘겨지는 핸드폰 -->
                             <!-- 핸드폰 -->
                             <div class="pho">
-                                <button class="phobtn btl"></button>
-                                <button class=" phobtn btr"></button>
-                                <div class="phi">
-                                    <div class="phib">
-                                        <img src="./images/slide_phone_1.jpg" alt="">
-                                        <img src="./images/slide_phone_2.jpg" alt="">
-                                        <img src="./images/slide_phone_3.jpg" alt="">
+                                <div class="phi swiper mySwiper">
+                                    <div class="phib swiper-wrapper">
+                                        <img class="swiper-slide" src="./images/slide_phone_1.jpg" alt="">
+                                        <img class="swiper-slide" src="./images/slide_phone_2.jpg" alt="">
+                                        <img class="swiper-slide" src="./images/slide_phone_3.jpg" alt="">
                                     </div><!-- phib -->
                                 </div><!-- phi -->
-                                <div class="bbtn">
-                                    <span class="on"></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
+                                <div class="phobtn btl"></div>
+                                <div class="phobtn btr"></div>
+                                <div class="swiper-pagination"></div>
                             </div>
                         </div>
                     </section>
