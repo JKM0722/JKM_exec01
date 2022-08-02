@@ -275,7 +275,7 @@ html, body{
     height: 50px;
     /* outline: 1px dashed red; */
     position: absolute;
-    top: 740px;
+    top: 921px;
     z-index: 10;
     cursor: pointer;
     transition: none;
@@ -294,7 +294,9 @@ html, body{
     background: url(../images/bg_arrow_life.svg) no-repeat 0 0 / 100% auto;
 }
 
-
+.swiper-button-disabled{
+    display: none;
+}
 
 
 
@@ -371,6 +373,16 @@ html, body{
     height: 247px ;
     padding: 25px ;
     box-sizing: border-box ;
+}
+
+
+@media screen and (max-width:1400px) {
+    .list{
+        opacity: .5;
+    }
+    .sec2 .swiper-slide-active .list, .sec2 .swiper-slide-next .list{
+        opacity: 1;
+    }
 }
 
 
