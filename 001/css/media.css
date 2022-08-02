@@ -305,12 +305,11 @@ body .ibx{
     z-index: 1 !important;
     left: 0 !important;
     height: 600px !important;
-    transition: .4s !important;
+    /* transition: .4s; */
 
     overflow: visible !important;
 
 }
-
 
 #sec2 .sec2 .sec2btn{
     transform: scale(.5);
