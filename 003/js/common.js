@@ -3,7 +3,7 @@
 $(()=>{
     $('#fullpage').fullpage({
         slidesNavigation: true,
-        responsiveWidth: 1024,
+        // responsiveWidth: 1024,
         autoScrolling: true,
         scrollBar: false
     });
