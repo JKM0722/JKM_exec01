@@ -341,15 +341,18 @@ body .ibx{
 }
 
 .sec2 .swiper-pagination-bullet {
+    display: inline-block;
     background: transparent !important;
-    border: 1px solid rgba(0, 0, 0, 0.466) !important;
+    border: 1px solid rgba(0, 0, 0, 0.144) !important;
     opacity: 1;
     transition: .4s;
+    margin: 0 2px !important;
+    padding: 0;
   } 
 
  .sec2 .swiper-pagination-bullet-active {
     background: aqua !important;
-    border: 1px solid balck !important;
+    /* border: 1px solid back !important; */
     /* width: 12px;
     height: 12px; */
   }
