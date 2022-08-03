@@ -337,7 +337,7 @@ $(()=>{
 
     $(window).resize(() => {
         scH = $(window).width()
-        console.log("나는 넓이", scH);
+        // console.log("나는 넓이", scH);
     })
 
 
