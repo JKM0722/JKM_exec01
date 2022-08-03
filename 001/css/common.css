@@ -126,7 +126,7 @@ body {
     /* opacity: 0; */
     opacity: 0;
     transform: translateY(30%);
-    transition: transform 1s ease-out;
+    transition: 1s ease-out;
 }
 .tfty.on{
     transform: translateY(0);
