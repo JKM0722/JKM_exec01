@@ -11,8 +11,17 @@
         flex-direction: row;
     }
 
+.gnb a{
+    font-size: 40px;
+}
 
+.gnb>ul{
+    left: 40%;
+}
 
+.gnb li{
+    margin-bottom: 25px;
+}
 
 .logo a{
     transform: scale(.8);
@@ -47,6 +56,14 @@
 .text_mask{
     left: 50px;
 }
+
+
+/* section2 */
+.section2 {
+    background-image: url(../images/omg002.png);
+
+}
+
 
 
 .text_mask.s1{top: 60%;}
