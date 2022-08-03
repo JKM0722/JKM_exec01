@@ -23,8 +23,18 @@
     margin-bottom: 25px;
 }
 
+.logo{
+    position: relative;
+    left: -15px;
+    width: 100px;
+    height: 50px;
+}
+
 .logo a{
-    transform: scale(.8);
+    /* transform: scale(.8); */    
+    width: 100%;    
+    height: 100%;
+    margin-right: -50px;
 }
 
 .bar{
@@ -46,15 +56,15 @@
 }
 
 .h3, .h2{
-    font-size: 50px !important;
+    font-size: 40px !important;
 }
 
 .p1, .p{
-    font-size: 16px !important;
+    font-size: 15px !important;
 }
 
-.text_mask{
-    left: 50px;
+.h3{
+    margin: 0 !important;
 }
 
 
@@ -64,17 +74,24 @@
 
 }
 
+.box{
+ left: 5%;
+ top: auto;
+ bottom: 10%;
+ width: auto;
+height: auto;
+}
+
+.text_mask.b1{
+    height: 46px;
+}
+
+.m1{
+    margin-bottom: 5px;
+}
 
 
-.text_mask.s1{top: 60%;}
-.text_mask.s2{top: 67%;}
-.text_mask.s3{top: 73.5%;}
-.text_mask.s4{top: 67%;}
-.text_mask.s5{top: 70%;}
-.text_mask.s6{top: 82%;}
-.text_mask.s7{top: 85%;}
-.text_mask.s8{top: 76%;}
-.text_mask.s9{top: 79%;}
+
 
 .category{
     left: 10%;
@@ -85,7 +102,7 @@
 }
 
 .num{
-    bottom: 5%;
+    bottom: 4.2%;
     right: 10%;
     font-size: 13px;
 }
@@ -109,6 +126,9 @@ body.fp-viewing-3 .prenum{
 body.fp-viewing-4 .prenum{
     top: -152px;
 }
+
+
+
 
 .footerline{
     display: none;

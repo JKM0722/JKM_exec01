@@ -172,10 +172,10 @@ body>img{
 .text_mask{
     /* outline: 1px solid red; */
     /* overflow: hidden; */
-    position: absolute;
+    /* position: absolute; */
     width: 500px;
     height: 27px;
-    left: 300px;
+    /* left: 300px; */
     overflow: hidden;
 }
 
@@ -183,19 +183,22 @@ body>img{
     height: 65px;
 }
 
-.text_mask.s1{top: 60px;}
-.text_mask.s2{top: 130px;}
-.text_mask.s3{top: 200px;}
-.text_mask.s4{top: 160px;}
-.text_mask.s5{top: 190px;}
-.text_mask.s6{top: 300px;}
-.text_mask.s7{top: 330px;}
-.text_mask.s8{top: 230px;}
-.text_mask.s9{top: 260px;}
+.box{
+    position: absolute;
+    top: 10%;
+    width: 40vw;
+    height: 30vh;
+    left: 23%;
+}
+
+
+
+.m1{
+    margin-bottom: 20px;
+}
 
 .h2, .p{
     opacity: 0;
-    /* transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1) .4s, transform 1.2s cubic-bezier(0.25, 1, 0.5, 1) .4s; */
 }
 
 
