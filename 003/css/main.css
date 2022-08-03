@@ -3,9 +3,13 @@
 @import url(./reset.css);
 @import url(./common.css);
 
-html {
+::-webkit-scrollbar {
+    display: none;
+  }
+
+/* html {
     overflow: hidden;
-}
+} */
 
 html,
 body {
