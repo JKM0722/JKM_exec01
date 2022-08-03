@@ -489,7 +489,6 @@ line-height: normal;
 
 .sec5b1{
     width: 700px;
-    z-index: 100;
 }
 
 .sec5b1 h2{
@@ -548,6 +547,11 @@ line-height: normal;
     flex-basis: 100%;
     height: 0;
     border: none;
+}
+
+.sec5b2{
+    position: relative;
+    z-index: 1;
 }
 
 .sec5b2 .pho{
