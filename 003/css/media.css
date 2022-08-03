@@ -1,5 +1,102 @@
 @charset "utf-8";
 
 @media screen and (max-width:1079px) {
-    
+.fixbox{
+        padding: 0;
+        /* padding-top: 55px; */
+        height: auto;
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid rgba(173, 173, 173, 0.397);
+        flex-direction: row;
+    }
+
+
+
+
+.logo a{
+    transform: scale(.8);
 }
+
+.bar{
+    right: 3%;
+    top: 55%;
+    transform: scaleX(-1) scale(.8) translateY(-50%);
+    bottom: auto;
+    /* text-align: right; */
+}
+
+.bar.open .tb1{
+    top: 7px;
+}
+
+.scrtxt{
+    top: 15%;
+    font-size: 10px;
+    right: 3%;
+}
+
+.h3, .h2{
+    font-size: 50px !important;
+}
+
+.p1, .p{
+    font-size: 16px !important;
+}
+
+.text_mask{
+    left: 50px;
+}
+
+
+.text_mask.s1{top: 60%;}
+.text_mask.s2{top: 67%;}
+.text_mask.s3{top: 73.5%;}
+.text_mask.s4{top: 67%;}
+.text_mask.s5{top: 70%;}
+.text_mask.s6{top: 82%;}
+.text_mask.s7{top: 85%;}
+.text_mask.s8{top: 76%;}
+.text_mask.s9{top: 79%;}
+
+.category{
+    left: 10%;
+    bottom: 5%;
+}
+.category span{
+    font-size: 13px;
+}
+
+.num{
+    bottom: 5%;
+    right: 10%;
+    font-size: 13px;
+}
+
+.num span{
+    margin-bottom: 25px;
+}
+
+body.fp-viewing-0 .prenum{
+    top: 0;
+}
+body.fp-viewing-1 .prenum{
+    top: -38px;
+}
+body.fp-viewing-2 .prenum{
+    top: -76px;
+}
+body.fp-viewing-3 .prenum{
+    top: -114px;
+}
+body.fp-viewing-4 .prenum{
+    top: -152px;
+}
+
+.footerline{
+    display: none;
+    }
+
+
+
+}/* 미디어쿼리 */
