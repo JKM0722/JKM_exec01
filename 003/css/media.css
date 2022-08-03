@@ -16,7 +16,11 @@
 }
 
 .gnb>ul{
-    left: 40%;
+    left: 70%;
+}
+
+.gnb a {
+    width: 300px;
 }
 
 .gnb li{
