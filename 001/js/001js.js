@@ -403,7 +403,7 @@ $(()=>{
             }/////else
          }
 
-         console.log("나는 넓이!", scH)
+        //  console.log("나는 넓이!", scH)
 
          function gnbposition(n){
             if(scH>1079){
