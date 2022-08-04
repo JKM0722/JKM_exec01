@@ -143,17 +143,17 @@ body>img{
     display: block;
     color: #fff;
     font-weight: 900;
-    /* transform: translateY(30%); */
+    transform: translateY(30%);
     /* display: none;   */
-    /* transition: .4s cubic-bezier(0.25, 1, 0.5, 1) .3s; */
+    transition: .4s cubic-bezier(0.25, 1, 0.5, 1) .3s;
 
     /* line-height: 8vh; */
 }
 
-/* .gnb.show a{
+.gnb.show a{
     transform: translateY(0);
     opacity: 1;
-} */
+}
 
 
 
