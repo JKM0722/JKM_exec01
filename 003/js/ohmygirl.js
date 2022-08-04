@@ -1,5 +1,22 @@
 // ohmygirl 서브페이지 js
 
+$(document).ready(function() {
+
+    $("#section1").parallax("50%", 0.2);
+    $("#section2").parallax("50%", 0.1);
+    // $("#section3").parallax("50%", 0.1);
+
+
+
+
+
+
+}); //// jQB ////////////////////////////////////
+
+
+
+
+
 $(()=>{
 
     $.fn.scrollReveal();
