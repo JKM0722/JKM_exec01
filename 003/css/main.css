@@ -75,7 +75,7 @@ body>img{
 .bar.open .tb1{
     width: 30px;
     transform: rotate(45deg);
-    top: 6px;
+    top: 7px;
     transition: width .1s ease-in-out, top .1s ease-in-out .1s, transform .1s ease-in-out .2s;
 
 }
