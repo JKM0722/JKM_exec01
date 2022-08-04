@@ -172,10 +172,14 @@ body>img{
     /* outline: 1px solid red; */
     /* overflow: hidden; */
     /* position: absolute; */
-    width: 500px;
+    width: 600px;
     height: 27px;
     /* left: 300px; */
     overflow: hidden;
+}
+
+.text_mask .h3{
+    width: 600px;
 }
 
 .text_mask.b1{
