@@ -208,7 +208,6 @@ body>img{
 .h2{
     transform: translateY(30%);
     transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1) .4s, transform 1.2s cubic-bezier(0.25, 1, 0.5, 1) .4s;
-
 }
 
 .p{

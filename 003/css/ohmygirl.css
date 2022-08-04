@@ -1,0 +1,274 @@
+@charset "utf-8";
+
+@import url(./reset.css);
+@import url(./common.css);
+
+/* html,
+body {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+} */
+
+
+body>img{
+    display: none;
+}
+
+
+/********************************************************
+                     header
+********************************************************/
+.fixbox {
+    height: 100%;
+    position: fixed;
+    /* background-color: rgba(255, 255, 255, 0.301); */
+    z-index: 101;    
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 65px 45px 55px;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    border-right: 2px solid rgba(173, 173, 173, 0.397);
+    box-sizing: border-box;
+}
+
+.logo a{
+    display: block;
+    background:  url(../images/omg_logo.png) no-repeat center/contain;
+    outline: 1px solid red;
+    width: 150px;
+    height: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.bar{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 15%;
+    z-index: 2;
+    transition: top .2s ease-in-out, width .2s ease-in-out .2s, transform .2s ease-in-out.2s, scale none;
+}
+
+.bar.open span{
+    transition: top .2s ease-in-out .2s, width .2s ease-in-out, transform .2s ease-in-out;
+}
+
+.bar.open .tb1{
+    width: 30px;
+    transform: rotate(45deg);
+    top: 7px;
+    transition: width .1s ease-in-out, top .1s ease-in-out .1s, transform .1s ease-in-out .2s;
+
+}
+.bar.open .bb1{
+    width: 30px;
+    transform: rotate(-45deg);
+    top: 4px;
+    transition:  top .1s ease-in-out .1s, transform .1s ease-in-out .2s;
+
+}
+
+.bar span{
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    position: relative;
+    /* border: 1px solid rgba(0, 0, 0, 0.205); */
+
+}
+
+.tb1{
+    width: 20px;
+    top: 0px;
+    transition: width .1s ease-in-out .1s, top .1s ease-in-out .1s, transform .1s ease-in-out;
+}
+
+.bb1{
+    width: 30px;
+    top: 10px;
+    transition:  top .1s ease-in-out .1s, transform .1s ease-in-out;
+
+}
+
+
+.gnb{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #312e69d3;
+    z-index: 1;
+    display: none;
+    /* opacity: ; */
+}
+
+/* .gnb.show{
+    display: block;
+} */
+
+
+
+.gnb>ul{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-70%, -50%);
+}
+.gnb li{
+    margin-bottom: 50px;
+    position: relative;
+    opacity: 0;
+    top: 20px;
+    
+}
+.gnb a{
+    font-size: 50px;
+    display: block;
+    color: #fff;
+    font-weight: 900;
+
+
+    /* display: none;   */
+    /* transition: .4s cubic-bezier(0.25, 1, 0.5, 1) .3s; */
+
+    /* line-height: 8vh; */
+}
+
+
+
+
+
+/* **********************************************
+            main
+********************************************** */
+
+.text_mask{
+    outline: 1px solid red;
+    /* position: absolute; */
+    width: 600px;
+    height: 27px;
+    /* left: 300px; */
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.text_mask.b1{
+    height: 65px;
+}
+
+.box{
+    position: absolute;
+    width: 40vw;
+    height: 30vh;
+}
+
+.ibx .h2{
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    /* position: absolute; */
+    /* left: 300px; */
+    margin-bottom: 30px;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    display: block;
+}
+
+.ibx .p{
+    color: white;
+    font-size: 18px;
+    /* position: absolute; */
+    /* left: 300px; */
+    line-height: 1.5;
+    display: block;
+}
+
+/* 스크롤 등장 이벤트 */
+
+.js-reveal {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1),
+        transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.js-reveal--hidden {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+
+/* section1 */
+.section1{
+    height: 100vh;
+    background: url(../images/ohmygirl_img/bg2.jpg) no-repeat center/cover;
+}
+
+.section1 .box{
+    top: 10%;
+    left: 25%;
+}
+
+.section1 .h2{
+    width: 600px;
+}
+
+
+.section1 .h2{
+    transform: translateY(30%);
+    transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1) .4s, transform 1.2s cubic-bezier(0.25, 1, 0.5, 1) .4s;
+    /* opacity: 0; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************** 
+    footer
+***********************************************/
+.fixbox2{
+    position: fixed;
+    z-index: 100;
+}
+
+.scrtxt{
+    color: white;
+    /* width: 50px; */
+    /* height: 100px; */
+    right: 5.5%;
+    top: 8.5%;
+    writing-mode: tb-rl;
+    outline: 1px solid red;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
