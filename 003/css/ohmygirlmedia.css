@@ -33,7 +33,7 @@
 
 .logo{
     position: relative;
-    left: 5px;
+    left: 10px;
     width: 100px;
     height: 50px;
 }
@@ -92,14 +92,14 @@ width: 80vw;
 }
 
 .intro h2{
-    font-size: 26px;
+    font-size: 30px;
     line-height: 1.4;
     font-weight: 900;
 }
 
 .intro p{
     padding-top: 50px;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.2;
     font-weight: 600;
     padding-bottom: 100px;

@@ -262,6 +262,7 @@ body>img{
     position: relative;
     min-height: 100vh;
     padding-top: 40vh;
+    background-color: #c5b5d8;
 }
 
 #section2::after{
@@ -291,14 +292,14 @@ body>img{
 }
 
 .intro h2{
-    font-size: 35px;
+    font-size: 36px;
     line-height: 1.4;
     font-weight: 900;
 }
 
 .intro p{
     padding-top: 50px;
-    font-size: 17px;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 600;
     padding-bottom: 100px;
