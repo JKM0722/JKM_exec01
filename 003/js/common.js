@@ -13,11 +13,20 @@ $(()=>{
         $(".bar").click(function () {
             $(this).toggleClass("open");
             $(".gnb")
-            .toggleClass("show")
             .fadeToggle(200);
+
+            $(".gnb li").each((idx,ele)=>{
+                $(ele).delay(100*idx).animate({top:"0",opacity:1})
+            });
             
+            if(!$(this).is("open")) $(".gnb li").attr("style","");    
         });
     });
+
+
+
+
+    
 
 
 
