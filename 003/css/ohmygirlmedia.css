@@ -116,7 +116,8 @@ width: 80vw;
 }
 
 .cbx{
-    width: 100%;
+    width: 90%;
+    margin: 0 5%;
     display: flex;
     flex-wrap: wrap;
     color: #fff;
@@ -125,8 +126,10 @@ width: 80vw;
     padding: 0px;
 }
 
+
+
 .cbx>div{
-    padding: 10px;
+    padding: 5%;
 }
 
 .cbx h3{
