@@ -186,6 +186,10 @@ body>img{
     height: 65px;
 }
 
+a {
+    display: block;
+}
+
 .box{
     position: absolute;
     top: 10%;
