@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+@import url(./reset.css);
+@import url(./common.css);
+
+.logo a {
+    background:  url(../images/onf_imf/logo.png) no-repeat center/contain;
+
+}
+
+#section1 .box{
+    text-transform: uppercase;
+}
+
+#section1 .box > div{
+    margin-top: 10px;
+}
+
+
+
+#section1{
+    background: url(../images/b1a4_img/bg2.jpg) no-repeat fixed center/cover;
+}
+
+#section2{
+    background: url(../images/b1a4_img/bg1.png) no-repeat fixed center /cover;
+    background-color: #18131c;
+}
+
+.intro{
+    color: lightgreen;
+    text-shadow: 1px 0 5px #000, -1px 0 5px #000, 0 1px 5px #000, 0 1px 5px #000;
+
+}
+
+#section3{
+    background: url(../images/b1a4_img/bg3.jpg) no-repeat fixed center /cover;
+    background-color: #662a48;
+    position: relative;
+}
+
+#section3::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; right: 0; left: 0; bottom: 0;
+    background-color: none;
+}
+
+
+.section3{
+    position: relative;
+    z-index: 2;
+}
+
+.section3 .cbx{
+    justify-content: flex-start
+}
+
+#section4{
+    background-color: #9e8d8e;
+}
