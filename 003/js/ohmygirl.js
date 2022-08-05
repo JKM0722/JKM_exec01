@@ -6,7 +6,9 @@ $(document).ready(function() {
     $("#section2").parallax("50%", 0.2);
     $("#section3").parallax("50%", 0.3);
 
-
+    $(document).on("contextmenu dragstart selectstart", function (e) {
+        return false;
+    });
 
 
 
@@ -29,7 +31,7 @@ $(()=>{
             .fadeToggle(200);
 
             $(".gnb li").each((idx,ele)=>{
-                $(ele).stop(true,true).delay(100*idx).animate({top:"0",opacity:1})
+                $(ele).stop(true,true).delay(50*idx).animate({top:"0",opacity:1})
             });
             
             if(!$(this).is("open")) $(".gnb li").attr("style","");    
