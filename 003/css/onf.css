@@ -27,6 +27,12 @@
     background-color: #18131c;
 }
 
+@media screen and (max-width:1079px){
+    /* #section1{
+
+    } */
+}
+
 .intro{
     color: rgb(240, 240, 240);
     text-shadow: 1px 0 5px #000, -1px 0 5px #000, 0 1px 5px #000, 0 1px 5px #000;
