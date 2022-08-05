@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+@import url(./reset.css);
+@import url(./common.css);
+
+.logo a {
+    background:  url(../images/b1a4_logo.png) no-repeat center/contain;
+
+}
+
+#section1 .box{
+    text-transform: uppercase;
+}
+
+#section1 .box > div{
+    margin-top: 10px;
+}
+
+.gnb{
+    background-color: #467500d2;
+}
+
+.gnb a{
+    color: #000;
+    text-shadow: 1px 0px 5px #fff, -1px 0px 5px #fff, 0px 1px 5px #fff, 0px -1px 5px #fff;
+}
+
+#section1{
+    background: url(../images/b1a4_img/bg2.jpg) no-repeat fixed center/cover;
+}
+
+#section2{
+    background: url(../images/b1a4_img/bg1.png) no-repeat fixed center /cover;
+    background-color: none;
+}
