@@ -16,14 +16,7 @@
     margin-top: 10px;
 }
 
-.gnb{
-    background-color: #467500d2;
-}
 
-.gnb a{
-    color: #000;
-    text-shadow: 1px 0px 5px #fff, -1px 0px 5px #fff, 0px 1px 5px #fff, 0px -1px 5px #fff;
-}
 
 #section1{
     background: url(../images/b1a4_img/bg2.jpg) no-repeat fixed center/cover;
