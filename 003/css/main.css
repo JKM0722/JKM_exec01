@@ -139,6 +139,7 @@ body>img{
     position: relative;
     opacity: 0;
     top: 20px;
+    /* display: none; */
     
 }
 .gnb a{
