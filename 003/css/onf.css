@@ -27,6 +27,14 @@
     background-color: #18131c;
 }
 
+#section3::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; right: 0; left: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
 @media screen and (max-width:1079px){
     /* #section1{
         background-position: right center !important;
@@ -46,8 +54,8 @@
 }
 
 #section3{
-    background: url(../images/b1a4_img/bg3.jpg) no-repeat fixed center /cover;
-    background-color: #662a48;
+    background: url(../images/onf_imf/bg2.jpeg) no-repeat fixed center /cover;
+    background-color: #00041c;
     position: relative;
 }
 
@@ -70,5 +78,5 @@
 }
 
 #section4{
-    background-color: #9e8d8e;
+    background-color: #000b47;
 }
