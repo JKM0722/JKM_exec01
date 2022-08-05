@@ -29,7 +29,7 @@ $(()=>{
             .fadeToggle(200);
 
             $(".gnb li").each((idx,ele)=>{
-                $(ele).delay(100*idx).animate({top:"0",opacity:1})
+                $(ele).stop(true,true).delay(100*idx).animate({top:"0",opacity:1})
             });
             
             if(!$(this).is("open")) $(".gnb li").attr("style","");    
