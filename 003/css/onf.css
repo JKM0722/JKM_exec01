@@ -2,7 +2,7 @@
 
 @import url(./reset.css);
 @import url(./common.css);
-
+ 
 .logo a {
     background:  url(../images/onf_imf/logo.png) no-repeat center/contain;
 
@@ -19,18 +19,24 @@
 
 
 #section1{
-    background: url(../images/b1a4_img/bg2.jpg) no-repeat fixed center/cover;
+    background: url(../images/onf_imf/bg1.jpg) no-repeat fixed center/cover;
 }
 
 #section2{
-    background: url(../images/b1a4_img/bg1.png) no-repeat fixed center /cover;
+    background: url(../images/ONF.jpg) no-repeat fixed center /cover;
     background-color: #18131c;
 }
 
 .intro{
-    color: lightgreen;
+    color: rgb(240, 240, 240);
     text-shadow: 1px 0 5px #000, -1px 0 5px #000, 0 1px 5px #000, 0 1px 5px #000;
+}
 
+.intro h2{
+    line-height: 1.2 !important;
+}
+.intro p{
+    line-height: 1.2 !important;
 }
 
 #section3{
