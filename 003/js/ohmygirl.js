@@ -22,7 +22,7 @@ $(document).ready(function() {
 $(()=>{
 
     $("body")
-            .fadeToggle(1000);
+            .fadeIn(1000);
 
 
     $.fn.scrollReveal();

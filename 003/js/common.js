@@ -3,7 +3,7 @@
 $(() => {
 
     $("body")
-    .fadeToggle(1000);
+    .fadeIn(1000);
 
     $(document).on("contextmenu dragstart selectstart", function (e) {
         return false;
