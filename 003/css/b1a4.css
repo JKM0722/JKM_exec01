@@ -5,7 +5,15 @@
 
 .logo a {
     background:  url(../images/b1a4_logo.png) no-repeat center/contain;
+    
+}
 
+.gnb{
+    background-color: rgba(94, 94, 94, 0.9);
+}
+
+.gnb a{
+    color: rgb(231, 231, 231);
 }
 
 #section1 .box{

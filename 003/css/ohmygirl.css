@@ -45,9 +45,9 @@ body>img{
 
 .logo a{
     display: block;
-    background:  url(../images/omg_logo.png) no-repeat center/contain;
+    background:  url(../images/omg_logo2.png) no-repeat center/contain;
     /* outline: 1px solid red; */
-    width: 150px;
+    width: 100px;
     height: 60px;
     position: relative;
     z-index: 2;
