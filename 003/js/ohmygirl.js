@@ -21,9 +21,14 @@ $(document).ready(function() {
 
 $(()=>{
 
+    $("body")
+            .fadeToggle(1000);
+
+
     $.fn.scrollReveal();
 
     $(function () {
+
         // 메뉴 버튼 꾸밈
         $(".bar").click(function () {
             $(this).toggleClass("open");

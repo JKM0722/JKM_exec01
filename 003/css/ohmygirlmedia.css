@@ -182,8 +182,13 @@ width: 80vw;
     font-size: 10px;
   }
 
+  .footer{
+    padding: 30px 0 30px 30px;
+  }
 
-
+  .footer span{
+    font-size: 11px;
+  }
 
 
 
