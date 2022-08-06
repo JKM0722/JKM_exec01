@@ -2,11 +2,12 @@
 
 @import url(./reset.css);
 @import url(./common.css);
- 
+
+
 .logo a {
     background:  url(../images/onf_imf/logo.png) no-repeat center/contain;
-
 }
+
 
 #section1 .box{
     text-transform: uppercase;
@@ -36,6 +37,12 @@
 }
 
 @media screen and (max-width:1079px){
+
+    .logo a {
+        width: 70% !important;
+    }
+
+
     /* #section1{
         background-position: right center !important;
     } */
