@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     $("#section1").parallax("50%", 0.1);
     $("#section2").parallax("50%", 0.2);
-    $("#section3").parallax("50%", 0.3);
+    // $("#section3").parallax("50%", 0.3);
 
     $(document).on("contextmenu dragstart selectstart", function (e) {
         return false;
