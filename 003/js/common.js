@@ -55,6 +55,6 @@ $(() => {
 // 윈도우 객체 컨텐츠가 모두 로딩된 후 로딩 박스 없애기
 $(window).on("load",function(){
     $(".LDbx").hide();
-    $("body")
+    $(".body")
     .fadeIn(1000);
 })
