@@ -501,7 +501,7 @@ html .body{
 }
 
 /* 로딩박스 */
-.LDbx {
+/* .LDbx {
     position: fixed;
     top: 0;
     left: 0;
@@ -518,4 +518,4 @@ html .body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
