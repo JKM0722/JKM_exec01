@@ -37,7 +37,7 @@
 
 @media screen and (max-width: 1079px){
     #section2{
-        background: url(../images/b1a4_img/bgm1.png) no-repeat fixed center /cover;
+        background: url(../images/b1a4_img/bgm1.png) no-repeat fixed center /cover !important;
         background-color: #2a232a;
 
     }

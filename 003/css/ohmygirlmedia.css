@@ -87,6 +87,12 @@
 
 
 /* section2 */
+
+#section2{
+    background: url(../images/ohmygirl_img/bg3mobile.png) no-repeat fixed center /cover;
+
+}
+
 .intro{
 left: 5%;
 width: 80vw;
