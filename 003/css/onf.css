@@ -26,7 +26,15 @@
 
 #section2{
     background: url(../images/ONF.jpg) no-repeat fixed center /cover;
-    background-color: #18131c;
+    background-color: #9283b0;
+}
+
+@media screen and (max-width: 1079px){
+    #section2{
+        background: url(../images/onf_imf/bgmobile.jpg) no-repeat fixed center /cover;
+        background-color: #9283b0;
+
+    }
 }
 
 #section3::after{
