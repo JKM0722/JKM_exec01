@@ -19,5 +19,50 @@
         top: 78vh;
     }
 
+    .fbx{
+        flex-direction: column;
+    }
+
+    .fbxl{
+        width: 100%;
+        height: 40%;
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .fbxl button{
+        padding: 20px;
+        margin: 0;
+        width: 30%;
+        font-size: 25px;
+        letter-spacing: -0.5px;
+    }
+
+    .fbxr{
+        width: 100%;
+        height: 60%;
+    }
+
+    .tic{
+        padding: 20%;
+    }
+
+    .map{
+        padding: 20%;
+    }
+
+    .tic a{
+        font-size: 35px;
+        white-space: nowrap;
+    }
+
+    .map a{
+        font-size: 35px;
+        white-space: nowrap;
+    }
+
+
 
 }
