@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
     <style>
-        input{
+        .inputarea {
+            width: 500px;
+            display: flex;
+        }
+
+        input {
             -webkit-appearance: none;
             border: 1px solid #555;
             border-radius: 4px;
@@ -14,15 +22,73 @@
             background-color: #ccc;
             padding: 5px 10px;
             color: #fff;
-            text-shadow: 0px 0  5px #000;
+            /* text-shadow: 0px 0  5px #000; */
+        }
+
+        .text {
+            width: 100%;
+            margin-left: 10px;
+        }
+
+        textarea {
+            display: block;
+            margin-top: 30px;
+            width: 500px;
+            height: 300px;
+        }
+
+        #hi{
+            width: 500px;
+            text-align: center;
+            background-color: #ccc;
+            height: 500px;
+            margin-top: 20px;
+            border: 1px solid #555;
+            border-radius: 7px;
+            font-size: 18px;
+            line-height: 30px;
+            overflow: auto;
         }
     </style>
-</head>
-<body>
-    <input type="button" value="hi" >
-    <input type="text" >
-    <input type="text" onkeydown="alert('key down!')">
+    <script>
+        window.onload = function () {
+            var btn = document.querySelector('input[type="button"]')
+            var txt = document.querySelector('input[type="text"]')
+            var tar = document.querySelector('#hi')
 
-    <img src="./" alt="">
+            function btnclick() {
+                var typewriter = new Typewriter(tar, {
+                loop: true,
+                delay: 75,
+            });
+
+            typewriter
+                .pauseFor(1000)
+                .typeString(txt.value)
+                .pauseFor(300)
+                .typeString("어서오세요")
+                .pauseFor(1000)
+                .deleteChars(10)
+                .start();
+            }//////////click
+
+            btn.addEventListener('click', btnclick)
+
+
+
+
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="inputarea">
+        <input type="button" value="hi">
+        <input type="text" placeholder="글을 쓸 시 아래에 출력됩니다." class="text">
+    </div>
+    <div id="hi"></div>
 </body>
+
 </html>
