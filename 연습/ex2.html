@@ -49,6 +49,7 @@
             line-height: 30px;
             overflow: auto;
         }
+
     </style>
     <script>
         window.onload = function () {
@@ -58,7 +59,7 @@
 
             function btnclick() {
                 var typewriter = new Typewriter(tar, {
-                loop: true,
+                loop: false,
                 delay: 75,
             });
 
@@ -66,9 +67,9 @@
                 .pauseFor(1000)
                 .typeString(txt.value)
                 .pauseFor(300)
-                .typeString("어서오세요")
+                .typeString(`<br><input type="button" value="submit" style="color:red; background-color:black;">`)
                 .pauseFor(1000)
-                .deleteChars(10)
+                // .deleteChars(10)
                 .start();
             }//////////click
 
@@ -89,6 +90,9 @@
         <input type="text" placeholder="글을 쓸 시 아래에 출력됩니다." class="text">
     </div>
     <div id="hi"></div>
+    <script>
+        document.write(2 === 1 + 1)
+    </script>
 </body>
 
 </html>
