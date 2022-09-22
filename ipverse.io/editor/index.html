@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ipverse</title>
+</head>
+<body>
+    <div>
+        <label for="content">변환 전</label>
+        <textarea name="" id="content" cols="30" rows="10"></textarea>
+    </div>
+    <div></div>
+    <button onclick="edit()">변환 하기</button>
+    <div>
+        <label for="result">변환 후</label>
+        <textarea name="" id="result" cols="30" rows="10"></textarea>
+    </div>
+    <script>
+        function edit() {
+            const content = document.querySelector('#content');
+            const result = document.querySelector('#result');
+            let value = content.value.replaceAll('"', "'");
+            result.value = value;
+        }
+
+    </script>
+</body>
+</html>

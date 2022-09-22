@@ -1,0 +1,19 @@
+.board{
+    max-width: 1140px;
+    padding: 200px 0;
+    width: 100%;
+    min-height: 50vh;
+    margin: auto;
+
+    word-break: break-all;
+}
+.board p{
+    word-break: break-all;
+}
+
+
+@media all and (max-width:767px){
+    .board{
+        padding: 70px 20px;
+    }
+}

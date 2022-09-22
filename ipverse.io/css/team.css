@@ -1,0 +1,274 @@
+@charset "utf-8";
+
+.wrap {
+  margin-top: 55px;
+}
+#team > h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  padding-top: 150px;
+  padding-bottom: 70px;
+  color: #fff;
+  background: var(--black2_color);
+}
+#team .white {
+  color: #fff;
+  background: var(--black2_color);
+}
+.dep2_wrap {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.operator_wrap.dep2_wrap {
+  padding-top: 0px;
+}
+.dep2_wrap h3 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+#team .container > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#team .container > ul > li {
+  width: 23%;
+  height: 350px;
+  border-radius: 16px;
+  margin-right: 2%;
+  color: var(--black1_color);
+  padding: 25px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: auto 60%;
+  background-position: right bottom;
+}
+#team .container > ul > li:nth-of-type(-n + 4) {
+  margin-bottom: 40px;
+}
+h4.pc_head_2,
+#team .container .advisor_card_cover > h4 {
+  position: relative;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+/* operators */
+.operator > ul > li {
+  cursor: pointer;
+}
+.operator > ul > li:last-child {
+  margin-right: 0px;
+}
+.operator li:first-child {
+  background-image: url(../images/team/operators/jo-seong-mok.png);
+}
+.operator li:nth-child(2) {
+  background-image: url(../images/team/operators/jeon-i-hyeon.png);
+}
+.operator li:nth-child(3) {
+  background-image: url(../images/team/operators/yang-back.png);
+}
+.operator li:last-child {
+  background-image: url(../images/team/operators/hong-ji-wook.png);
+}
+
+.operator > ul > li > button {
+  margin-top: 20px;
+}
+
+/* global */
+.global_member1 {
+  background-image: url(../images/team/global/ahn-young-pil.png);
+}
+.global_member2 {
+  background-image: url(../images/team/global/karan.png);
+}
+.global_member3 {
+  background-image: url(../images/team/global/franklin.png);
+}
+.global_member4 {
+  background-image: url(../images/team/global/zhan-zhicheng.png);
+}
+.global_member5 {
+  background-image: url(../images/team/global/kwon-june.png);
+}
+.global span{
+  display: block;
+}
+.global > ul > li > button {
+  margin-top: 20px;
+}
+
+/* members */
+.members li:first-child {
+    background-image: url(../images/team/members/lee-hyo-seong.png);
+}
+.members li:nth-child(2) {
+    background-image: url(../images/team/members/kim-won-sik.png);
+}
+.members li:nth-child(3) {
+    background-image: url(../images/team/members/lee-jin-woo.png);
+}
+.members li:nth-child(4) {
+    background-image: url(../images/team/members/park-jeong-wook.png);
+}
+.members li:nth-child(5) {
+    background-image: url(../images/team/members/min-young-jin.png);
+}
+.members li:last-child {
+    background-image: url(../images/team/members/lee-chang-woo.png);
+}
+
+/* advisors */
+.global > ul > li {
+  position: relative;
+  overflow: hidden;
+  color: var(--black2_color) !important;
+  background-color: #fff !important;
+  cursor: pointer;
+}
+.advisor > ul > li {
+  position: relative;
+  overflow: hidden;
+  color: #fff !important;
+  background-color: var(--black2_color) !important;
+  cursor: pointer;
+}
+.global > ul > li > p,
+.advisor > ul > li > p {
+  position: relative;
+  display: none;
+}
+.global .global_view_more button,
+.advisor .advisor_view_more button {
+  display: none;
+}
+.global .advisor_view_more p,
+.advisor .advisor_view_more p {
+  display: block;
+  z-index: 5;
+}
+.blur_cover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  backdrop-filter: saturate(180%) blur(20px);
+  z-index: 0;
+}
+.global .blur_cover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.global_view_more .blur_cover,
+.advisor_view_more .blur_cover {
+  display: block;
+  text-indent: -9999px;
+}
+.advisor_member1 {
+  background-image: url(../images/team/advisors/kim-mun-gyeom.png);
+}
+.advisor_member2 {
+  background-image: url(../images/team/advisors/kim-yong-jeong.png);
+}
+.advisor_member3 {
+  background-image: url(../images/team/advisors//kim-deog-gi.png);
+}
+.advisor_member4 {
+  background-image: url(../images/team/advisors/kim-seung-guk.png);
+}
+.advisor_member5 {
+  background-image: url(../images/team/advisors/lee-yoon-deok.png);
+}
+.advisor_member6 {
+  background-image: url(../images/team/advisors/gong-hyeong-jin.png);
+}
+.advisor_member7 {
+  background-image: url(../images/team/advisors/kim-byeong-geol.png);
+}
+.advisor_member8 {
+  background-image: url(../images/team/advisors/kim-maeng-lyong.png);
+}
+
+
+/* operator modal */
+.operator_modal {
+  display: none;
+  background-color: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 720px;
+  height: 480px;
+  z-index: 99;
+  padding: 35px 40px;
+  color: #000;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 30%;
+  border-radius: 30px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.operator_modal:first-child {
+  background-image: url(../images/team/operators/jo-seong-mok.png);
+}
+.operator_modal:nth-child(2)  {
+  background-image: url(../images/team/operators/jeon-i-hyeon.png);
+}
+.operator_modal:nth-child(3)  {
+  background-image: url(../images/team/operators/yang-back.png);
+}
+.operator_modal:last-child  {
+  background-image: url(../images/team/operators/hong-ji-wook.png);
+}
+.modal_close_btn {
+  display: block;
+  margin-left: auto;
+  position: relative;
+  padding: 10px;
+}
+.modal_close_btn::before {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 1px;
+  width: 15px;
+  background-color: #000;
+  transform: rotate(45deg);
+}
+.modal_close_btn::after {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 1px;
+  width: 15px;
+  background-color: #000;
+  transform: rotate(-45deg);
+}
+.operator_tit > p {
+  font-size: 16px;
+}
+.operator_modal > ul {
+  width: 70%;
+  padding-top: 30px;
+}
+.operator_modal li {
+  font-size: 13.5px;
+  line-height: 20px;
+}
+.operator_modal li > em {
+  display: block;
+}
+.operator_modal li > em {
+  padding-left: 26px;
+}
+:lang(en) .operator_modal li > em {
+  padding-left: 62px !important;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2H3L628WLY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2H3L628WLY');
+    </script>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IR</title>
+	<link rel="shortcut icon" href="/images/fav.ico?1">
+    <link href="/css/common/reset.css" rel="stylesheet">
+    <link href="/css/common.css?5" rel="stylesheet">
+    <link href="/css/common_res.css?5" rel="stylesheet">
+
+	<link href="/css/ir.css?6" rel="stylesheet">
+	<link href="/css/ir_res.css?6" rel="stylesheet">
+
+    <link href="/css/common/module.css?5" rel="stylesheet">
+
+    <link href="/css/common/res.css?5" rel="stylesheet">
+    <link href="/css/module_res.css?5" rel="stylesheet">
+    <script src="/js/common/jquery-3.6.0.min.js"></script>
+    <script src="/js/common/common.js?6"></script>
+    <script src="/js/common/module.js?6"></script>
+
+</head>
+<body>
+	<header id="hd"></header>
+    <!-- mobile gnb modal S -->
+    <div class="modal">modal</div>
+    <!-- mobile gnb modal E -->
+
+    <!-- button to top S -->
+    <div class="to_top">
+        <input type="image" src="/images/about/ico_arrow_up.png" alt="위로">
+    </div>
+    <!-- button to top E -->
+    <div class="wrap">
+        <section class="board">
+            <h1 class="board-page-titlte">IR</h1>
+
+            <div class="borad-top">
+                <ul class="board-top__tab">
+                    <li>
+                        <button data-id="ir" onclick="tabBtn(this)" class="board-top__tab-button"> IR 活动 </button>
+                    </li>
+                    <li>
+                        <button data-id="an" onclick="tabBtn(this)" class="board-top__tab-button board-top__tab-button--active"> 公告 </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="activityContent" class="board-contents" style="display: none;">
+                <table lang="ko" class="table-board">
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>작성일</th>
+                        </tr>
+                    </thead>
+                    <tbody id="">
+                        <tr>
+                            <td colspan="4">
+                                등록된 내용이 없습니다.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- <div id="paging" class="paging"></div> -->
+            </div>
+            <div id="announceBoard" class="board-contents">
+
+                <table lang="ko" class="table-board">
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>작성일</th>
+                        </tr>
+                    </thead>
+                    <tbody id="announceBoardContent">
+                        <tr>
+                            <td colspan="4">
+                                등록된 내용이 없습니다.
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+
+                <div id="paging" class="paging"></div>
+            </div>
+        </section>
+
+    </div>
+	<footer id="ft" class="silver"></footer>
+
+    <!-- <script src="/js/ir/showData.js"></script> -->
+    <script src="/js/ir/table.js"></script>
+
+    <script>
+        function tabBtn(ele) {
+            const tab = ele;
+            const ir = document.querySelector('#activityContent');
+            const ann = document.querySelector('#announceBoard');
+
+            if(tab.dataset.id === 'an'){
+
+                ir.style.display = 'none';
+                ann.style.display = 'block';
+                document.querySelector('[data-id="ir"]').className = 'board-top__tab-button';
+                tab.className = 'board-top__tab-button board-top__tab-button--active';
+            }else{
+                ir.style.display = 'block';
+                ann.style.display = 'none';
+                document.querySelector('[data-id="an"]').className = 'board-top__tab-button';
+                tab.className = 'board-top__tab-button board-top__tab-button--active';
+            }
+        }
+    </script>
+
+    <script>
+        const version =  new Date();
+        let annLink = '/data/cn/announce.json?v=' + version.getMilliseconds();
+        let irLink  = '/data/cn/activity.json?v='+ version.getMilliseconds();
+
+        if(window.innerWidth > 767){
+            const announce = new Table({
+                link:annLink,
+                table : 'announceBoard',
+                maxListSize: 10,
+                maxPageSize : 10
+            });
+            const irAct = new Table({
+                link:irLink,
+                table : 'activityContent',
+                maxListSize: 10,
+                maxPageSize : 10
+            });
+
+        }else{
+            const announce = new MobileTable({
+                link:annLink,
+                table : 'announceBoard',
+                maxListSize: 10,
+                maxPageSize : 5
+            });
+            const irAct = new MobileTable({
+                link:irLink,
+                table : 'activityContent',
+                maxListSize: 10,
+                maxPageSize : 5
+            });
+        }
+
+    </script>
+</body>
+</html>

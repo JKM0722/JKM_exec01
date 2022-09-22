@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* Laptop small S */
+@media all and (min-width:1024px) and (max-width:1440px){
+    
+    .container{
+        max-width:1140px;
+        padding-left:30px;
+        padding-right:30px;
+        margin:0px auto;
+    }
+}
+
+/* Laptop E */
+
+/* Tablet and Mobile S */
+@media all and (max-width:1023px){
+
+}
+/* Tablet and Mobile E */
+
+/* Tablet S */
+@media all and (min-width:768px) and (max-width:1023px){
+    .pc_d_none{
+        display:block;
+    }
+    .pc_d_view{
+        display:none;
+    }
+}
+/* Tablet E */
+
+/* Mobile S */
+@media all and (max-width:767px){
+
+}
+/* Mobile E */

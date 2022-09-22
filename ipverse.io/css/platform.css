@@ -1,0 +1,609 @@
+@charset "utf-8";
+
+html {
+    color: var(--black1_color);
+}
+.wrap{
+    margin-top:60px;
+}
+.point{
+    color:var(--black1_color);
+}
+
+#platform>h2, #market>.market_banner, .ip_items>.ip_item1, .ip_items>.ip_item2, .ip_items>.ip_item3, .ip_items>.ip_item4{
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+.light_gray_color{
+    color:var(--light_gray);
+}
+
+.dep2_wrap{
+    padding-top:150px;
+    padding-bottom:150px;
+}
+#platform>h2{
+    font-family:'Roboto', sans-serif;
+    width:100%;
+    height:455px;
+    line-height:455px;
+    text-align:center;
+    font-weight:700;
+    background-image:url(../../images/platform/platform_banner.jpg);
+    background-size:cover;
+    color:#fff;
+}
+
+.platform_cn{
+    margin-top: 150px;
+}
+
+#platform h4{
+    font-weight:700;
+    margin-bottom:5px;
+    color: var(--main_color);
+}
+#platform h3{
+    font-weight:700;    
+    margin-bottom:25px;
+    color: var(--black1_color);
+}
+#platform .ipr_token_wrap h3{
+    color: #fff;
+}
+/* #platform .pc_desc_text{
+    color:var(--gray2_color);
+} */
+
+
+/* NFT S */
+.nft>h3{
+    color: var(--gray1_color);
+}
+.nft.container>p{
+    font-weight:700;;
+    margin-bottom:70px;
+    color:var(--gray2_color);
+}
+.nft.container>ul{
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    text-align:center;
+}
+.nft.container>ul>li>div{
+    position:relative;
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    margin-bottom:15px;
+    background:var(--blue1_color);
+}
+.nft.container>ul>li>p{
+    font-weight: 700;
+    color: var(--blue1_color);
+}
+
+.nft>.swiper-container{
+    display:none;
+}
+.nft>.swiper-container ul>li>p{
+    font-weight: 700;
+    color: var(--blue1_color);
+}
+/* NFT E */
+
+/* what NFT S */
+.what_nft ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.what_nft ul li{
+    /* height: 400px; */
+    flex-shrink: 0;
+}
+.what_nft ul .what_nft_card1{
+    width: 100%;
+    padding: 30px 48px;
+
+    background-color: var(--black1_color);
+    background-image: url("../../images/platform/background_nft_card.png");
+    background-repeat: no-repeat;
+    background-position-x: -5px;
+    background-position-y: calc(100% + 10px);
+    background-size: 126%;
+
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.13);
+    border-radius: 15px;
+
+    color: var(--gray3_color);
+    font-weight: bold;
+}
+.what_nft ul b {
+    color: #fff;
+}
+.what_nft_card1 .what_token_left_txt_wrap{
+    float: left;
+    height: 100%;
+    width: 60%;
+}
+.what_nft_card1 .what_token_tit{
+    margin-bottom: 80px;
+
+    font-size: var(--pc_line_height4);
+    line-height: 42px;
+}
+.what_nft_card1 .what_token_right_img{
+    float: right;
+    height: 100%;
+    width: 30%;
+    margin-right: 60px;
+
+    text-align: right;
+}
+.what_nft_card1 .what_token_right_img img{
+    height: 100%;
+}
+.what_nft_card2,
+.what_nft_card3{
+    padding: 30px;
+    width: 48%;
+    margin-top: 35px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.13);
+    border-radius: 15px;
+}
+.what_nft_card3{
+    background-color: #F4F6FF;
+    background-image: url("../../images/platform/background_nft_attribute_card.png");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% + 5px);
+    background-position-y: -5px;
+    background-size: 105%;
+}
+.what_card_tit2{
+    font-size: var(--mt_font_size2);
+    color: var(--black1_color);
+    font-weight: bold;
+}
+.img_nft_contract {
+    width: 230px;
+    margin: auto;
+    margin-top: 25px;
+}
+.img_nft_contract img{
+    width: 100%;
+}
+.what_nft_card3 p:nth-child(2){
+    margin-top: 110px;
+    color: #757575;
+}
+.what_nft_card3 p:nth-child(2) span{
+    color: var(--black1_color);
+}
+/* what NFT E */
+
+/* IPR Token S */
+.ipr_token_wrap{
+    color:#fff;
+    background:#000 url(../images/icon/Group\ 3255.jpg) no-repeat center /cover;
+}
+.ipr_token>div.ipr_token_des{
+    position:relative;
+    display:flex;
+    height:500px;
+    margin-bottom:150px;
+}
+.ipr_token>div.ipr_token_des>.ethereum_text{
+    z-index:10;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+.ipr_token>div.ipr_token_des>.ethereum_text>.main_color{
+    color:#fff! important;
+}
+.ipr_token>div.ipr_token_des>.ethereum_img{
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+
+.ipr_token>div>div>p{
+    font-weight: 700;
+    color:var(--light_gray);
+}
+
+.ipr_token_using_wrap > .title_wrap {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: nowrap !important;
+}
+.ipr_token_using_wrap > .title_wrap > .line {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    position: relative;
+    top: 28px;
+    margin-left: 10px;
+}
+.ipr_token_using_wrap>div{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin-bottom: 150px;
+}
+.ipr_token_using_wrap>div:last-of-type{
+    margin-bottom: 0px;
+}
+
+#platform .ipr_token_using_wrap>h3{
+    margin-bottom:100px;
+}
+.ipr_token_using>img{
+    width:100%;
+    margin-bottom:20px;
+}
+.ipr_token_using>p{
+    font-weight: 700;
+}
+.ipr_token_using1{
+    width:650px;
+}
+.ipr_token_using2{
+    width:360px;
+    margin-top:600px;
+    margin-left:auto;
+}
+.ipr_token_using3{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.ipr_token_using4{
+    margin-left:auto;
+}
+/* IPR Token E */
+
+/* P2P S */
+.p2p.container>p{
+    margin-bottom:70px;
+    color: var(--gray2_color);
+}
+.p2p_des_wrap{
+
+}
+.p2p_des_wrap>img{
+    width:100%;
+    padding: 50px 130px 70px 130px;
+    border-radius: 15px;
+    background: var(--white3_color);
+}
+.p2p_des_wrap>div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+/* .p2p_des_wrap>div::after{
+    content: '';
+    clear: both;
+    display: block;
+} */
+.p2p_des_wrap>div>p{
+    width: 50%;
+    font-size: var(--pc_font_size5);
+    font-weight:500;
+    color: var(--gray2_color);
+}
+.p2p_des_wrap>div>p>.point{
+    font-weight: 700;
+}
+.p2p_des_wrap>div>p:first-of-type{
+    margin-right: 70px;
+}
+
+/* P2P E */
+
+/* Eco-system S */
+.eco_system_wrap{
+    background:var(--white2_color);
+}
+.eco_system>h3{
+    color: var(gray1_color);
+}
+.eco_system>div{
+    display:flex;
+    justify-content:space-between;
+}
+.eco_system>p{
+    font-weight: 700;
+    margin-bottom:70px;
+    color: var(--gray2_color);
+}
+.eco_system>div>div>ul{
+    width:780px;
+    display:flex;
+    flex-wrap:wrap;
+}
+.eco_system>div>div>ul>li{
+    width:370px;
+    padding: 30px;
+    border-radius: 16px;
+    background: #fff;
+}
+.eco_system>div>div>ul>li:nth-of-type(1), .eco_system>div>div>ul>li:nth-of-type(2){
+    margin-bottom:20px;
+}
+.eco_system>div>div>ul>li:nth-of-type(2n-1){
+    margin-right:20px;
+}
+.eco_system>div>div>ul>li>h5{
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+.eco_system>div>div>ul>li>p{
+    line-height: var(--pc_line_height7);
+    font-size: var(--pc_font_size7);
+    font-weight:500;
+    color: var(--gray2_color);
+}
+.eco_system>div>img{
+    width:325px;
+    height:435px;
+    border-radius: 16px;
+}
+
+.eco_system_items_wrap{
+    margin-top:150px;
+}
+.eco_system_items_wrap>ul{
+    width: 100%;
+    display:flex;
+}
+.eco_system_items_wrap>ul>li{
+    overflow:hidden;
+    width:33.33%;
+    text-align:center;
+    border-radius: 16px;
+    margin-right:50px;
+}
+.eco_system_items_wrap>ul>li:last-of-type{
+    margin-right:0px;
+}
+.eco_system_items_wrap>ul>li>img{
+    width:100%;
+}
+.eco_system_items_wrap>ul>li>div{
+    height: 100%;
+    padding: 30px 20px;
+    background: #fff;
+}
+.eco_system_items_wrap>ul>li>div>h5{
+    font-family:"Roboto", sans-serif;
+    font-weight:700;
+    margin-bottom:15px;
+}
+.eco_system_items_wrap>ul>li>p{
+    font-weight:400;
+    color: var(--gray1_color);
+}
+.eco_system_items_wrap>ul>li>p>.point{
+    font-weight: 700;
+}
+/* Eco-system E */
+
+/* Wallet S */
+.wallet{
+    position:relative;
+}
+.wallet>div{
+    display: flex;
+    justify-content: space-between;
+}
+.wallet>div>p{
+    font-weight: 700;
+    color: var(--gray2_color);
+}
+.wallet>div>p>.point{
+    color: var(--black1_color);
+}
+.wallet>div>ul{
+    display:flex;
+    flex-wrap:wrap;
+    width: 500px;
+}
+.wallet>div>ul>li{
+    display: flex;
+    align-items: center;
+    min-width: 215px;
+    font-weight:500;
+    margin-right: 70px;
+}
+.wallet>div>ul>li:nth-of-type(2n){
+    margin-right: 0px;
+}
+.wallet>div>ul>li>img{
+    margin-right: 15px;
+}
+.wallet>div>ul>li:nth-of-type(1), .wallet>div>ul>li:nth-of-type(2){
+    margin-bottom:50px;
+}
+.wallet>div>ul>li>img{
+    width:70px;
+    height: auto;
+}
+.wallet>div>ul>li>p{
+    font-weight: 700;
+    max-width: 130px;
+}
+/* Wallet E */
+
+/* Market S */
+#market>.market_banner{
+    position:relative;
+    font-family:'Roboto', sans-serif;
+    width:100%;
+    height:455px;
+    text-align:center;
+    font-weight:700;
+    background-image:url(../../images/market/market_banner.jpg);
+    background-size:cover;
+    color:#fff;
+}
+#market>.market_banner>div{
+    width:100%;
+}
+#market>.market_banner>div>h2{
+    margin-bottom:30px;
+}
+#market>.market_banner>div>p{
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight:400;
+    color: #fff;
+}
+.market {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.market > .pc_desc_text {
+    margin-bottom: 50px;
+}
+.market > p{
+    margin-top: 30px;
+    text-align:center;
+    font-weight:700;
+    color: var(--gray2_color);
+}
+.market > img {
+    width: 90%;
+    margin: 0 auto;
+}
+.market .channel_tit{
+    width: auto;
+    height: 80px;
+    margin-bottom:30px;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-family: Roboto;
+    line-height: 80px;
+    text-align: center;
+    color: var(--blue1_color);
+}
+.market>p>span{
+    font-weight: bold;
+    color: var(--black1_color);
+}
+.market>ul{
+    display:flex;
+    flex-wrap:wrap;
+}
+.market>.ip_items>li{
+    width:50%;
+    text-align:center;
+    font-weight:700;
+    height:330px;
+    line-height:330px;
+    color:#fff;
+}
+.ip_items>.ip_item1, .ip_items>.ip_item2, .ip_items>.ip_item3, .ip_items>.ip_item4{
+    font-family:"Roboto", sans-serif;
+}
+.market>.ip_items>.ip_item1{
+    background-image:url(../../images/market/entertainment.png);
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.market>.ip_items>.ip_item2{
+    background-image:url(../../images/market/charater.png);
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.market>.ip_items>.ip_item3{
+    background-image:url(../../images/market/antique.png);
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.market>.ip_items>.ip_item4{
+    background-image:url(../../images/market/patent.png);
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+/* Market E */
+
+/* IPR S */
+.ipr_wrap{
+    color:#fff;
+    background:#000;
+}
+.ipr.container>h4{
+    color: var(--main_color);
+    font-weight:700;
+}
+.ipr.container>h3{
+    font-weight:700;
+    margin-bottom:70px;
+}
+.ipr.container>div{
+    display:flex;
+    justify-content:space-between;
+}
+.ipr.container>div>img{
+    width:600px;
+}
+.ipr.container>div>ul>li{
+    display:flex;
+    justify-content:space-between;
+    position:relative;
+    width:350px;
+    height:70px;
+    border-bottom:1px solid var(--black2_color);
+    padding-left:50px;
+}
+.ipr.container>div>ul>li>h5{
+    line-height:70px;
+    font-family:"Roboto", sans-serif;
+    font-weight:400;
+}
+.ipr.container>div>ul>li>p{
+    line-height:70px;
+    font-weight:700;
+}
+.color_pic{
+    text-indent:-9999px;
+    position:absolute;
+    top:50%;
+    left:0px;
+    transform:translateY(-50%);
+    width:20px;
+    height:20px;
+    border-radius:4px;
+    background:#f00;
+}
+.ipr-eco_system>.color_pic{
+    background:#BDE6FF;
+}
+.marketing>.color_pic{
+    background:#6FADFF;
+}
+.team>.color_pic{
+    background:#3157C9;
+}
+.company_reserve>.color_pic{
+    background:#756FEA;
+}
+.bounty>.color_pic{
+    background:#5973E9;
+}
+.presale>.color_pic{
+    background:#57B4E1;
+}
+.public>.color_pic{
+    background:#5CE8E5;
+}
+/* IPR E */
+

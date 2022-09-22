@@ -1,0 +1,368 @@
+@charset "utf-8";
+
+/* Laptop small S */
+@media all and (min-width:1024px) and (max-width:1440px){
+    .m-width-100{
+        width: 980px;
+    }
+
+
+    /* ipverse goal */
+    .wrap_ipverse_goals li{
+        width: 190px;
+    }
+    .wrap_ipverse_goals li .card_txt p{
+        font-size: 15px;
+    }
+
+    /* how to pay */
+    .box_how_to_pay .how_to_01{
+        top: 100%;
+        transform: translate(-50%, -100%);
+        width: 500px;
+    }
+    .box_how_to_pay .how_to_02{
+        top: 70px;
+        right: 26%;
+        width: 100px;
+    }
+
+    /* .contents_itr{
+        width: 50%;
+    } */
+ 
+}
+/* Laptop E */
+
+/* Tablet and Mobile S */
+@media all and (max-width:1023px){
+    .m-width-100{
+        width: 100%;
+    }
+    .side-padding{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .wrap_ipverse_goals ul {
+        flex-wrap: wrap;
+    }
+    .wrap_ipverse_goals ul li{
+        width: 150px;
+        height: 240px;
+        margin: 0 1px;
+        margin-bottom: 40px;
+    }
+    .wrap_ipverse_goals ul .card_icon img{
+        width: 65%;
+    }
+    .wrap_ipverse_goals li .card_txt p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+}
+/* Tablet and Mobile E */
+
+/* Tablet S */
+@media all and (min-width:768px) and (max-width:1023px){
+
+
+
+    .pc_d_none{
+        display:block;
+    }
+    .pc_d_view{
+        display:none;
+    }
+    .m-d-none{
+        display:none !important;
+    }
+    .box_ip_imgs .icon_background {
+        width :110px;
+        height:110px;
+    }
+    /* Market problem / IPVERSE Goal S */
+    .market_problem>ul>li, .goal>ul>li{
+        font-size: var(--pc_font_size6);
+        padding: 20px 0px;
+    }
+    .market_problem>ul>li{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Market problem / IPVERSE Goal S */
+
+}
+/* Tablet E */
+
+/* Mobile S */
+@media all and (max-width:767px){
+
+    .banner_contents {
+    left: 10px;
+    }
+
+    .about_box{
+        flex-direction: column;
+    }
+
+    .about_box .contents_itr, .box_ip_imgs{
+        width: 100% !important;
+        text-align: center;
+    }
+
+
+    /* .box_ip_imgs .brk{
+        display: none;
+    } */
+
+    .contents>h4{
+        font-size: 40px ; 
+    }
+    /* main banner S */
+    .main_banner{
+        height: 535px;
+    }
+    .main_banner img{
+        left: 30%;
+        max-width: 250%;
+    }
+    .main_banner .down{
+        display: none;
+    }
+
+    .banner_title{
+        font-size: 36px;
+        line-height: 49px;
+    }
+    .banner_text{
+        font-size: var(--mt_font_size5);
+        line-height: var(--mt_line_height5);
+    }
+    .download_paper{
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        font-size: var(--mt_font_size5);
+        margin-top: 15px;
+    }
+
+    .banner_links {
+        top: 75%;
+    }
+
+    .banner_links li {
+        /* min-width: none; */
+        /* width: 80px; */
+        background-size: 70% 70%;
+        margin-right: 10px;
+    }
+
+
+
+    /* main banner E */
+
+    .m-h4{
+        font-size: var(--mt_font_size3);
+        line-height: var(--mt_line_height3);
+    }
+    .m-h3{
+        font-size: var(--mt_font_size2);
+        line-height: var(--mt_line_height2);
+    }
+    .m-desc-txt{
+        font-size: var(--mt_font_size5);
+        line-height: var(--mt_line_height5);
+    }
+
+    .m-d-none{
+        display:none !important;
+    }
+    .m-view{
+        display: block;
+    }
+
+    /* what is ipverse */
+
+    .why_wrap h4{
+        font-size: 40px;
+        margin-top: 100px;
+    }
+
+    .ipverse_do{
+        height: 300px;
+    }
+
+    .box_ip_imgs{
+        margin-bottom: 52px;
+    }
+    .box_ip_imgs ul {
+        flex-wrap: wrap;
+        flex-shrink: 0;
+        align-items: start;
+    }
+    .box_ip_imgs ul li{
+        width: 130px;
+        height: 130px;
+        margin-bottom: 50px;
+    }
+
+    .box_ip_imgs ul li:nth-of-type(4), .box_ip_imgs ul li:nth-of-type(5), .box_ip_imgs ul li:nth-of-type(6){
+        margin-bottom: 0px;
+    }
+    .box_ip_imgs .icon_background{
+        width: 100%;
+        height: 100%;
+    }
+    .box_ip_imgs li p{
+        font-size: var(--mt_font_size5);
+        font-weight: 700;
+        line-height: var(--mt_line_height5);
+    }
+    
+    .text_what{
+        margin-bottom: 52px;
+    }
+
+    /* ipverse func */
+
+
+    .func_card_01,
+    .func_card_02,
+    .func_card_03,
+    .func_card_04,
+    .func_card_05{
+        width: 100%;
+        height: 104px !important;
+    }
+    .box_func_cards li .desc_card{
+        height: 100%;
+    }
+    .box_func_cards li img{
+        min-width: 100%;
+        /* height: 100%; */
+    }
+    .ipverse_funcs h4{
+        font-size: var(--pc_font_size6);
+    }
+
+    /* why ipverse */
+    .img_why_ipverse{
+        margin-top: 52px;
+        margin-bottom: 52px;
+    }
+    
+    .problem-goal_wrap>.market_problem, .problem-goal_wrap>.goal{
+        width: 100%;
+    }
+    .market_problem>ul>li, .goal>ul>li{
+        height: auto;
+        line-height: var(--mt_line_height5);
+    }
+
+    .problem-goal_wrap>.arrow_wrap{
+        width: 100%;
+        margin: 28px 0px;
+    }
+    .problem-goal_wrap>.arrow_wrap>ul>li{
+        display: none;
+        height: auto;
+        line-height: normal;
+        text-align: center;
+        margin: 0px;
+    }
+    .problem-goal_wrap>.arrow_wrap>ul>li:first-of-type{
+        display: block;
+    }
+    .problem-goal_wrap>.arrow_wrap>ul>li:first-of-type>img{
+        transform: rotate(90deg);
+    }
+
+    .problem-goal_wrap{
+        display: block;
+        padding-top: 52px;
+    }
+    .problem-goal_wrap h5{
+        height: auto;
+        font-size: var(--mt_font_size4);
+        line-height: var(--mt_line_height4);
+    }
+    .market_problem>ul>li, .goal>ul>li{
+        padding: 20px 10px;
+        font-size: var(--mt_font_size5);
+    }
+
+    /* how to pay */
+    .txt_how{
+        max-width: 680px;
+    }
+}
+/* Mobile E */
+
+/* mobile Large ~ */
+@media screen and (max-width:428px) {
+    .sm-d-none{
+        display: none;
+    }
+    .box_ip_imgs ul li{
+        /* width: 70px;
+        height: 70px; */
+    }
+    .box_ip_imgs ul li:nth-child(2),
+    .box_ip_imgs ul li:nth-child(5){
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .wrap_ipverse_goals ul li{
+        width: 48%;
+    }
+}
+
+
+@media screen and (max-width:460px) {
+
+    .banner_links ul{
+        width: 200px;
+        flex-wrap: nowrap;
+    }
+
+    .banner_links li {
+        background-size: 40% 40%;
+        margin-right: 0px;
+        width: 50px;
+        height: 50px;
+    }
+    .banner_links li:nth-child(1){
+        width: 100px !important;
+        background-size: 60% 60%;
+
+    }
+
+    .banner_links li a{
+        margin-left: 0;
+    }
+
+    /* .icon1, .icon2, .icon3{
+        width: auto;
+    } */
+
+
+    .download_paper {
+        width: 70px;
+        height: 30px;
+        line-height: 28px;
+        font-size: 11px;
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+
+    .box_ip_imgs ul li{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 50px;
+    }
+}/* ///460 */

@@ -1,0 +1,466 @@
+@charset "utf-8";
+
+/* Laptop small S */
+@media all and (min-width:1024px) and (max-width:1440px){
+    .ipr_token_using1{
+        width:500px;
+    }
+    .ipr_token_using2{
+        margin-top:500px;
+    }
+    .p2p_des_wrap>div>p{
+        font-size: var(--pc_font_size6);
+    }
+    .p2p_des_wrap>div>p:first-of-type{
+        margin-right: 70px;
+    }
+
+    /* Eco-system S */
+    .eco_system>div>div>ul{
+        width: 98%;
+        margin-right: 2%;
+    }
+    .eco_system>div>div>ul>li{
+        width:49%;
+        padding: 25px;
+        border-radius: 12px;
+        background: #fff;
+    }
+    .eco_system>div>div>ul>li:nth-of-type(2n-1){
+        margin-right: 2%;
+    }
+    .eco_system>div>div>ul>li:nth-of-type(1), .eco_system>div>div>ul>li:nth-of-type(2){
+        margin-bottom: 2%;
+    }
+    .eco_system>div>img{
+        width: 310px;
+        height: 478px;
+    }
+    /* Eco-system E */
+
+    /* Wallet S */
+    .wallet>div>p{
+        font-size: var(--pc_font_size6);
+    }
+    /* Wallet E */
+}
+/* Laptop E */
+
+/* Tablet and Mobile S */
+@media all and (max-width:1023px){
+    /* NFT S */
+    .nft.container>p{
+        margin-bottom:60px;
+    }
+    .nft.container>ul{
+        display:none;
+    }
+    .nft>.swiper-container{
+        display:block;
+    }
+    /*.nft>.swiper-container{
+        padding-bottom:50px;
+    }*/
+    .nft>.swiper-container ul{
+        display:flex;
+    }
+    .nft>.swiper-container ul>li{
+        width:33.3%;
+        text-align:center;
+    }
+    .nft>.swiper-container ul>li>div{
+        position:relative;
+        width:80px;
+        height:80px;
+        margin:0px auto 15px auto;
+        border-radius:50%;
+        background:var(--blue1_color);
+    }
+    .nft>.swiper-container ul>li>div>img{
+        width:60%;   
+    }
+    /* NFT E */
+    
+    /* IPR S */
+    .ipr_token>div.ipr_token_des{
+        flex-wrap:wrap;
+        margin-bottom:120px;
+    }
+    .ipr_token>div.ipr_token_des>.ethereum_text{
+        position:static;
+        margin-bottom:60px;
+    }
+    .ipr_token>div.ipr_token_des>.ethereum_img{
+        position:static;
+    }
+    .ipr_token>div.ipr_token_des>.ethereum_img>img{
+        width:100%;
+        max-height: 370px;
+    }
+    
+    .ipr_token_using_wrap>div{
+        margin-bottom:60px;
+    }
+    #platform .ipr_token_using_wrap>h3{
+        margin-bottom:30px;
+    }
+    .ipr_token_using4{
+        width:230px;
+    }
+    /* IPR E */
+    
+    /* P2P S */
+    .p2p_des_wrap{
+        display:block;
+    }
+    .p2p_des_wrap>img{
+        width:100%;
+        margin-right:0px;
+        margin-bottom:60px;
+        padding: 5% 10%;
+    }
+
+    .p2p_des_wrap>div{
+        width:100%;
+        /* text-align:center; */
+    }
+    .p2p_des_wrap>div>p:first-of-type{
+        margin-bottom:30px;
+    }
+    /* P2P E */
+    
+    /* Eco-system S */
+    .eco_system>div{
+        flex-wrap:wrap;
+    }
+    .eco_system_first_item>div{
+        order: 2;
+    }
+    .eco_system>div>div>ul{
+        display:block;
+        width:100%;
+    }
+    .wrap .eco_system>div>div>ul>li{
+        width:100%;
+        padding-bottom:30px;
+        margin:0px 0px 30px 0px;
+    }
+    .eco_system>div>img{
+        order:1;
+        width:100%;
+        height:auto;
+    }
+    .eco_system_swiper .swiper-slide{
+        overflow: hidden;
+        text-align:center;
+        border-radius: 16px;
+        background: #fff;
+    }
+    .eco_system_swiper .swiper-slide>img{
+        width:100%;
+    }
+    .eco_system_swiper .swiper-slide>h5{
+        font-size:var(--mt_font_size3);
+        font-weight:700;
+        margin:30px 0px 20px 0px;
+    }
+    .eco_system_swiper .swiper-slide>p{
+        padding: 0px 20px 20px 20px;
+    }
+    /* Eco-system E */
+    
+    /* Wallet S */
+    .wallet>div{
+        display: block;
+    }
+    .wallet>div>p{
+        margin-bottom: 36px;
+    }
+    .wallet>div>ul{
+        width:100%;
+    }
+    .wallet>div>ul>li{
+        display: block;
+        width: 50%;
+        min-width: auto;
+        margin-right: 0px;
+    }
+    .wallet>div>ul>li>p{
+        line-height: var(--mt_line_height5);
+        font-size: var(--mt_font_size5);
+        margin-top: 15px;
+    }
+    /* Wallet E */
+    
+    /* Market S */
+    #market>.market_banner{
+        height:330px;
+    }
+    .market_banner>div{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .market_banner>div>p{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 600px;
+    }
+    .market>p{
+        margin-bottom:60px;
+    }
+    
+    .market>.ip_items>li{
+        width:100%;
+        height:220px;
+        line-height:220px;
+        font-size:var(--mt_font_size2);
+    }
+    .market .channel_tit{
+        height: 40px;
+        line-height: 40px;
+        font-size:var(--mt_font_size2);
+    }
+    .market>.ip_items>.ip_item1,
+    .market>.ip_items>.ip_item2,
+    .market>.ip_items>.ip_item3,
+    .market>.ip_items>.ip_item4{
+        border:none;
+        border-bottom: 1px solid #fff;
+    }
+    /* Market E */
+    
+    /* IPR S */
+    .ipr.container>div{
+        display:block;
+    }
+    .ipr.container>div>img{
+        width:100%;
+        height:auto;
+        margin-bottom:60px;
+    }
+    .ipr.container>div>ul>li{
+        width:100%;
+        padding-left:30px;
+    }
+    .color_pic{
+        width:14px;
+        height:14px;
+    }
+    /* IPR E */
+}
+/* Tablet and Mobile E */
+
+/* Tablet S */
+@media all and (min-width:768px) and (max-width:1023px){
+    /* IPR Token S */
+    .ipr_token>div.ipr_token_des{
+        height:auto;
+    }
+    .ipr_token_using1{
+        width:500px;
+    }
+    .ipr_token_using2{
+        margin-top:60px;
+    }
+    .ipr_token_using4{
+        width:450px;
+    }
+    
+    /* IPR Token E */
+
+    /* what nft S */
+    .what_token_txt {
+        max-width: 440px;
+    }
+    /* what nft E */
+    
+    /* Eco-system S */
+    .eco_system>div>div>ul{
+        display:flex;
+    }
+    .wrap .eco_system>div>div>ul>li{
+        width:49%;
+        margin-bottom: 2%;
+    }
+    .wrap .eco_system>div>div>ul>li:nth-of-type(3), .wrap .eco_system>div>div>ul>li:nth-of-type(4){
+        margin-bottom: 0px;
+    }
+    .wrap .eco_system>div>div>ul>li:nth-of-type(2n-1){
+        margin-right:2%;
+    }
+    .eco_system>div>img{
+        margin-bottom: 60px;
+    }
+    .eco_system_items_wrap>ul>li{
+        margin-right: 20px;
+    }
+    /* Eco-system E */
+    
+    /* Market S */
+    /* .market_banner>div>p{
+        margin:0 auto;
+    } */
+    .market>.ip_items>li{
+        height:330px;
+        line-height:330px;
+        background-size:cover;
+    }
+    /* Market E */
+    
+    /* IPR S */
+    .ipr.container>div>img:first-of-type{
+        display:block;
+    }
+    /* IPR E */
+}
+/* Tablet E */
+
+/* Mobile S */
+@media screen and (max-width:767px){
+    
+    .dep2_wrap{
+        padding-top:80px;
+        padding-bottom:80px;
+    }
+    
+    #platform>h2{
+        height:175px;
+        line-height:175px;
+    }
+    #platform h3{
+        margin-bottom:15px;
+    }
+    .ipr_token_using_wrap > .title_wrap {
+        align-items: center;
+    }
+    .ipr_token_using_wrap > .title_wrap > .line {
+        position: static;
+        top: 0;
+    }
+    .ipr_token_using1{
+        width:270px;
+    }
+    .ipr_token_using2{
+        width:230px;
+        margin-top:60px;
+        margin-left:auto;
+    }
+    /* what nft S */
+    .nft>.swiper-container ul>li>p{
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+    }
+    .what_nft ul li{
+        height: auto;
+    }
+    .what_nft_card1 .what_token_left_txt_wrap{
+        float: none;
+        height: auto;
+        width: 100%;
+        margin-bottom: 65px;
+    }
+    .what_nft ul .what_nft_card1{
+        padding: 30px;
+        background-position-y: bottom;
+        background-position-x: calc(100% + 100px);
+        background-size: 200%;
+    }
+    .what_nft_card1 .what_token_tit{
+        margin-bottom: 30px;
+
+        font-size: var(--pc_line_height6);
+    }
+    .what_token_txt{
+        max-width: 210px;
+    }
+    .what_nft_card1 .what_token_right_img{
+        float: none;
+        width: 100%;
+        height: auto;
+        
+        text-align: center;
+    }
+
+    .what_nft_card2,
+    .what_nft_card3{
+        width: 100%;
+    }
+
+
+    .what_nft_card3 p:nth-child(2){
+        /* margin-top:  */
+    }
+    /* what nft E */
+
+    /* p2p S */
+    .p2p_des_wrap>div{
+        display: block;
+    }
+    .p2p_des_wrap>div>p{
+        width: 100%;
+        font-size: var(--mt_font_size5);
+    }
+    /* p2p E */
+
+    /* Eco-system S */
+    .wrap .eco_system>div>div>ul>li{
+        margin-bottom: 14px;
+    }
+    .wrap .eco_system>div>div>ul>li:last-of-type{
+        margin-bottom: 0px;
+    }
+    .eco_system>div>img{
+        margin-bottom: 14px;
+    }
+    .eco_system_items_wrap>ul{
+        display:none;
+    }
+    .what_nft_card1 .what_token_right_img img{
+        width: 200px;
+    }
+
+    .wallet>div>ul>li>img{
+        width: 60px;
+    }
+    /* Eco-system E */
+
+    /* Market S */
+    .market .channel_tit{
+        font-size: var(--mt_font_size3);
+    }
+    .market>ul{
+        position: relative;
+        width: calc(100% + 60px);
+        left: -30px;
+    }
+    .market>.ip_items>.ip_item1,
+    .market>.ip_items>.ip_item2,
+    .market>.ip_items>.ip_item3,
+    .market>.ip_items>.ip_item4{
+        background-size: 100%;
+    }
+    /* Market E */
+
+    /* IPR S */
+    .ipr.container>div>ul>li{
+        height: 55px;
+    }
+    .ipr.container>div>ul>li>h5, .ipr.container>div>ul>li>p{
+        line-height: 55px;
+    }
+    /* IPR E */
+}
+/* Mobile E */
+
+/* Mobile small S */
+@media screen and(max-width:323px){
+    .market>.ip_items>.ip_item1,
+    .market>.ip_items>.ip_item2,
+    .market>.ip_items>.ip_item3,
+    .market>.ip_items>.ip_item4{
+        background-size: 110%;
+    }
+}
+/* Mobile small E */
+
