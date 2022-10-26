@@ -1,10 +1,20 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+/* font-family: 'Nanum Pen Script', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap');
+/* font-family: 'Sunflower', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+/* font-family: 'Hi Melody', cursive; */
 
 body{
+    overflow-x: hidden;
 }
 
 .box{
     min-height: 100vh;
+    overflow: hidden;
 }
 
 /* 섹션 부제목 */
@@ -19,35 +29,130 @@ body{
     font-size: 60px;
     top: 50%;
     transition: .8s;
-    color: rgba(0, 0, 0, 0.877);
+    color: rgba(255, 255, 255, 0.89);
 }
 
 .pb2{
-    font-size: 15px;
     transition: .6s;
-    font-size: 40px;
-    color: rgba(54, 54, 54, 0.76);
+    font-size: 50px;
+    color: rgba(221, 221, 221, 0.39);
     top: 50%;   
 }
 
 
-
-/* section1 */
-.section1{
-    min-height: 100vh;
+/* 섹션 1 + 2 배경색 */
+.gradient_filter{
+    background: linear-gradient(to bottom,rgba(161, 161, 161, 0) 0,rgba(0, 0, 0, 0.9) 40%,rgba(0, 0, 0, 0.9) 100%);
+    position: relative;
+    z-index: 100;
 }
 
 
+/************************** section1 **************************/
+.section1{
+    min-height: 100vh;
+    position: relative;
+}
 
-/* section2 */
+
+/* 타이핑 */
+#text{
+    height: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: 'Hi Melody', cursive;
+}
+
+#text strong{
+    display: inline-block;
+    transform: translateY(10px);
+    font-weight: 700;
+    color: #d2d898;
+    font-size: 70px;
+    /* text-shadow: 1px 0 #ffffff, -1px 0 #ffffff, 0 1px #fff, 0 -1px #fff; */
+    font-family: 'Noto Sans KR', sans-serif;}
+
+#text2{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(204, 204, 204);
+    font-size: 40px;
+    font-family: 'Nanum Pen Script', cursive ;
+}
+
+/* 비디오 백그라운드 */
+.myvid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 마우스 */
+.mouse{
+    width: 30px;
+    height: 45px;
+    position: absolute;
+    border: 3px solid white;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.mouse_wheel{
+    position: absolute;
+    width: 3px;
+    background-color: white;
+    left: calc(50% - 1.5px);
+    animation: wheelAni 2s ease-in-out .4s infinite;
+    /* bottom: 50px; */
+    height: 13px;
+    box-sizing: border-box;
+    top: 1px;
+}
+
+@keyframes wheelAni {   
+    0%{
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    60%{
+        opacity: 1;
+        transform: translateY(5px);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateY(7px);
+    }
+    
+}
+
+/********************************* section2 - recurit *********************************/
 .section2{
     position: relative;
-    background-color: #ccc;
+    /* background-color: #ccc; */
 }
 
 
 
 .pbx1_1{
+    color: rgb(255, 255, 255) !important;
     right: 30px;
 }
 
@@ -56,9 +161,10 @@ body{
 }
 
 
-/* section3 */
+/* section3 - portfolio */
 .section3{
     position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .pbx2_1{
@@ -67,4 +173,18 @@ body{
 
 .pbx2_2{
     left: 25px;
+}
+
+/* section4 - others */
+.section4{
+    background-color: rgba(0, 0, 0, 0.9);
+    position: relative;
+}
+
+.pbx3_1{
+    right: 30px;
+}
+
+.pbx3_2{
+    right: 25px;
 }
