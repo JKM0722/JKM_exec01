@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+
+.height{
+    min-height: 5000px;
+    position: relative;
+}
+
+.box{
+
+    position: absolute;
+    top: 50%;
+    min-height: 1000px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    perspective: 1px;
+}
+
+.pb{
+    position: absolute;
+    top: 50%;
+    width: 200px;
+    background-color: #fff;
+    height: 240px;
+}
