@@ -1,25 +1,70 @@
 @charset "utf-8";
 
-
-.height{
-    min-height: 5000px;
-    position: relative;
+body{
 }
 
 .box{
-
-    position: absolute;
-    top: 50%;
-    min-height: 1000px;
-    width: 500px;
-    background-color: rgba(0, 0, 0, 0.5);
-    perspective: 1px;
+    min-height: 100vh;
 }
 
+/* 섹션 부제목 */
+
 .pb{
+    writing-mode: vertical-lr;
     position: absolute;
+    font-weight: bold;
+}
+
+.pb1{
+    font-size: 60px;
     top: 50%;
-    width: 200px;
-    background-color: #fff;
-    height: 240px;
+    transition: .8s;
+    color: rgba(0, 0, 0, 0.877);
+}
+
+.pb2{
+    font-size: 15px;
+    transition: .6s;
+    font-size: 40px;
+    color: rgba(54, 54, 54, 0.76);
+    top: 50%;   
+}
+
+
+
+/* section1 */
+.section1{
+    min-height: 100vh;
+}
+
+
+
+/* section2 */
+.section2{
+    position: relative;
+    background-color: #ccc;
+}
+
+
+
+.pbx1_1{
+    right: 30px;
+}
+
+.pbx1_2{
+    right: 25px;
+}
+
+
+/* section3 */
+.section3{
+    position: relative;
+}
+
+.pbx2_1{
+    left: 30px;
+}
+
+.pbx2_2{
+    left: 25px;
 }
