@@ -106,7 +106,7 @@ $(document).ready(function () {
 
             //  console.log(sct_skill, sct)
 
-            if(sct > sct_skill - 500){
+            if(sct > sct_skill - 800){
                 counterFn();
                 counterFn2();
                 counterFn3();
@@ -127,7 +127,7 @@ $(document).ready(function () {
 
         function counterFn() {
 
-          id0 = setInterval(count0Fn, 400);
+          id0 = setInterval(count0Fn, 350);
 
           function count0Fn() {
             cnt0++;
@@ -142,7 +142,7 @@ $(document).ready(function () {
 
         function counterFn2() {
 
-          id2 = setInterval(count0Fn, 400);
+          id2 = setInterval(count0Fn, 350);
 
           function count0Fn() {
             cnt2++;
@@ -157,7 +157,7 @@ $(document).ready(function () {
 
         function counterFn3() {
 
-          id3 = setInterval(count0Fn, 400);
+          id3 = setInterval(count0Fn, 350);
 
           function count0Fn() {
             cnt3++;

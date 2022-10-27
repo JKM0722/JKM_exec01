@@ -24,7 +24,7 @@ body{
 
 .box{
     min-height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .ibx{
@@ -109,13 +109,14 @@ header{
     top: 50%;
     /* transition: .8s; */
     color: rgba(255, 255, 255, 0.89);
+    transform: translateY(-50%);
 }
 
 .pb2{
     transition: .4s;
     font-size: 50px;
     color: rgba(221, 221, 221, 0.39);
-    top: 50%;   
+    /* top: 50%;    */
 }
 
 
@@ -238,6 +239,7 @@ header{
 
 .pbx1_2{
     right: 25px;
+    top: 35%;
 }
 
 
@@ -248,17 +250,38 @@ header{
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+.section3.box{
+    min-height: auto;
+    height: auto;
+}
+
+.section3 .ibx{
+    height: auto;
+    min-height: auto;
+}
+
 .pbx2_1{
     left: 30px;
 }
 
 .pbx2_2{
     left: 25px;
+    top: 15%;
 }
 
-/* .skill_set{
-    padding-top: 200px;
-} */
+.skill_set{
+    padding-bottom: 200px;
+}
+
+.skill_txt{
+    height: 500px;
+    line-height: 500px;
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    width: 95%;
+    margin: 0 auto;
+}
 
 .skill_set ul{
     display: flex;
@@ -302,6 +325,7 @@ header{
 
 .pbx3_2{
     right: 25px;
+    top: 25%;
 }
 
 
@@ -318,6 +342,7 @@ header{
 
 .pbx4_2{
     left: 25px;
+    top: 20%;
 }
 
 /************************************ section6 - contact ************************************/
@@ -333,6 +358,7 @@ header{
 
 .pbx5_2{
     right: 25px;
+    top: 15%;
 }
 
 
