@@ -20,6 +20,7 @@ html{
 
 body{
     overflow-x: hidden;
+    word-break: keep-all;
 }
 
 .box{
@@ -266,7 +267,7 @@ header{
 
 .pbx2_2{
     left: 25px;
-    top: 15%;
+    top: 30%;
 }
 
 .skill_set{
@@ -342,7 +343,7 @@ header{
 
 .pbx4_2{
     left: 25px;
-    top: 20%;
+    top: 22%;
 }
 
 /************************************ section6 - contact ************************************/
@@ -358,7 +359,7 @@ header{
 
 .pbx5_2{
     right: 25px;
-    top: 15%;
+    top: 20%;
 }
 
 

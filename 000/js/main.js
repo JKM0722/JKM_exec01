@@ -22,11 +22,11 @@ $(document).ready(function () {
 
     typewriter2
         .pauseFor(2000)
-        .typeString('#성실한')
+        .typeString('#성장하는')
         .pauseFor(1000)
-        .typeString(' #겸손한')
+        .typeString(' #웹퍼블리셔')
         .pauseFor(1000)
-        .typeString(' #성장하는')
+        .typeString(' #코딩')
         .start();
 
 
