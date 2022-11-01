@@ -10,9 +10,9 @@
 
 
 /* 공사중 표시 */
-html *{
+/* html *{
     outline: 1px dashed red;
-}
+} */
 
 html{
     scroll-behavior: smooth;
@@ -242,6 +242,188 @@ header{
     right: 25px;
     top: 35%;
 }
+
+.about_profile{
+    margin-bottom: 50px;
+}
+
+.about_profile ul{
+    display: flex;
+}
+
+.about_txt>h2{
+    font-weight: bold;
+    font-size: 40px;
+    width: 60%;
+    color: #f8f8f8;
+    line-height: 1.5;
+    margin: 50px 0;
+}
+
+.about_txt>h2 strong{
+    color: rgb(242, 255, 129);
+}
+
+.about_profile li{
+    padding: 10px;
+    text-align: center;
+    width: calc(100% / 2);
+    color: rgb(199, 199, 199);
+}
+
+.about_profile li img{
+    border-radius: 50%;
+    /* border: 1px solid #000; */
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: rgb(185, 185, 185);
+    width: 85px;
+}
+
+.edu{
+    padding: 10px;
+    border: 5px solid #000;
+
+}
+
+
+
+.about_profile li h3{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(242, 255, 129);
+    margin: 15px 0;
+}
+
+.about_profile li h4{
+    text-align: left;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d2d898;
+    line-height: 35px;
+}
+
+.about_profile li p{
+    text-align: left;
+    margin: 10px 0;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.about_box{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about_profile li p.hash{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.about_profile li p.hash .tag{
+    color: rgb(242, 255, 129);
+}
+
+.about_box2 p{
+    color: rgb(255, 255, 255);
+}
+
+.about_box2 p strong{
+    color: rgb(242, 255, 129);
+    font-weight: bold ;
+    line-height: 50px;
+}
+
+.about_txt>p{
+    color: rgb(209, 209, 209);
+    font-size: 18px;
+    line-height: 1.5;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* 다운로드 버튼 */
+
+.down_txt{
+    color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 25px;
+    margin-top: 60px;
+    position: relative;
+}
+
+.down_txt::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 185px;
+    height: 3px;
+    background-color: #fff;
+    top: -10px;
+}
+
+.down_txt::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 185px;
+    height: 3px;
+    background-color: #fff;
+    bottom: -10px;
+}
+
+.down_btn{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.down_btn button{
+    background: #ffe6e6; 
+    border: 1px solid rgba(247, 255, 170, 0.658); 
+    box-shadow:none; 
+    padding: 10px 38px 10px; 
+    overflow:visible; 
+    cursor:pointer;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Sunflower', sans-serif;
+    line-height: 1.0;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.re_down{
+    position: relative;
+    z-index: 2;
+}
+
+.down_btn button::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    transition: height .4s;
+    background-color: rgba(0, 255, 255, 0.404);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.down_btn button:hover::after{
+    height: 100%;
+}
+
 
 
 /*************************************** section3 - skills ***************************************/
