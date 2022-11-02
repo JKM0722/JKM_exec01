@@ -146,7 +146,7 @@
 
     .pbx2_2{
         left: 5px;
-        top: 45%;
+        top: 40%;
     }
 
     /* portfolio */
@@ -157,7 +157,7 @@
 
     .pbx3_2{
         right: 5px;
-        top: 40%;
+        top: 35%;
     }
 
     /* others */
@@ -167,7 +167,7 @@
 
     .pbx4_2{
         left: 5px;
-        top: 40%;
+        top: 35%;
     }
 
     /* contact */
@@ -178,7 +178,7 @@
 
     .pbx5_2{
         right: 5px;
-        top: 40%;
+        top: 35%;
     }
 
 
@@ -249,7 +249,7 @@
     }
 
     .about_txt>p{
-        font-size: 16px;
+        font-size: 14px;
         width: 100%;
     }
 
@@ -306,6 +306,7 @@
 
     .skill_set{
         padding-top: 40px;
+        padding-bottom: 50px;
     }
 
     .skill_set ul{
@@ -323,5 +324,36 @@
         height: 90px;
     }
 
+    /*************************** section4 - portfolio **************************/
+
+    .ptli{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 15px 0;
+    }
+
+    .ptli_img{
+        width: 100%;
+    }
+    
+    .ptli>li>h2{
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    .ptli2 h2{
+        text-align: center;
+    }
+
+    .btn{
+        width: 110px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .btn a{
+        font-size: 14px;
+    }
 
 } /* 780px */
