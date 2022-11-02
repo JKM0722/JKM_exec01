@@ -158,7 +158,7 @@ header{
 
 .pbx3_2{
     right: 25px;
-    top: 15%;
+    top: 20%;
 }
 
 /* others */
@@ -168,7 +168,7 @@ header{
 
 .pbx4_2{
     left: 25px;
-    top: 10%;
+    top: 20%;
 }
 
 /* contact */
@@ -179,7 +179,7 @@ header{
 
 .pbx5_2{
     right: 25px;
-    top: 5%;
+    top: 15%;
 }
 
 
@@ -578,7 +578,6 @@ header{
     color: rgba(255, 255, 255, 0.692);
     font-size: 30px;
     font-weight: bold;
-    padding-top: 50px;
 }
 
 .ptli2 h2{

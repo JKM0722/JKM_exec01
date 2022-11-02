@@ -1,0 +1,327 @@
+@charset "utf-8";
+
+@media screen and (max-width:1180px) {
+
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .ibx{
+        max-width: auto;
+        width: 80%;
+    }
+
+    /************************** 섹션 부제목 **************************/
+    .pb1{
+        font-size: 40px;
+    }
+
+    .pb2{
+        font-size: 30px;
+    }
+    
+    /* about */
+
+    .pbx1_1{
+        color: rgb(255, 255, 255) !important;
+        right: 20px;
+    }
+
+    .pbx1_2{
+        right: 15px;
+        top: 40%;
+    }
+
+    /* skills */
+    .pbx2_1{
+        left: 20px;
+    }
+
+    .pbx2_2{
+        left: 15px;
+        top: 35%;
+    }
+
+    /* portfolio */
+
+    .pbx3_1{
+        right: 20px;
+    }
+
+    .pbx3_2{
+        right: 15px;
+        top: 30%;
+    }
+
+    /* others */
+    .pbx4_1{
+        left: 20px;
+    }
+
+    .pbx4_2{
+        left: 15px;
+        top: 30%;
+    }
+
+    /* contact */
+
+    .pbx5_1{
+        right: 20px;
+    }
+
+    .pbx5_2{
+        right: 15px;
+        top: 30%;
+    }
+
+
+    /**************************** 네비게이션 ****************************/
+
+    .gnb li{
+        height: 25px;
+        line-height: 25px;
+    }
+
+    .gnb a {
+        font-size: 15px;
+    }
+
+    .gnb li.on a {
+        font-size: 20px;
+    }
+
+    /************************ section1 ************************/
+
+    #text {
+        font-size: 50px;
+        line-height: normal;
+        width: 100%;
+    }
+
+    #text strong{
+        font-size: 50px;
+    }
+
+    /********************** section2 - about **********************/
+
+    .about_txt>h2{
+        width: 80%;
+        font-size: 35px;
+    }
+
+
+}/* 1180px */
+
+
+
+/**************************** 780px ****************************/
+
+@media screen and (max-width:780px) {
+
+    /************************** 섹션 부제목 **************************/
+    .pb1{
+        font-size: 25px;
+    }
+
+    .pb2{
+        font-size: 15px;
+    }
+
+    /* about */
+
+    .pbx1_1{
+        color: rgb(255, 255, 255) !important;
+        right: 10px;
+    }
+
+    .pbx1_2{
+        right: 5px;
+        top: 45%;
+    }
+
+    /* skills */
+    .pbx2_1{
+        left: 10px;
+    }
+
+    .pbx2_2{
+        left: 5px;
+        top: 45%;
+    }
+
+    /* portfolio */
+
+    .pbx3_1{
+        right: 10px;
+    }
+
+    .pbx3_2{
+        right: 5px;
+        top: 40%;
+    }
+
+    /* others */
+    .pbx4_1{
+        left: 10px;
+    }
+
+    .pbx4_2{
+        left: 5px;
+        top: 40%;
+    }
+
+    /* contact */
+
+    .pbx5_1{
+        right: 10px;
+    }
+
+    .pbx5_2{
+        right: 5px;
+        top: 40%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /********************** section1 *********************************/
+    #text {
+        font-size: 40px;
+        line-height: normal;
+        width: 100%;
+    }
+
+    #text strong{
+        font-size: 40px;
+    }
+
+    #text2{
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mouse{
+        transform: scale(.7) translateX(-50%);
+    }
+
+    /********************** section2 - about **********************/
+
+    .section2{
+        padding: 50px 0;
+    }
+
+    .about_txt>h2 {
+        font-size: 20px;
+        margin: 50px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about_profile ul{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .about_profile li{
+        width: 100%;
+    }
+
+    .about_profile li h3{
+        font-size: 20px;
+    }
+
+    .about_profile li h4{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .about_box{
+        width: 100%;
+    }
+
+    .about_txt>p{
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .about_profile li img{
+        width: 70px;
+    }
+
+    .about_profile li p.hash{
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .about_profile li p{
+        line-height: 20px;
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .down_txt{
+        width: 100%;
+        font-size: 16px;
+        margin-top: 50px;
+    }
+
+    .down_txt::after, .down_txt::before{
+        width: 122px;
+    }
+
+    .down_btn{
+        width: 100%;
+    }
+
+    .down_btn button{
+        padding: 10px 25px;
+    }
+    
+    .down_btn button .re_down{
+        font-size: 14px;
+    }
+
+
+
+
+    /***************************** section3 - skills *****************************/
+
+    .skill_txt{
+        line-height: normal;
+        height: 100px;
+        padding-top: 100px;
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .skill_set{
+        padding-top: 40px;
+    }
+
+    .skill_set ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill_set ul li{
+        width: 80%;
+        margin: 30px 0;
+        font-size: 20px;
+    }
+
+    .skill_set ul img{
+        height: 90px;
+    }
+
+
+} /* 780px */
