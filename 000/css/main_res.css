@@ -208,10 +208,12 @@
         font-size: 25px;
         width: 100%;
         text-align: center;
+        bottom: 10vh;
     }
 
     .mouse{
         transform: scale(.7) translateX(-50%);
+        bottom: 3vh;
     }
 
     /********************** section2 - about **********************/
