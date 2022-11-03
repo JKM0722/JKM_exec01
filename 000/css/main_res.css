@@ -1,362 +1,307 @@
 @charset "utf-8";
 
-@media screen and (max-width:1180px) {
+@media screen and (max-width: 1180px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
 
-    html, body{
-        overflow-x: hidden;
-    }
+  .ibx {
+    max-width: auto;
+    width: 80%;
+  }
 
-    .ibx{
-        max-width: auto;
-        width: 80%;
-    }
+  /************************** 섹션 부제목 **************************/
+  .pb1 {
+    font-size: 40px;
+  }
 
-    /************************** 섹션 부제목 **************************/
-    .pb1{
-        font-size: 40px;
-    }
+  .pb2 {
+    font-size: 30px;
+  }
 
-    .pb2{
-        font-size: 30px;
-    }
-    
-    /* about */
+  /* about */
 
-    .pbx1_1{
-        color: rgb(255, 255, 255) !important;
-        right: 20px;
-    }
+  .pbx1_1 {
+    color: rgb(255, 255, 255) !important;
+    right: 20px;
+  }
 
-    .pbx1_2{
-        right: 15px;
-        top: 40%;
-    }
+  .pbx1_2 {
+    right: 15px;
+    top: 40%;
+  }
 
-    /* skills */
-    .pbx2_1{
-        left: 20px;
-    }
+  /* skills */
+  .pbx2_1 {
+    left: 20px;
+  }
 
-    .pbx2_2{
-        left: 15px;
-        top: 35%;
-    }
+  .pbx2_2 {
+    left: 15px;
+    top: 35%;
+  }
 
-    /* portfolio */
+  /* portfolio */
 
-    .pbx3_1{
-        right: 20px;
-    }
+  .pbx3_1 {
+    right: 20px;
+  }
 
-    .pbx3_2{
-        right: 15px;
-        top: 30%;
-    }
+  .pbx3_2 {
+    right: 15px;
+    top: 30%;
+  }
 
-    /* others */
-    .pbx4_1{
-        left: 20px;
-    }
+  /* others */
+  .pbx4_1 {
+    left: 20px;
+  }
 
-    .pbx4_2{
-        left: 15px;
-        top: 30%;
-    }
+  .pbx4_2 {
+    left: 15px;
+    top: 30%;
+  }
 
-    /* contact */
+  /* contact */
 
-    .pbx5_1{
-        right: 20px;
-    }
+  .pbx5_1 {
+    right: 20px;
+  }
 
-    .pbx5_2{
-        right: 15px;
-        top: 30%;
-    }
+  .pbx5_2 {
+    right: 15px;
+    top: 30%;
+  }
 
+  /**************************** 네비게이션 ****************************/
 
-    /**************************** 네비게이션 ****************************/
+  .gnb li {
+    height: 25px;
+    line-height: 25px;
+  }
 
-    .gnb li{
-        height: 25px;
-        line-height: 25px;
-    }
+  .gnb a {
+    font-size: 15px;
+  }
 
-    .gnb a {
-        font-size: 15px;
-    }
+  .gnb li.on a {
+    font-size: 20px;
+  }
 
-    .gnb li.on a {
-        font-size: 20px;
-    }
+  /************************ section1 ************************/
 
-    /************************ section1 ************************/
+  #text {
+    font-size: 50px;
+    line-height: normal;
+    width: 100%;
+  }
 
-    #text {
-        font-size: 50px;
-        line-height: normal;
-        width: 100%;
-    }
+  #text strong {
+    font-size: 50px;
+  }
 
-    #text strong{
-        font-size: 50px;
-    }
+  /********************** section2 - about **********************/
 
-    /********************** section2 - about **********************/
-
-    .about_txt>h2{
-        width: 80%;
-        font-size: 35px;
-    }
-
-
-}/* 1180px */
-
-
+  .about_txt > h2 {
+    width: 80%;
+    font-size: 35px;
+  }
+} /* 1180px */
 
 /**************************** 780px ****************************/
 
-@media screen and (max-width:780px) {
+@media screen and (max-width: 780px) {
+  .ibx {
+    max-width: auto;
+    width: 90%;
+  }
 
-    /************************** 섹션 부제목 **************************/
-    .pb1{
-        font-size: 25px;
-    }
+  /************************** 섹션 부제목 **************************/
+  .pb1 {
+    display: none;
+  }
 
-    .pb2{
-        font-size: 15px;
-        transition: none;
-    }
+  .pb2 {
+    display: none;
+  }
 
-    /* about */
+  .mb_txt {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+  }
 
-    .pbx1_1{
-        color: rgb(255, 255, 255) !important;
-        right: 10px;
-    }
+  /********************** section1 *********************************/
+  #text {
+    font-size: 40px;
+    line-height: normal;
+    width: 100%;
+  }
 
-    .pbx1_2{
-        right: 5px;
-        top: 45%;
-    }
+  #text strong {
+    font-size: 40px;
+  }
 
-    /* skills */
-    .pbx2_1{
-        left: 10px;
-    }
+  #text2 {
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    bottom: 10vh;
+  }
 
-    .pbx2_2{
-        left: 5px;
-        top: 40%;
-    }
+  .mouse {
+    transform: scale(0.7) translateX(-50%);
+    bottom: 3vh;
+  }
 
-    /* portfolio */
+  /********************** section2 - about **********************/
 
-    .pbx3_1{
-        right: 10px;
-    }
+  .section2 {
+    padding: 50px 0 100px;
+  }
 
-    .pbx3_2{
-        right: 5px;
-        top: 30%;
-    }
+  .about_txt > h2 {
+    font-size: 20px;
+    margin: 50px 0;
+    width: 100%;
+    text-align: center;
+  }
 
-    /* others */
-    .pbx4_1{
-        left: 10px;
-    }
+  .about_profile ul {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
 
-    .pbx4_2{
-        left: 5px;
-        top: 30%;
-    }
+  .about_profile li {
+    width: 100%;
+  }
 
-    /* contact */
+  .about_profile li h3 {
+    font-size: 20px;
+  }
 
-    .pbx5_1{
-        right: 10px;
-    }
+  .about_profile li h4 {
+    font-size: 15px;
+    line-height: 25px;
+  }
 
-    .pbx5_2{
-        right: 5px;
-        top: 30%;
-    }
+  .about_box {
+    width: 100%;
+  }
 
+  .about_txt > p {
+    font-size: 14px;
+    width: 100%;
+  }
 
+  .about_profile li img {
+    width: 70px;
+  }
 
+  .about_profile li p.hash {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
 
+  .about_profile li p {
+    line-height: 20px;
+    font-size: 14px;
+    margin: 5px 0;
+  }
 
+  .down_txt {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 50px;
+  }
 
+  .down_txt::after,
+  .down_txt::before {
+    width: 122px;
+  }
 
+  .down_btn {
+    width: 100%;
+  }
 
+  .down_btn button {
+    padding: 10px 25px;
+  }
 
+  .down_btn button .re_down {
+    font-size: 14px;
+  }
 
+  /***************************** section3 - skills *****************************/
 
+  .skill_txt {
+    line-height: normal;
+    height: 100px;
+    padding-top: 50px;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+  }
 
-    /********************** section1 *********************************/
-    #text {
-        font-size: 40px;
-        line-height: normal;
-        width: 100%;
-    }
+  .skill_set {
+    padding-top: 0px;
+    padding-bottom: 100px;
+  }
 
-    #text strong{
-        font-size: 40px;
-    }
+  .skill_set ul {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #text2{
-        font-size: 25px;
-        width: 100%;
-        text-align: center;
-        bottom: 10vh;
-    }
+  .skill_set ul li {
+    width: 80%;
+    margin: 30px 0;
+    font-size: 20px;
+  }
 
-    .mouse{
-        transform: scale(.7) translateX(-50%);
-        bottom: 3vh;
-    }
+  .skill_set ul img {
+    height: 90px;
+  }
 
-    /********************** section2 - about **********************/
+  /*************************** section4 - portfolio **************************/
 
-    .section2{
-        padding: 50px 0;
-    }
+  .pt {
+    padding-top: 50px;
+  }
 
-    .about_txt>h2 {
-        font-size: 20px;
-        margin: 50px 0;
-        width: 100%;
-        text-align: center;
-    }
+  .ptli {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 15px 0;
+  }
 
-    .about_profile ul{
-        flex-direction: column;
-        margin-bottom: 30px;
-    }
+  .ptli_img {
+    width: 100%;
+  }
 
-    .about_profile li{
-        width: 100%;
-    }
+  .ptli > li > h2 {
+    font-size: 25px;
+    margin: 30px 0;
+  }
 
-    .about_profile li h3{
-        font-size: 20px;
-    }
+  .ptli2 h2 {
+    text-align: center;
+  }
 
-    .about_profile li h4{
-        font-size: 15px;
-        line-height: 25px;
-    }
+  .btnli {
+    margin-bottom: 50px;
+  }
 
-    .about_box{
-        width: 100%;
-    }
+  .btn {
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+  }
 
-    .about_txt>p{
-        font-size: 14px;
-        width: 100%;
-    }
-
-    .about_profile li img{
-        width: 70px;
-    }
-
-    .about_profile li p.hash{
-        margin-bottom: 20px;
-        font-size: 16px;
-    }
-
-    .about_profile li p{
-        line-height: 20px;
-        font-size: 14px;
-        margin: 5px 0;
-    }
-
-    .down_txt{
-        width: 100%;
-        font-size: 16px;
-        margin-top: 50px;
-    }
-
-    .down_txt::after, .down_txt::before{
-        width: 122px;
-    }
-
-    .down_btn{
-        width: 100%;
-    }
-
-    .down_btn button{
-        padding: 10px 25px;
-    }
-    
-    .down_btn button .re_down{
-        font-size: 14px;
-    }
-
-
-
-
-    /***************************** section3 - skills *****************************/
-
-    .skill_txt{
-        line-height: normal;
-        height: 100px;
-        padding-top: 100px;
-        font-size: 25px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .skill_set{
-        padding-top: 40px;
-        padding-bottom: 50px;
-    }
-
-    .skill_set ul{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .skill_set ul li{
-        width: 80%;
-        margin: 30px 0;
-        font-size: 20px;
-    }
-
-    .skill_set ul img{
-        height: 90px;
-    }
-
-    /*************************** section4 - portfolio **************************/
-
-    .ptli{
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        margin: 15px 0;
-    }
-
-    .ptli_img{
-        width: 100%;
-    }
-    
-    .ptli>li>h2{
-        font-size: 20px;
-        margin: 20px 0;
-    }
-
-    .ptli2 h2{
-        text-align: center;
-    }
-
-    .btn{
-        width: 110px;
-        height: 40px;
-        line-height: 40px;
-    }
-
-    .btn a{
-        font-size: 14px;
-    }
-
+  .btn a {
+    font-size: 14px;
+  }
 } /* 780px */

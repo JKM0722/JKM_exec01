@@ -1,264 +1,305 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>장규민의 Portfolio</title>
     <!--제이쿼리 라이브러리-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
+
     <!--제이쿼리 UI-->
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- <script src="./js/jquery-touch-punch.min.js"></script> -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"
-        integrity="sha512-k2o1KZdvUi59PUXirfThShW9Gdwtk+jVYum6t7RmyCNAVyF9ozijFpvLEWmpgqkHuqSWpflsLf5+PEW6Lxy/wA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"
+      integrity="sha512-k2o1KZdvUi59PUXirfThShW9Gdwtk+jVYum6t7RmyCNAVyF9ozijFpvLEWmpgqkHuqSWpflsLf5+PEW6Lxy/wA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    
 
     <script src="./js/main.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/font.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/main_res.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main_res.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="gnb">
-            <ul>
-                <li>
-                    <a href="#section2">ABOUT</a>
-                </li>
-                <li>
-                    <a href="#section3">SKILLS</a>
-                </li>
-                <li>
-                    <a href="#section4">PORTFOLIO</a>
-                </li>
-                <li>
-                    <a href="#section5">OTHERS</a>
-                </li>
-                <li>
-                    <a href="#section6">CONTACT</a>
-                </li>
-            </ul>
-        </div>
+      <div class="gnb">
+        <ul>
+          <li>
+            <a href="#section2">ABOUT</a>
+          </li>
+          <li>
+            <a href="#section3">SKILLS</a>
+          </li>
+          <li>
+            <a href="#section4">PORTFOLIO</a>
+          </li>
+          <li>
+            <a href="#section5">OTHERS</a>
+          </li>
+          <li>
+            <a href="#section6">CONTACT</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
-    <video src="./vid/mainbg.mp4" class="myvid" autoplay data-keepplaying loop muted></video>
+    <video
+      src="./vid/mainbg.mp4"
+      class="myvid"
+      autoplay
+      data-keepplaying
+      loop
+      muted
+    ></video>
     <div class="gradient_filter">
-        <div class="section1 box">
-            <h1 id="text"></h1>
-            <h1 id="text2"></h1>
-            <div class="mouse">
-                <div class="mouse_wheel"></div>
-            </div>
+      <div class="section1 box">
+        <h1 id="text"></h1>
+        <h1 id="text2"></h1>
+        <div class="mouse">
+          <div class="mouse_wheel"></div>
         </div>
-        <div id="section2" class="section2 box scgnb">
-            <div class="sub sub1">
-                <div class="pb pb1 pbx1_1">
-                    ABOUT
-                </div>
-                <div class="pb2 pb pbx1_2">
-                    ABOUT
-                </div>
-            </div>
-            <!-- ibx 시작 -->
-            <div class="ibx ibxl">
-                <div class="about_txt">
-                    <h2> 끊임없는 배움으로 성장하고 상상한 모든것을 실현시키려 하는 <strong>장규민</strong>입니다 </h2>
-                    
-                    <div class="about_profile">
-                        <ul>
-                            <li>
-                                <div class="about_box">
-                                    <img class="edu" src="./img/about/educationicon.png" alt="교육">
-                                    <h3>교육 이력</h3>
-                                    <h4>UIUX 반응형디자인 프론트엔드 개발자</h4>
-                                    <p> 기관 : 그린컴퓨터아카데미</p>
-                                    <p> 기간 : 2022.04 ~ 2022.06</p>
-                                    <h4>4차산업 frontend IT소프트웨어 웹개발</h4>
-                                    <p> 기관 : 그린컴퓨터아카데미</p>
-                                    <p> 기간 : 2022.06 ~ 2022.08</p>
-                                    <h4>[GTQ 1급 포토샵] 디자인 자격증대비반</h4>
-                                    <p> 기관 : 그린컴퓨터아카데미</p>
-                                    <p> 기간 : 2022.08 ~ 2022.09</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="about_box about_box2">
-                                    <img src="./img/about/profileicon.png" alt="프로필">
-                                    <h3>저는 이런 사람이에요</h3>
-                                    <p class="hash"><span class="tag">#</span>성실한 <span class="tag">#</span>책임감 <span class="tag">#</span>끈기 <span class="tag">#</span>성장하는</p>
-                                    <p><strong>성실하게</strong> 회사 생활에 임합니다. </p>
-                                    <p>맡은 일은 <strong>책임감</strong>있게 합니다. </p>
-                                    <p>원치 않은 부분에 막히더라도 <strong>끈기있게</strong> 끝까지 합니다.</p>
-                                    <p>끊임없는 자기계발로 계속해서 <strong>성장하려고</strong> 합니다.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <p>군 생활 중에 장래를 고민하던 중 쉽게 접했던 사이트들이 코딩이라는 것을 활용하여 만들어진다는 것에 흥미를 갖게 되었고 4차 산업혁명의 결과로 정보통신 분야의 중요성이 극대화되고 있어 개발자라는 직업이 가진 전문성에 매력을 느끼고 공부를 시작하게 되었습니다.</p>
-
-                    <p>더욱 전문적인 지식을 쌓고자 학원에 여러 개인 프로젝트를 해나가며 큰 성취감을 느껴 개발 분야에 대한 확신이 더해졌습니다. 좀 더 빠르게 시작하면 어땠겠냐는 생각이 들 정도로 직접 짠 코드를 통해 화면이 구현된다는 것과 오류가 발생했을 때 이를 해결하기 위해 노력했던 과정 자체가 즐겁게 느껴졌습니다. 그동안의 노력과 성장을 바탕으로 배움의 즐거움을 놓치지 않고 어제보다 오늘 더 발전하는 사원이 되겠습니다.</p>
-                </div>
-
-                <div class="down_txt">
-                    이력서 다운로드
-                </div>
-                <div class="down_btn">
-                    <a href="./document/장규민_이력서.pdf" download><button><div class="re_down">RECRUIT<br>DOWNLOAD</div></button></a>
-                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="section3" class="section3 box scgnb">
-        <div class="sub sub2">
-            <div class="pb pb1 pbx2_1">
-                SKILLS
-            </div>
-            <div class="pb2 pb pbx2_2">
-                SKILLS
-            </div>
-            <!-- ibx 시작 -->
-            <div class="ibx ibxr">
-                <div class="skill_txt">
-                    <h2>실무중심의 프로그램 사용 능력</h2>
-                </div>
-                <div class="skill_set">
-                    <ul>
-                        <li>
-                            <img src="./img/skills_icon_1.png" alt="">
-                            <p class="skill_name">HTML5</p>
-                            <div class="number">0</div><div class="per">%</div>
-                        </li>
-                        <li>
-                            <img src="./img/skills_icon_2.png" alt="">
-                            <p class="skill_name">CSS3</p>
-                            <div class="number">0</div><div class="per">%</div>
-                        </li>
-                        <li>
-                            <img src="./img/skills_icon_3.png" alt="">
-                            <p class="skill_name">JAVSCRIPT & JQUERY</p>
-                            <div class="number2">0</div><div class="per">%</div>
-                        </li>
-                        <li>
-                            <img src="./img/skills_icon_4.png" alt="">
-                            <p class="skill_name">PHOTOSHOP</p>
-                            <div class="number3">0</div><div class="per">%</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div id="section4" class="section4 box scgnb">
-        <div class="sub sub3">
-            <div class="pb pb1 pbx3_1">
-                PORTFOLIO
-            </div>
-            <div class="pb2 pb pbx3_2">
-                PORTFOLIO
-            </div>
+      </div>
+      <div id="section2" class="section2 box scgnb">
+        <div class="sub sub1">
+          <div class="pb pb1 pbx1_1">ABOUT</div>
+          <div class="pb2 pb pbx1_2">ABOUT</div>
         </div>
         <!-- ibx 시작 -->
         <div class="ibx ibxl">
-            <div class="pt">
-                <ul>
-                    <li>
-                        <ul class="ptli ptli1">
-                            <li class="ptli_img"><img src="./img/portfolio/000.png" alt="#"></li>
-                            <li>
-                                <h2>장규민의 포트폴리오</h2>
-                                <div class="btn btn_pdf">
-                                    <a href="#">INTRODUCE</a>
-                                </div>
-                                <div class="btn btn_url">
-                                    <a href="#">HOMEPAGE</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="ptli ptli2">
-                            <li class="ptli_img"><img src="./img/portfolio/001.png" alt="#"></li>
-                            <li>
-                                <h2>Assuretee</h2>
-                                <div class="btn btn_pdf">
-                                    <a href="./document/Assuretee.pdf">INTRODUCE</a>
-                                </div>
-                                <div class="btn btn_url">
-                                    <a href="https://jkm0722.github.io/JKM_exec01/001/">HOMEPAGE</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="ptli ptli3">
-                            <li class="ptli_img"><img src="./img/portfolio/003.png" alt="#"></li>
-                            <li>
-                                <h2>WM Entertainment</h2>
-                                <div class="btn btn_pdf">
-                                    <a href="./document/WM Entertainment.pdf">INTRODUCE</a>
-                                </div>
-                                <div class="btn btn_url">
-                                    <a href="https://jkm0722.github.io/JKM_exec01/003/">HOMEPAGE</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+          <div class="mb_txt"><h2>ABOUT</h2></div>
+          <div class="about_txt">
+            <h2>
+              끊임없는 배움으로 성장하고 상상한 모든것을 실현시키려 하는
+              <strong>장규민</strong>입니다
+            </h2>
+
+            <div class="about_profile">
+              <ul>
+                <li>
+                  <div class="about_box">
+                    <img
+                      class="edu"
+                      src="./img/about/educationicon.png"
+                      alt="교육"
+                    />
+                    <h3>교육 이력</h3>
+                    <h4>UIUX 반응형디자인 프론트엔드 개발자</h4>
+                    <p>기관 : 그린컴퓨터아카데미</p>
+                    <p>기간 : 2022.04 ~ 2022.06</p>
+                    <h4>4차산업 frontend IT소프트웨어 웹개발</h4>
+                    <p>기관 : 그린컴퓨터아카데미</p>
+                    <p>기간 : 2022.06 ~ 2022.08</p>
+                    <h4>[GTQ 1급 포토샵] 디자인 자격증대비반</h4>
+                    <p>기관 : 그린컴퓨터아카데미</p>
+                    <p>기간 : 2022.08 ~ 2022.09</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="about_box about_box2">
+                    <img src="./img/about/profileicon.png" alt="프로필" />
+                    <h3>저는 이런 사람이에요</h3>
+                    <p class="hash">
+                      <span class="tag">#</span>성실한
+                      <span class="tag">#</span>책임감
+                      <span class="tag">#</span>끈기
+                      <span class="tag">#</span>성장하는
+                    </p>
+                    <p><strong>성실하게</strong> 회사 생활에 임합니다.</p>
+                    <p>맡은 일은 <strong>책임감</strong>있게 합니다.</p>
+                    <p>
+                      원치 않은 부분에 막히더라도
+                      <strong>끈기있게</strong> 끝까지 합니다.
+                    </p>
+                    <p>
+                      끊임없는 자기계발로 계속해서
+                      <strong>성장하려고</strong> 합니다.
+                    </p>
+                  </div>
+                </li>
+              </ul>
             </div>
+
+            <p>
+              군 생활 중에 장래를 고민하던 중 쉽게 접했던 사이트들이 코딩이라는
+              것을 활용하여 만들어진다는 것에 흥미를 갖게 되었고 4차 산업혁명의
+              결과로 정보통신 분야의 중요성이 극대화되고 있어 개발자라는 직업이
+              가진 전문성에 매력을 느끼고 공부를 시작하게 되었습니다.
+            </p>
+
+            <p>
+              더욱 전문적인 지식을 쌓고자 학원에 여러 개인 프로젝트를 해나가며
+              큰 성취감을 느껴 개발 분야에 대한 확신이 더해졌습니다. 좀 더
+              빠르게 시작하면 어땠겠냐는 생각이 들 정도로 직접 짠 코드를 통해
+              화면이 구현된다는 것과 오류가 발생했을 때 이를 해결하기 위해
+              노력했던 과정 자체가 즐겁게 느껴졌습니다. 그동안의 노력과 성장을
+              바탕으로 배움의 즐거움을 놓치지 않고 어제보다 오늘 더 발전하는
+              사원이 되겠습니다.
+            </p>
+          </div>
+
+          <div class="down_txt">이력서 다운로드</div>
+          <div class="down_btn">
+            <a href="./document/장규민_이력서.pdf" download
+              ><button>
+                <div class="re_down">RECRUIT<br />DOWNLOAD</div>
+              </button></a
+            >
+          </div>
         </div>
+      </div>
+    </div>
+
+    <div id="section3" class="section3 box scgnb">
+      <div class="sub sub2">
+        <div class="pb pb1 pbx2_1">SKILLS</div>
+        <div class="pb2 pb pbx2_2">SKILLS</div>
+        <!-- ibx 시작 -->
+        <div class="ibx ibxr">
+          <div class="mb_txt"><h2>SKILLS</h2></div>
+          <div class="skill_txt">
+            <h2>실무중심의 프로그램 사용 능력</h2>
+          </div>
+          <div class="skill_set">
+            <ul>
+              <li>
+                <img src="./img/skills_icon_1.png" alt="" />
+                <p class="skill_name">HTML5</p>
+                <div class="number">0</div>
+                <div class="per">%</div>
+              </li>
+              <li>
+                <img src="./img/skills_icon_2.png" alt="" />
+                <p class="skill_name">CSS3</p>
+                <div class="number">0</div>
+                <div class="per">%</div>
+              </li>
+              <li>
+                <img src="./img/skills_icon_3.png" alt="" />
+                <p class="skill_name">JAVSCRIPT & JQUERY</p>
+                <div class="number2">0</div>
+                <div class="per">%</div>
+              </li>
+              <li>
+                <img src="./img/skills_icon_4.png" alt="" />
+                <p class="skill_name">PHOTOSHOP</p>
+                <div class="number3">0</div>
+                <div class="per">%</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="section4" class="section4 box scgnb">
+      <div class="sub sub3">
+        <div class="pb pb1 pbx3_1">PORTFOLIO</div>
+        <div class="pb2 pb pbx3_2">PORTFOLIO</div>
+      </div>
+      <!-- ibx 시작 -->
+      <div class="ibx ibxl">
+        <div class="mb_txt"><h2>PORTFOLIO</h2></div>
+        <div class="pt">
+          <ul>
+            <li>
+              <ul class="ptli ptli1">
+                <li class="ptli_img">
+                  <img src="./img/portfolio/000.png" alt="#" />
+                </li>
+                <li class="btnli">
+                  <h2>장규민의 포트폴리오</h2>
+                  <div class="btn btn_pdf">
+                    <a href="#">INTRODUCE</a>
+                  </div>
+                  <div class="btn btn_url">
+                    <a href="#">HOMEPAGE</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="ptli ptli2">
+                <li class="ptli_img">
+                  <img src="./img/portfolio/001.png" alt="#" />
+                </li>
+                <li class="btnli">
+                  <h2>Assuretee</h2>
+                  <div class="btn btn_pdf">
+                    <a href="./document/Assuretee.pdf">INTRODUCE</a>
+                  </div>
+                  <div class="btn btn_url">
+                    <a href="https://jkm0722.github.io/JKM_exec01/001/"
+                      >HOMEPAGE</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="ptli ptli3">
+                <li class="ptli_img">
+                  <img src="./img/portfolio/003.png" alt="#" />
+                </li>
+                <li class="btnli">
+                  <h2>WM Entertainment</h2>
+                  <div class="btn btn_pdf">
+                    <a href="./document/WM Entertainment.pdf">INTRODUCE</a>
+                  </div>
+                  <div class="btn btn_url">
+                    <a href="https://jkm0722.github.io/JKM_exec01/003/"
+                      >HOMEPAGE</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div id="section5" class="section5 box scgnb">
-        <div class="sub sub4">
-            <div class="pb pb1 pbx4_1">
-                OTHERS
-            </div>
-            <div class="pb2 pb pbx4_2">
-                OTHERS
-            </div>
-        </div>
-        <!-- ibx 시작 -->
-        <div class="ibx ibxr">
-
-        </div>
+      <div class="sub sub4">
+        <div class="pb pb1 pbx4_1">OTHERS</div>
+        <div class="pb2 pb pbx4_2">OTHERS</div>
+      </div>
+      <!-- ibx 시작 -->
+      <div class="ibx ibxr">
+        <div class="mb_txt"><h2>OTHERS</h2></div>
+      </div>
     </div>
 
     <div id="section6" class="section6 box scgnb">
-        <div class="sub sub5">
-            <div class="pb pb1 pbx5_1">
-                CONTACT
-            </div>
-            <div class="pb2 pb pbx5_2">
-                CONTACT
-            </div>
+      <div class="sub sub5">
+        <div class="pb pb1 pbx5_1">CONTACT</div>
+        <div class="pb2 pb pbx5_2">CONTACT</div>
+      </div>
+      <!-- ibx 시작 -->
+      <div class="ibx ibxl">
+        <div class="mb_txt">
+          <h2>CONTACT</h2>
+          >
         </div>
-        <!-- ibx 시작 -->
-        <div class="ibx ibxl"></div>
+      </div>
     </div>
 
-    <footer>
-
-    </footer>
-
-</body>
-
-
+    <footer></footer>
+  </body>
 </html>
