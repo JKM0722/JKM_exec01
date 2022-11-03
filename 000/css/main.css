@@ -1,9 +1,9 @@
 @charset "utf-8";
 
 /* 공사중 표시 */
-html * {
+/* html * {
   outline: 1px dashed red;
-}
+} */
 
 html {
   scroll-behavior: smooth;
