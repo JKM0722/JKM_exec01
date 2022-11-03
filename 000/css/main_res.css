@@ -165,8 +165,8 @@
   .about_txt > h2 {
     font-size: 20px;
     margin: 50px 0;
-    width: 100%;
-    text-align: center;
+    width: 80%;
+    /* text-align: center; */
   }
 
   .about_profile ul {
