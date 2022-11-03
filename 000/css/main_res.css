@@ -148,12 +148,12 @@
     font-size: 25px;
     width: 100%;
     text-align: center;
-    bottom: 10vh;
+    top: 85vh;
   }
 
   .mouse {
     transform: scale(0.7) translateX(-50%);
-    bottom: 3vh;
+    top: 90vh;
   }
 
   /********************** section2 - about **********************/

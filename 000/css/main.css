@@ -88,8 +88,8 @@ header {
   display: none;
 }
 
-.mb_txt > h2 {
-}
+/* .mb_txt > h2 {
+} */
 
 .pb {
   writing-mode: vertical-lr;
