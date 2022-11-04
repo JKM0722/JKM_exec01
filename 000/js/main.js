@@ -173,10 +173,10 @@ $(document).ready(function () {
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         centeredSlides: true,
-        slidesPerView: 3,
+        // slidesPerView: 3,
         loop: true,
         autoplay: {
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
           
         },
