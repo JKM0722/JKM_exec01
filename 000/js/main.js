@@ -112,6 +112,8 @@ $(document).ready(function () {
                 counterFn3();
             }///if
 
+
+
            
 
         })////scroll
@@ -189,6 +191,70 @@ $(document).ready(function () {
           prevEl: ".swiper-button-prev",
         },
       });
+
+
+
+      
+
+    /*********************************************************/
+    /////스크롤이벤트///////////////////////////////////////////
+    /*********************************************************/
+    
+    let scTop; // 스크롤 위치변수    
+
+
+    // 각 등장액션 위치 배열변수
+    const scposy = [];
+
+    const tfty = $(".tfty");
+
+    const gapp = $(window).height();
+
+    // console.log("gapp 입니다", gapp)
+
+    tfty.each((idx,ele) => {
+        // console.log(idx,ele);
+        scposy[idx] = $(ele).offset().top;
+        // console.log(scposy)
+    });
+
+    // resize
+    $(window).resize(() => {
+        tfty.each((idx, ele) => scposy[idx] = $(ele).offset().top);
+        // console.log(scposy);
+    }); /////////// resize함수 ///////////////////
+
+    /************************************* 
+         함수명: tftyGo
+         기능: 스크롤 등장액션 주기
+    *************************************/
+
+         function tftyGo(n){
+            if(scTop > scposy[n] - 800){
+                tfty.eq(n).addClass("on")
+            }///////if
+            else{
+                tfty.eq(n).removeClass("on")
+            }/////else
+         }
+
+
+
+
+
+
+
+
+         $(window).scroll(function(){
+
+            scTop = $(this).scrollTop();
+
+            tfty.each((idx) => tftyGo(idx));
+
+         })/////////////scroll
+
+         
+
 
 
 
