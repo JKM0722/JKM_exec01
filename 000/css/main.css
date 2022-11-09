@@ -29,7 +29,7 @@ body {
 /************************ 스크롤 이벤트 만들기 ************************/
 .tfty{
   opacity: 0;
-  transition: .4s;
+  transition: .6s;
   transform: translateY(20px);
 }
 
